@@ -1,0 +1,19 @@
+[
+  {
+    "Classification": "hive-site",
+    "Properties": {
+      "javax.jdo.option.ConnectionURL": "jdbc:mysql:\/\/hivemetastore.cljrh2oncqba.us-east-1.rds.amazonaws.com:3306\/metastore-dev?createDatabaseIfNotExist=true",
+      "javax.jdo.option.ConnectionDriverName": "org.mariadb.jdbc.Driver",
+      "javax.jdo.option.ConnectionUserName": "metastoreadmin",
+      "javax.jdo.option.ConnectionPassword": "MyStupidPassword12345"
+    }
+  },
+  {
+    "Classification": "zeppelin-env",
+    "Properties": {
+      "ZEPPELIN_NOTEBOOK_S3_BUCKET": "muhbutt",
+      "ZEPPELIN_NOTEBOOK_S3_USER": "hadoop",
+      "ZEPPELIN_NOTEBOOK_STORAGE": "org.apache.zeppelin.notebook.repo.S3NotebookRepo"
+    }
+  }
+]
