@@ -34,51 +34,26 @@
 
 * On cluster launch, can configure Zeppelin to store notebook on S3 with the following Software Configuration:
 
-classification=zeppelin-env.properties
-
-[ZEPPELIN_NOTEBOOK_S3_BUCKET=my-zeppelin-bucket-name,ZEPPELIN_NOTEBOOK_STORAGE=org.apache.zeppelin.notebook.repo.S3NotebookRepo,ZEPPELIN_NOTEBOOK_USER=hadoop]
-
-Or possibly
-
-classification=zeppelin-env,properties
-
-[ZEPPELIN_NOTEBOOK_S3_BUCKET=my-zeppelin-bucket-name,ZEPPELIN_NOTEBOOK_STORAGE=org.apache.zeppelin.notebook.repo.S3NotebookRepo,ZEPPELIN_NOTEBOOK_USER=hadoop]
-
+<pre>
 [
-
   {
-
     "Classification": "zeppelin-env",
-
     "Properties": {
-
       
-
     },
-
     "Configurations": [
-
       {
-
         "Classification": "export",
-
         "Properties": {
-
-          "ZEPPELIN_NOTEBOOK_S3_BUCKET": "muhbutt",
-
+          "ZEPPELIN_NOTEBOOK_S3_BUCKET": "bucket-name",
           "ZEPPELIN_NOTEBOOK_STORAGE": "org.apache.zeppelin.notebook.repo.S3NotebookRepo",
-
           "ZEPPELIN_NOTEBOOK_S3_USER" : "hadoop"
-
         }
-
       }
-
     ]
-
   }
-
 ]
+</pre>
 
 ##### Zeppelin Use Cases
 
