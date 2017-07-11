@@ -1,5 +1,5 @@
 
-# This covers the following topics in Domain 4.0: Analysis (17%):
+# This covers the following topics in Domain 4: Analysis (17%):
 
 * intro.md
   * Introduction to Redshift
@@ -18,3 +18,6 @@
   * Redshift Loading Data Part 1
   * Redshift Data Loading Part 2
   * Redshift Loading Data Part 3
+
+
+[See Also - Redshift Security](../Domain_6_-_Security/Redshift_Security.md)
