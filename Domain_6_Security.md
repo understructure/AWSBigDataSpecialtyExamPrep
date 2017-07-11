@@ -118,8 +118,8 @@
       * ~8 that start with spark.ssl
       * spark.network.sasl.serverAlwaysEncrypt
 
-For the Exam:
-Encryption at rest - know the encryption modes and how they work, and which file are automatically updated behind the scenes
-Encryption in transit - specifically, study how Hadoop Encrypted Shuffle is setup
-At a minimum - remember how encryption for Spark and Tez are setup
+**For the Exam:**
+* **Encryption at rest** - know the encryption modes and how they work, and which file are automatically updated behind the scenes
+* **Encryption in transit** - specifically, study how [Hadoop Encrypted Shuffle](https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html) is setup
+  * At a minimum - remember how **encryption for Spark and Tez** are setup
 
