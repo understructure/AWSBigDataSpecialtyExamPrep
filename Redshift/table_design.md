@@ -13,7 +13,7 @@
 
 ## Table Design - Distribution Styles
 
-###One of three distribution styles
+### One of three distribution styles
 
 * **Even** (default distribution style)
   * rows distributed across slices in round-robin fashion regardless of values in column
