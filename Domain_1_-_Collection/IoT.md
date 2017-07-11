@@ -32,7 +32,7 @@
 
 [https://aws.amazon.com/iot-platform/how-it-works/](https://aws.amazon.com/iot-platform/how-it-works/)
 
-![image alt text](image_2.png)
+![image_2.png](domain1_2.png)
 
 #### Security
 
