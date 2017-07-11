@@ -101,7 +101,7 @@
     * mapreduce.shuffle.ssl.enabled (set from false to true)
 
 
-![images/hadoop_encrypted_shuffle.png](Hadoop Encrypted Shuffle)
+![Hadoop Encrypted Shuffle](images/hadoop_encrypted_shuffle.png)
 
 * For Tez:
   * **tez-site.xml**
