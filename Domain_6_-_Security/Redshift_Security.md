@@ -36,7 +36,7 @@
     * Decrypted cluster encryption key is used to decrypt Database encryption key
   * **Data encryption keys** - Decrypted database encryption key encrypts data encryption keys randomly generated for for each block in Redshift
 
-##### Hardware Security Modules (HSMs)
+#### Hardware Security Modules (HSMs)
 * Physical devices that safeguard and manage digital keys for strong authentication and provide cryptoprocessing
 * Contractual, regulatory requirements may determine if a HSM should be used instead of KMS
 * For either on-prem or Cloud HSM, you have to setup a trusted connection (HSM Connection) b/t Redshift and the HSM
@@ -52,7 +52,7 @@
 
 For more information, see the [Redshift Documentation on Using HSM](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html).
 
-** How HSM and Redshift pass encryption keys**
+**How HSM and Redshift pass encryption keys**
 1. When you select an HSM to manage encryption keys on cluster launch, RS sends request to the HSM to create and store a key
 1. That key will be used as the Cluster encryption key, and will be stored on the HSM
 1. RS then randomly generates the database encryption key in the cluster, and passes it to the HSM to be encrypted by the Cluster encryption key
