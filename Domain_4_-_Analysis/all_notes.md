@@ -608,7 +608,7 @@ For the exam, know:
 
 * **Example use** - create a user group called smallqueries, assign 30% of memory to this, create a query group called largequeries, assign 70% of memory to this
 
-![image alt text](../images/domain5_0.png)
+![image alt text](../images/domain4_0.png)
 
 * **Concurrency** - The number of queries that can run concurrently in the queue. Each query runs in a separate virtual space, called a slot. Memory allocated to the queue is divided among the queue's slots. Valid values are 1 to 50. The maximum concurrency for all queues is 50.
 
@@ -686,7 +686,7 @@ For Exam:
 
 * [http://docs.aws.amazon.com/redshift/latest/dg/cm-c-wlm-queue-assignment-rules.html](http://docs.aws.amazon.com/redshift/latest/dg/cm-c-wlm-queue-assignment-rules.html)
 
-![image alt text](../images/domain5_1.png)
+![image alt text](../images/domain4_1.png)
 
 ### Redshift Data Loading Part 1
 
@@ -744,7 +744,7 @@ copy tablename from 's3://mybucket/myfile.whatever' credentials 'aws_iam_role=ar
 
 Remember this slide from Architecture?
 
-![image alt text](../images/domain5_2.png)
+![image alt text](../images/domain4_2.png)
 
 * Each compute node has node slices
 
@@ -1422,7 +1422,7 @@ Interpreting Results
 
     * Lambda function reacts to new data by processing it, and streaming it to the ES Service Domain
 
-![image alt text](../images/domain5_3.png)
+![image alt text](../images/domain4_3.png)
 
 #### Indices and Shards
 
