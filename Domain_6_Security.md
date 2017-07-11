@@ -77,4 +77,28 @@
   * **core-site.xml** - updates property **hadoop.rpc.protection** to value=**privacy**
   * **hdfs-site.xml** - updates property **dfs.encrypt.data.transfer** value=**true**
 
+#### Setting Up Encryption - In Transit
+* Through Security Configuration section
+* Essentially what we’re setting up is in-transit encryption between the nodes within your cluster (e.g., for Hadoop, Tez, and Spark)
+* Check In-Transit Encryption checkbox
+* Two options:
+  * **PEM** - can create a zip file of .pem certificates and store them in S3, where EMR will download these certificates to each node and implement encryption in transit
+    * Can create these certs [using open-ssl per AWS documentation](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-encryption-certificates.html)
+    * In DEV, it’s OK to use self-created certs, but in prod, it’s a risk
+  * **Custom option** (custom option is like S3 CSE-Custom option) 
+
+* [Hadoop Encrypted Shuffle](https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html) - process of transferring data from mappers to reducers - from node to node w/in the cluster
+* Allows encryption of mapreduce shuffle using HTTPS
+* Two files updated
+  * **core-site.xml** - properties related to SSL keystore
+    * hadoop.ssl.require.client.cert
+    * hadoop.ssl.hostname.verifier
+    * hadoop.ssl.keystores.factory.class
+    * hadoop.ssl.server.conf
+    * hadoop.ssl.client.conf
+    * hadoop.ssl.enabled.protocols
+  * **mapred-site.xml**
+    * mapreduce.shuffle.ssl.enabled (set from false to true)
+
+
 
