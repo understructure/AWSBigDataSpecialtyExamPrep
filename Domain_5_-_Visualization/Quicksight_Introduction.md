@@ -102,7 +102,7 @@
 
 * Data Preparation - clean or transform raw data from data source
 
-    * Change filed names
+    * Change field names
 
     * Add calculated fields
 

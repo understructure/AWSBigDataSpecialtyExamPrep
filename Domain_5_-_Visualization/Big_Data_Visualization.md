@@ -81,7 +81,7 @@
 
 * Requires a custom bootstrap action on EMR
 
-D3.js
+#### D3.js
 
 * JavaScript library for dynamic, interactive data viz in Web browsers
 
