@@ -40,13 +40,13 @@
 
     * Cost the same as regular requests
 
-![image alt text](image_0.png)
+![image_0.png](../images/sqs0.png)
 
 * TL;DR - can use auto scaling groups based on size of queue if needed
 
 * Can also have priority queues to process more important things first - poll high priority queue until empty, then poll lower priority queue
 
-![image alt text](image_1.png)
+![image_01.png](../images/sqs1.png)
 
 * SQS Fanout - Use SNS topics to send messages to multiple SQS queues all at the same time
 
