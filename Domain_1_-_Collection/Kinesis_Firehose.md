@@ -26,11 +26,13 @@
 
 * Each record can be up to 1000 KB
 
+* For each delivery stream, you'll set a buffer size and a buffer interval
+
 * Set buffer size (1 MB - 128 MB) and buffer interval (60-900 seconds) - whichever condition is satisfied first triggers moving the data to S3 or Elasticsearch
 
-* Can use COPY command in Redshift to then get data into Redshift
+* Can use COPY command in Redshift to then get data into Redshift from S3
 
-**Loading data to Kinesis Firehose**
+#### Loading data to Kinesis Firehose
 
 **Amazon Kinesis Agent**
 
@@ -45,6 +47,8 @@
 * Agent handles file rotation, checkpointing, retry on failure
 
 * Agent also helps w/ Cloudwatch metrics
+
+* Can create custom CloudWatch metrics with Kinesis Agent
 
 * Can pre-process data before sending to delivery stream, e.g., 
 
@@ -62,15 +66,52 @@
 
 * PutRecordBatch (multiple records)
 
-DEMO 4:28 - 8:25 - watch this again / do it
-
 * Firehose can invoke a Lambda function to transform data, and then deliver that data to S3, Redshift, or Elasticsearch
 
-* Can enable transformation when you create your delivery stream	
+* Can enable transformation when you create your delivery stream
+
+DEMO 4:28 - 8:25
+
+1. Create Delivery Stream - can choose to send data to
+  * S3
+  * Redshift
+  * Elasticsearch Service
+1. Configuration - S3
+  * Data transformation (with Lambda) - enable yes/no
+  * Enter S3 bucket name and prefix for files
+  * S3 buffer - these settings really apply if S3 or Elasticsearch is your destination.  Redshift it depends on how fast the RS cluster can run a COPY command
+    * Buffer size - default is 5 megs, ranges from 1-128 in 1-meg increments
+    * Buffer interval - default is 300 seconds, ranges from 60-900 seconds in 1-sec increments
+  * S3 Compression and Encryption
+    * Data compression - default is "UNCOMPRESSED" - other options include GZIP, ZIP, and Snappy
+    * Data encryption - default is "no encryption" - other option is "aws/s3"
+  * Error logging - integrated with CloudWatch - default is Enable
+  * IAM Role - can select or allow AWS to create one for you - policy allows a bunch of stuff, including:
+    * s3:AbortMultipartUpload
+    * s3:GetBucketLocation
+    * s3:GetObject
+    * s3:ListBucket
+    * s3:ListBucketMultipartUploads
+    * s3:PutObject
+    * kinesis:DescribeStream
+    * kinesis:GetShardIterator
+    * kinesis:GetRecords
+    * kms:Decrypt
+1. Configuration - Redshift
+  * You HAVE to specify an intermediate bucket for files that will get loaded to Redshift
+  * You optionally may specify a prefix for those files in the bucket
+  * Select cluster, database, table
+  * Enter comma-delimited list of column names to load data to, in order of source (firehose) data
+  * Redshift username and password
+  * Redshift COPY options
+  * Enter Retry duration seconds - default is 3600, range is 0-7200 - how long after failed COPY command will be retried - if it still fails, error manifest files are delivered to the intermediate bucket
+
+
+* When testing with demo data (at least), files are generated in your bucket with a key that begins with <YEAR>/<MONTH>/<DAY>/<HOUR>/
 
 **Data Transformation Flow**
 
-* Firehose buffers data (up to buffering size specified in delivery stream)
+* Firehose buffers data (up to 3MB or buffering size specified in delivery stream, whichever is smaller)
 
 * Firehose invokes Lambda function w/ each buffered batch asynchronously
 
@@ -78,7 +119,7 @@ DEMO 4:28 - 8:25 - watch this again / do it
 
 * Transformed data then sent to destination when specified buffering size or interval is reached, whichever happens first
 
-**Parameters for Transformation** - Lambda must contain these parameters or Firehose will reject them
+**Parameters for Transformation** - Lambda must contain these parameters or Firehose will reject them - treating it as a transform data failure
 
 * **recordId** - Transformed record must have the same recordId prior to transformation
 
@@ -120,7 +161,7 @@ DEMO 4:28 - 8:25 - watch this again / do it
 
     * Can specify retry duration of 0-7200 seconds from S3 - can do this when creating delivery stream
 
-    * If Redshift is under maintenance or there’s a cluster failure - it Skips S3 objects and lists them in a manifest file
+    * If Redshift is under maintenance or there’s a cluster failure - firehose will retry for the retry duration, then if it's unsuccessful, it Skips S3 objects and lists them in a manifest file
 
 * Elasticsearch
 
