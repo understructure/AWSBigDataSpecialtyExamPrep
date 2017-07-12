@@ -17,7 +17,7 @@ CLUSTER_NAME=$1
 KEY_NAME=$2
 REGION_NAME=$3
 THE_ENVIRONMENT=$4
-EC2_ATTRIBUTES=\''{"KeyName":"'"$KEY_NAME"'","InstanceProfile":"EMR_EC2_DefaultRole","SubnetId":"subnet-8a2da3a7","EmrManagedSlaveSecurityGroup":"sg-41f36c30","EmrManagedMasterSecurityGroup":"sg-39fa6548","AdditionalMasterSecurityGroups":["sg-fc35a48d"]}'\'
+EC2_ATTRIBUTES="{\"KeyName\":\"$KEY_NAME\",\"InstanceProfile\":\"EMR_EC2_DefaultRole\",\"SubnetId\":\"subnet-8a2da3a7\",\"EmrManagedSlaveSecurityGroup\":\"sg-41f36c30\",\"EmrManagedMasterSecurityGroup\":\"sg-39fa6548\",\"AdditionalMasterSecurityGroups\":[\"sg-fc35a48d\"]}"
 
 
 # echo $EC2_ATTRIBUTES
@@ -25,7 +25,7 @@ EC2_ATTRIBUTES=\''{"KeyName":"'"$KEY_NAME"'","InstanceProfile":"EMR_EC2_DefaultR
 aws emr create-cluster \
 --auto-scaling-role EMR_AutoScaling_DefaultRole \
 --applications Name=Hadoop Name=Hive Name=Zeppelin Name=Spark \
---ec2-attributes '{"KeyName":"key-big-data-admin","InstanceProfile":"EMR_EC2_DefaultRole","SubnetId":"subnet-8a2da3a7","EmrManagedSlaveSecurityGroup":"sg-41f36c30","EmrManagedMasterSecurityGroup":"sg-39fa6548","AdditionalMasterSecurityGroups":["sg-fc35a48d"]}' \
+--ec2-attributes=${EC2_ATTRIBUTES} \
 --service-role EMR_DefaultRole \
 --enable-debugging \
 --release-label emr-5.5.0 \

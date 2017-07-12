@@ -11,7 +11,7 @@
   {
     "Classification": "zeppelin-env",
     "Properties": {
-      "ZEPPELIN_NOTEBOOK_S3_BUCKET": "notebooks-bucket-name",
+      "ZEPPELIN_NOTEBOOK_S3_BUCKET": "ustruct-code",
       "ZEPPELIN_NOTEBOOK_S3_USER": "hadoop",
       "ZEPPELIN_NOTEBOOK_STORAGE": "org.apache.zeppelin.notebook.repo.S3NotebookRepo"
     }
