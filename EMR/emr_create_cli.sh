@@ -29,7 +29,7 @@ aws emr create-cluster \
 --service-role EMR_DefaultRole \
 --enable-debugging \
 --release-label emr-5.5.0 \
---log-uri 's3n://muhbutt/emr-logs/' \
+--log-uri 's3n://ustruct-logs/emr-logs/' \
 --name "$CLUSTER_NAME" \
 --instance-groups '[{"InstanceCount":1,"BidPrice":"0.05","InstanceGroupType":"MASTER","InstanceType":"m3.xlarge","Name":"Master - 1"}]' \
 --configuration file://cluster-config-$THE_ENVIRONMENT.json \
