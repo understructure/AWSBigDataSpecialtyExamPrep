@@ -14,11 +14,11 @@
 
 * Any app can store data in "failsafe" queue
 
-* Any app can retrieve from queue
+* Any app can retrieve from queue using the SQS API 
 
 * For messages > 256KB, can use SQS Extended Client for Java, which uses S3
 
-* Ensures at least once delivery
+* Ensures at least once delivery, multiple readers and writers
 
 * Single queue can be used by many components
 
@@ -58,7 +58,7 @@
 
 * **SQS** is a message queue service allowing you to move data b/t distributed components of applications w/out losing messages or requiring each application component to be always available
 
-* **Kinesis Streams** is used for processing big data
+* **Kinesis Streams** is used for real-time processing of big data
 
 * Be familiar with SQS use cases
 
@@ -66,7 +66,7 @@
 
     * Image processing
 
-* Be familiar with Kinesis Streams use cases (Keep in mind, it’s likely that with any of these use cases, data is emitted to something like Redshift, S3, Elasticsearch, EMR, DynamoDB, etc.)
+* Be familiar with Kinesis Streams use cases (Keep in mind, it’s likely that with any of these use cases, data is emitted to something like Redshift, S3, Elasticsearch, DynamoDB, etc.)
 
     * Fast log and data feed intake and processing
 
