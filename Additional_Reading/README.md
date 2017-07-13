@@ -25,8 +25,17 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Using Spark SQL for ETL](https://aws.amazon.com/blogs/big-data/using-spark-sql-for-etl/) | Blog post |
 | [EMR DynamoDB Connector](https://github.com/awslabs/emr-dynamodb-connector) | GitHub Repo |
 | [Redshift Data Source for Apache Spark](https://github.com/databricks/spark-redshift) | GitHub Repo |
-
+| [EMR Lab**](https://github.com/sko71/aws-bigdata-specialty) | GitHub Repo |
+| [A Zero-Administration Amazon Redshift Database Loader](https://aws.amazon.com/blogs/big-data/a-zero-administration-amazon-redshift-database-loader/)
+| [Ad Hoc Big Data Processing Made Simple with Serverless MapReduce](https://aws.amazon.com/blogs/compute/ad-hoc-big-data-processing-made-simple-with-serverless-mapreduce/) | Blog Post |
+| [Using AWS Lambda for Event-driven Data Processing Pipelines](https://aws.amazon.com/blogs/big-data/using-aws-lambda-for-event-driven-data-processing-pipelines/) | Blog Post |
+| [Using AWS Lambda with Amazon DynamoDB](http://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html) | Docs |
+| [Amazon Kinesis Firehose Data Transformation with AWS Lambda](https://aws.amazon.com/blogs/compute/amazon-kinesis-firehose-data-transformation-with-aws-lambda/) | Blog Post |
+| [Using AWS Lambda with Amazon Kinesis](http://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html) | Docs |
+| [Implementing a Serverless AWS IoT Backend with AWS Lambda and Amazon DynamoDB](https://aws.amazon.com/blogs/compute/implementing-a-serverless-aws-iot-backend-with-aws-lambda-and-amazon-dynamodb/) | Blog Post |
+| [Indexing Metadata in Amazon Elasticsearch Service Using AWS Lambda and Python](https://aws.amazon.com/blogs/database/indexing-metadata-in-amazon-elasticsearch-service-using-aws-lambda-and-python/) | Blog Post |
 
 
 \* This is a static link to a document that is out-of-date, AWS took this document offline in June, 2017
+\*\* See the scripts in the EMR directory of this repo for a better implementation
                                                                                                                           
