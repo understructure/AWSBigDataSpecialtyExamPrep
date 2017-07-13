@@ -2,6 +2,7 @@
 
 https://d0.awsstatic.com/whitepapers/core-tenets-of-iot1.pdf
 
+|--------------|------------|
 | Type         | Whitepaper |
 | Format       | PDF        |
 | Last Updated | July, 2017 |
