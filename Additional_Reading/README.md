@@ -40,7 +40,6 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Redshift - Loading Encrypted Data Files from Amazon S3](http://docs.aws.amazon.com/redshift/latest/dg/c_loading-encrypted-files.html) | Docs |
 | [Redshift - Unloading Encrypted Data Files](http://docs.aws.amazon.com/redshift/latest/dg/t_unloading_encrypted_files.html) | Docs |
 | [Redshift Node Type Details](http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html) | Docs |
-
 | [Analyze & Vacuum Schema Utility](https://github.com/awslabs/amazon-redshift-utils/tree/master/src/AnalyzeVacuumUtility) | GitHub Repo |
 | [Performing a Deep Copy](http://docs.aws.amazon.com/redshift/latest/dg/performing-a-deep-copy.html) | Docs |
 | [Amazon Redshift Snapshot Manager](https://github.com/awslabs/amazon-redshift-utils/tree/master/src/SnapshotManager) | GitHub Repo |
