@@ -19,17 +19,11 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [View Web Interfaces Hosted on Amazon EMR Clusters](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-web-interfaces.html) | Docs |
 | [Configure Hue for LDAP Users](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/hue-ldap.html) | Docs | 
 | [Analyze Your Data on Amazon DynamoDB with Apache Spark](https://aws.amazon.com/blogs/big-data/analyze-your-data-on-amazon-dynamodb-with-apache-spark/) | Blog Post |
-
 | [Analyze Realtime Data from Amazon Kinesis Streams Using Zeppelin and Spark Streaming](https://aws.amazon.com/blogs/big-data/analyze-realtime-data-from-amazon-kinesis-streams-using-zeppelin-and-spark-streaming/) | Blog Post |
-
 | [Optimize Spark-Streaming to Efficiently Process Amazon Kinesis Streams](https://aws.amazon.com/blogs/big-data/optimize-spark-streaming-to-efficiently-process-amazon-kinesis-streams/) | Blog Post |
-
 | [Powering Amazon Redshift Analytics with Apache Spark and Amazon Machine Learning](https://aws.amazon.com/blogs/big-data/powering-amazon-redshift-analytics-with-apache-spark-and-amazon-machine-learning/) | Blog Post |
-
 | [Using Spark SQL for ETL](https://aws.amazon.com/blogs/big-data/using-spark-sql-for-etl/) | Blog post |
-
 | [EMR DynamoDB Connector](https://github.com/awslabs/emr-dynamodb-connector) | GitHub Repo |
-
 | [Redshift Data Source for Apache Spark](https://github.com/databricks/spark-redshift) | GitHub Repo |
 
 
