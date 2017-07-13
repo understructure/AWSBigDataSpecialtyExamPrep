@@ -5,6 +5,6 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 
 | Link                                                                                                                                                              | Notes         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| [Amazon Kinesis Firehose Data Transformation with AWS Lambda](https://aws.amazon.com/blogs/compute/amazon-kinesis-firehose-data-transformation-with-aws-lambda/)  |               |
+| [Amazon Kinesis Firehose Data Transformation with AWS Lambda](https://aws.amazon.com/blogs/compute/amazon-kinesis-firehose-data-transformation-with-aws-lambda/)  | Blog Post   |
 | [Core Tenets of IoT](https://d0.awsstatic.com/whitepapers/core-tenets-of-iot1.pdf)                                                                                | Whitepaper    |
                                                                                                                           
