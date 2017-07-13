@@ -1,29 +1,38 @@
 ### Data Pipeline
 
-* Asked about backup & restore of data into other regions
+* EXAM - You'll be asked about backup & restore of data into other regions
 
-* Web service that allows you to reliably process and move data b/t AWS compute and storage services and on-premise data sources
+* Data Pipeline is a web service that allows you to reliably process and move data b/t AWS compute and storage services and on-premise data sources
 
 * Create an ETL workflow to automate the processing and movement of data at scheduled intervals, then terminate the resources
+
+#### Types of Pipelines
+
+* ShellCommandActivity
+* Run AWS CLI Command
+* Export DynamoDB table to S3
+* Import DynamoDB backup from S3
+* Run job on EMR cluster
+* Full or incremental copy of RDS MySQL table to S3
+* Load S3 data into RDS MySQL table
+* Full or incremental copy of RDS MySQL table to Redshift
+* Load S3 data into Redhsift
 
 * More than one way to do it - be aware of the combinations you can use
 
 * You can move data across regions
 
-* E.g., can copy entire DynamoDB table to another region, or an incremental copy of table
+  * E.g., can copy entire DynamoDB table to another region, or an incremental copy of table
 
-    * Can schedule time and frequency of copy
+* Can schedule time and frequency of copy
 
 * Behind the scenes, Data Pipeline is launching an EMR cluster to extract data from DynamoDB in region A into a file in S3 in region B, then launches another EMR cluster to copy the data from S3 into DynamoDB (both in region B)
 
 * Pipeline is the name of a container that contains things like
 
     * Data nodes
-
     * Activities
-
     * Preconditions
-
     * Schedules
 
 * All of the above components work together to help you move your data from one location to another
@@ -41,23 +50,17 @@
 * **Data nodes** - end destination for your data
 
     * DynamoDB
-
     * MySQL (Deprecated, use SQLDataNode instead)
-
     * RedshiftDataNode
-
     * S3DataNode
 
 * **Activities** - an action that Data Pipeline initiates on your behalf as part of a pipeline
 
     * CopyActivity
-
     * EMRActivity
-
     * HiveActivity
-
+    * PipActivity
     * ShellCommandActivity
-
     * etc.
 
 * **Preconditions** - readiness check, can be optionally associated with a data source or activity
@@ -69,13 +72,9 @@
     * Can specify custom preconditions
 
         * DynamoDBDataExists - does data exist?
-
         * DynamoDBTableExists - does table exist?
-
         * S3KeyExists - Does S3 path exist?
-
         * S3PrefixExists - Does file exist?
-
         * ShellCommandPrecondition - custom preconditions
 
 * **Schedules** - define when pipeline acctivites run, and frequency with which service expects your data to be available

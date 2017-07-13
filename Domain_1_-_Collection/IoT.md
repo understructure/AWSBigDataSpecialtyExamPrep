@@ -1,5 +1,8 @@
 ### IoT
 
+
+* [Core Tenets of IoT Whitepaper](https://d0.awsstatic.com/whitepapers/core-tenets-of-iot1.pdf)
+
 * IoT service - allows devices to interact securely with applications and other devices
 
 * Billions of devices, trillions of messages
