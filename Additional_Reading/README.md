@@ -36,6 +36,6 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Indexing Metadata in Amazon Elasticsearch Service Using AWS Lambda and Python](https://aws.amazon.com/blogs/database/indexing-metadata-in-amazon-elasticsearch-service-using-aws-lambda-and-python/) | Blog Post |
 
 
-\* This is a static link to a document that is out-of-date, AWS took this document offline in June, 2017
+\* This is a static link to a document that is out-of-date, AWS took this document offline in June, 2017  
 \*\* See the scripts in the EMR directory of this repo for a better implementation
                                                                                                                           
