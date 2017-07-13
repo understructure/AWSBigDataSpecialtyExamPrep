@@ -1,4 +1,14 @@
 
+## List of Services Covered
+
+This is a list of all the services covered in the A Cloud Guru study lectures.  The H/M/L column speaks to my own *perceived* importance relative to the domain.  My criteria:
+
+* High - If the domain didn't have much in it, all items were marked as High
+* Medium - If this item was covered lightly or if there was explicit mention that there weren't many questions on this item, it was marked as Medium
+* Low - If the gist of the video was "Know what it is and when to use it," it was marked as Low 
+
+When in doubt, an item was marked High
+
 | Service / Item                        | Domain            | H/M/L  | Notes                                                              |
 |---------------------------------------|-------------------|--------|--------------------------------------------------------------------|
 | Kinesis Firehose                      | 1 - Collection    | High   |                                                                    |
@@ -13,7 +23,7 @@
 | EMR - Hue                             | 3 – Processing    | Low    |                                                                    |
 | EMR - Presto                          | 3 – Processing    | Low    |                                                                    |
 | EMR - Spark                           | 3 – Processing    | High   |                                                                    |
-| EMR - File Storage and Compression    | 3 – Processing    |        |                                                                    |
+| EMR - File Storage and Compression    | 3 – Processing    | High   |                                                                    |
 | Lambda                                | 3 – Processing    | High   |                                                                    |
 | Redshift - Architecture               | 4 - Analysis      | High   |                                                                    |
 | Redshift - Table Design               | 4 - Analysis      | High   |                                                                    |
