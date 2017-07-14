@@ -25,7 +25,7 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Using Spark SQL for ETL](https://aws.amazon.com/blogs/big-data/using-spark-sql-for-etl/) | Blog post |
 | [EMR DynamoDB Connector](https://github.com/awslabs/emr-dynamodb-connector) | GitHub Repo |
 | [Redshift Data Source for Apache Spark](https://github.com/databricks/spark-redshift) | GitHub Repo |
-| [EMR Lab**](https://github.com/sko71/aws-bigdata-specialty) | GitHub Repo |
+| [EMR Lab**](https://github.com/sko71/aws-bigdata-specialty) | Lab Link |
 | [A Zero-Administration Amazon Redshift Database Loader](https://aws.amazon.com/blogs/big-data/a-zero-administration-amazon-redshift-database-loader/) | Blog Post |
 | [Ad Hoc Big Data Processing Made Simple with Serverless MapReduce](https://aws.amazon.com/blogs/compute/ad-hoc-big-data-processing-made-simple-with-serverless-mapreduce/) | Blog Post |
 | [Using AWS Lambda for Event-driven Data Processing Pipelines](https://aws.amazon.com/blogs/big-data/using-aws-lambda-for-event-driven-data-processing-pipelines/) | Blog Post |

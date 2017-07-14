@@ -46,7 +46,27 @@
 
 * Agent handles file rotation, checkpointing, retry on failure
 
-* Agent also helps w/ Cloudwatch metrics
+* Agent also helps w/ [Cloudwatch metrics](http://docs.aws.amazon.com/firehose/latest/dev/monitoring-with-cloudwatch-metrics.html)
+
+##### Service-level CloudWatch Metrics
+
+* S3 Target Metrics - Get all these regardless of destination:
+  * IncomingBytes (Sum)
+  * IncomingRecords (Sum)
+  * DeliveryToS3 DataFreshness (Maximum)
+  * DeliveryToS3 Bytes (Sum)
+  * DeliveryToS3 Records (Sum)
+  * DeliveryToS3 Success (Average)
+
+* Elasticsearch Target Metrics - Out of the box, you get all of the S3 metrics above, plus:
+  * DeliveryToElasticsearch Bytes (Sum)
+  * DeliveryToElasticsearch Records (Sum)
+  * DeliveryToElasticsearch Success (Average)
+
+* Redshift Target Metrics -  Out of the box, you get all of the S3 metrics above, plus:
+  * DeliveryToRedshift Bytes (Sum)
+  * DeliveryToRedshift Records (Sum)
+  * DeliveryToRedshift Success (Average)
 
 * Can create custom CloudWatch metrics with Kinesis Agent
 
