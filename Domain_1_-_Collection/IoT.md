@@ -23,13 +23,13 @@
 
 * IoT rule actions also allow you to:
 
-    * Change / capture CloudWatch metric
+    * Change / capture CloudWatch alarm / metric
 
     * Write data to S3
 
     * Write data to SQS
 
-    * Write data to SNS
+    * Write data to SNS as a push notification
 
     * Invoke Lambda function
 
@@ -37,15 +37,17 @@
 
 ![image_2.png](../images/domain1_2.png)
 
+NOTE: See [Core Tenets of IoT Whitepaper notes](../Additional_Reading/1_Core_Tenets_of_IoT.md) for summary of the whitepaper, includes information from lecture
+
 #### Security
 
 **Authentication**
 
-* each connected device requires an X.509 certificate
+* Each connected device requires an X.509 certificate
 
 * Each certificate must be provisioned, activated, and installed on a device before it can be used as a valid identity w/ AWS IoT
 
-* Can generate certs with AWS IoT Certificate Authority
+* Can generate certs, private key and public key with AWS IoT Certificate Authority
 
 * Can upload your own Certificate Signing Request (CSR) based on a private key you own
 
@@ -61,11 +63,13 @@
 
 * Allows you to use your own identity provider
 
-* Login with Amazon, Facebook, Google, Twitter
+* Can use login with Amazon, Facebook, Google, Twitter
 
 * Can use OpenID providers, and SAML identity providers
 
 * Can use Cognito Identity User Pools (scale to millions of users)
+
+**How Cognito Works With IoT**
 
 * AWS IoT allows a policy to be attached to Cognito Identities
 
@@ -105,15 +109,15 @@
 
 * "Topic" is what device gateway uses to route messages from publishing clients to subscribing clients
 
+* Scales automatically to support over 1 billion devices
+
 * Protocols:
 
     * MQTT (Message Queue Telemetry Transport) - lightweight, used on top of TCP/IP - ideal for IoT, designed for connections w/ remote locations where network bandwidth is limited 
-
     * WebSockets
 
     * HTTP
 
-    * Scales automatically to support over 1 billion devices
 
 **Device Registry**
 
@@ -170,3 +174,7 @@
     * Know what rules engine does
 
     * Know what a rule action does
+
+* Cognito identities can be used to authenticate against AWS IoT - specifically for mobile users
+
+* Cognito Identity User Pools can be used instead, and can scale to millions of users

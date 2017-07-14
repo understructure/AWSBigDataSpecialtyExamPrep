@@ -35,6 +35,8 @@
     * Preconditions
     * Schedules
 
+* TIP:  Remember the acronym PADS
+
 * All of the above components work together to help you move your data from one location to another
 
 * Data Pipeline runs on an EC2 instance or an EMR cluster which are provisioned and terminated automatically
