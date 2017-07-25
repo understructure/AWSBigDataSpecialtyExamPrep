@@ -20,13 +20,15 @@ Create a data processing applications, that reads data from stream as data recor
 
 #### Common Scenarios
 
-* Fast log and data feed processing (data logs, application logs, etc.) 
+* Fast log and data feed processing (data logs, application logs, system logs, etc.) 
 
     * Faster than Cloudwatch (seconds, not minutes)
 
 * Real-time metrics reporting
 
 * Real-time data analytics - analyze how users are clicking around your site in realtime
+
+    * Combine parallel processing with realtime data
 
 * Complex stream processing - take data from one stream and put it into another
 
@@ -36,15 +38,15 @@ Create a data processing applications, that reads data from stream as data recor
 
 * Loading aggregate data into Redshift / EMR cluster
 
-* Durability and elasticity
+* Durability and elasticity - “you will never lose data records”
 
-* Parallel application readers - multiple apps can read data from stream simultaneously
+* Parallel application readers - multiple apps can read data from stream simultaneously and perform different functions
 
 #### Loading Data Into / Getting Data From Streams
 
 * **Producer** - anything that puts data into Kinesis Stream
 
-    * Kinesis Producer Library (KPL)
+    * Kinesis Producer Library (KPL) - simplifies creation of producer apps
 
 * **Consumer** - anything that gets data from Kinesis Stream
 
@@ -58,4 +60,4 @@ Create a data processing applications, that reads data from stream as data recor
 
 * Can emit to Lambda as well, though it’s not on this diagram:
 
-![image alt text](..images/domain2_0.png)
+![image alt text](../images/domain2_0.png)
