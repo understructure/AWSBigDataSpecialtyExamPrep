@@ -44,7 +44,7 @@
 
 #### Shards - uniquely identified group of data records in a stream
 
-**Single shard capacity **
+**Single shard capacity**
 
 <table>
   <tr>
@@ -60,7 +60,7 @@
 </table>
 
 
-* Can create multiple shards per stream, for instance:
+* Can create multiple shards per stream, for instance, with 2 shards:
 
 <table>
   <tr>
