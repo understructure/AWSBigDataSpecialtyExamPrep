@@ -20,22 +20,21 @@
 
 * [http://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html](http://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html)
 
+* [Example Policies](http://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock-policy.html) - note that policies are applied in order, first policy takes precedence over the folllowing policies
+
 * Steps for Vault Lock
 
-    * Initial Vault Lock
+    1. Initiate Vault Lock
 
         * Attaches Vault Lock policy to vault
-
         * Lock is then set to an InProgress state, lock ID is returned
-
         * You then have 24 hours to validate the lock, or it expires
 
-    * Complete Vault Lock
+    2. Complete Vault Lock
 
         * Now goes from InProgress state → Locked state (immutable)
 
 **For the exam, know:**
 
-* Vault lock controls - time-based retention, "undeleteable" or both
-
+* Vault lock controls - time-based retention, "undeleteable" or both in same policy
 * Implement control using IAM policies
