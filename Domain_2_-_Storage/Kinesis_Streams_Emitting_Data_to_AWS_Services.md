@@ -115,6 +115,9 @@ public class S3Emitter implements IEmitter<byte[]> {
 }
 </pre>
 
+
+(**Demo**)
+
 * For the exam - "as long as you have a basic understanding of the Kinesis Connector Library, and how data is emitted into a service like Redshift, then you should be able to answer the questions that cover this topic."
 
 * .properties file for each connector - defaults left for demo but check this out
@@ -124,6 +127,6 @@ public class S3Emitter implements IEmitter<byte[]> {
 **For the exam, know:**
 
 * Data can be emitted to S3, Elasticsearch, Redshift, DynamoDB from Kinesis Streams using the Kinesis Connector Library
-
     * There are some questions specifically about how to get data into Redshift
-
+    
+* Lambda functions can automatically read records from a Kinesis Stream, process them, and send the records to Redshift, S3, or DynamoDB
