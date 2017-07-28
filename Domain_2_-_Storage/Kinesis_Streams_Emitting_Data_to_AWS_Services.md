@@ -92,25 +92,25 @@
 <pre>
 public class S3Emitter implements IEmitter<byte[]> {
 
-private static final Log LOG = LogFactory.getLog(S3Emitter.class);
-
-protected final String s3Bucket;
-
-protected final String s3Endpoint;
-
-protected final AmazonS3Client s3client;
-
-public S3Emitter(KinesisConnectorConfiguration configuration)
-
-protected String getS3FileName(String firstSeq, String lastSeq)
-
-protected String getS3URI(String s3FileName)
-
-public List<byte[]> emit(final UnmodifiableBuffer<byte[]> buffer) throws IOException
-
-public void shutdown()
-
-public void fail(List<byte[]> records)
+    private static final Log LOG = LogFactory.getLog(S3Emitter.class);
+    
+    protected final String s3Bucket;
+    
+    protected final String s3Endpoint;
+    
+    protected final AmazonS3Client s3client;
+    
+    public S3Emitter(KinesisConnectorConfiguration configuration)
+    
+    protected String getS3FileName(String firstSeq, String lastSeq)
+    
+    protected String getS3URI(String s3FileName)
+    
+    public List<byte[]> emit(final UnmodifiableBuffer<byte[]> buffer) throws IOException
+    
+    public void shutdown()
+    
+    public void fail(List<byte[]> records)
 
 }
 </pre>
