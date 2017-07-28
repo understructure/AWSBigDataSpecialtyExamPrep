@@ -49,11 +49,13 @@
 <table>
   <tr>
     <td>Read</td>
-    <td>2 MB / sec, 5 transactions / sec</td>
+    <td>2 MB / sec</td>
+    <td>5 transactions / sec</td>
   </tr>
   <tr>
     <td>Write</td>
-    <td>1 MB / sec, 1000 transactions / sec</td>
+    <td>1 MB / sec</td>
+    <td>1000 transactions / sec</td>
   </tr>
 </table>
 
