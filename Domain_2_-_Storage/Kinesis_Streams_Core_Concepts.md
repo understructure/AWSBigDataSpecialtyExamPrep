@@ -1,46 +1,6 @@
-### Kinesis Streams Core Concepts Part 1
+### Kinesis Streams Core Concepts
 
-#### **Data producers** 
 
-3 ways producers put data to Kinesis Streams:
-
-1. **Amazon Kinesis Streams API**
-
-    1. AWS SDK for Java
-
-        1. PutRecord - puts single data record
-
-        2. PutRecords - puts multiple data records - recommended by AWS, will give you higher throughput
-
-2. **Kinesis Producer Library (KPL) **
-
-    2. high performance - makes it easier to create Streams apps 
-
-    3. high write throughput, can do complicated stuff like matching
-
-    4. Monitoring - at Stream, Shard, or Producer level
-
-    5. [Kinesis Producer Library Github repository](https://github.com/awslabs/amazon-kinesis-producer)
-
-3. **Kinesis Agent**
-
-    6. Standalone Java software application
-
-    7. Install on Web, Log, or Database servers
-
-    8. [Download & install from Github](https://github.com/awslabs/amazon-kinesis-agent) OR do yum install
-
-    9. Can monitor multiple directories for files
-
-    10. Can write to multiple streams
-
-    11. Pre-process data before sent to string
-
-        3. Multi-line records to single-line format
-
-        4. Convert from delimiter to JSON
-
-        5. Convert from log format to JSON
 
 #### Shards - uniquely identified group of data records in a stream
 
@@ -133,6 +93,49 @@ Record consists of:
 * Retention period can be changed through CLI
 
 * If you change your retention period, there will be a charge for keeping your data longer in a Kinesis stream
+
+
+#### **Data producers** 
+
+3 ways producers put data to Kinesis Streams:
+
+1. **Amazon Kinesis Streams API**
+
+    1. AWS SDK for Java
+
+        1. PutRecord - puts single data record
+
+        2. PutRecords - puts multiple data records - recommended by AWS, will give you higher throughput
+
+2. **Kinesis Producer Library (KPL) **
+
+    2. high performance - makes it easier to create Streams apps 
+
+    3. high write throughput, can do complicated stuff like matching
+
+    4. Monitoring - at Stream, Shard, or Producer level
+
+    5. [Kinesis Producer Library Github repository](https://github.com/awslabs/amazon-kinesis-producer)
+
+3. **Kinesis Agent**
+
+    6. Standalone Java software application
+
+    7. Install on Web, Log, or Database servers
+
+    8. [Download & install from Github](https://github.com/awslabs/amazon-kinesis-agent) OR do yum install
+
+    9. Can monitor multiple directories for files
+
+    10. Can write to multiple streams
+
+    11. Pre-process data before sent to string
+
+        3. Multi-line records to single-line format
+
+        4. Convert from delimiter to JSON
+
+        5. Convert from log format to JSON
 
 * Kinesis Consumers a.k.a. Kinesis Applications
 
