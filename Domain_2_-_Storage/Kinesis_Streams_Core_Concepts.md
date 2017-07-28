@@ -111,19 +111,16 @@ For the exam:
 
 Record consists of:
 
-* **Sequence number** - unique ID for records inserted into a shard
-
-    * Think of it as a unique key that identifies a data blob
-
-    * Assigned when a producer calls PutRecord or PutRecords operations to add data to a stream
-
-    * You can’t use sequence numbers to logically separate data in terms of what shards they have come from, you can only do this using partition keys
-
 * **Partition key** - group data by shard
 
     * Tells you which shard data belongs to
-
     * Specified by applications putting data into a stream
+    
+* **Sequence number** - unique ID for records inserted into a shard
+
+    * Think of it as a unique key that identifies a data blob
+    * Assigned when a producer calls PutRecord or PutRecords operations to add data to a stream
+    * You can’t use sequence numbers to logically separate data in terms of what shards they have come from, you can only do this using partition keys
 
 * **Data (BLOB)** - Actual data producer adds to stream, max size (data payload after Base64-decoding) is 1 MB
 
