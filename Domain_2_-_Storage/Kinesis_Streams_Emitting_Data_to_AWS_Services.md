@@ -15,6 +15,10 @@
     * Redshift
 
     * DynamoDB
+    
+* For EMR, emit data to S3, then EMR can consume from there.
+  * There *was* a connector on GitHub, but it was for Hadoop 1.0.  There doesn't seem to be a connector for Hadoop 2.
+  * Can also use Spark Streaming to consume from Kinesis and then push data into S3, Redshift, DynamoDB
 
 * Can create Lambda functions to automatically read batches of records off your Kinesis Stream, and process them, can then send to:
 
@@ -28,7 +32,7 @@
 
 * **S3** - archiving data
 
-* **DynamoDB** - metrics
+* **DynamoDB** - metrics in near real-time
 
 * **Elasticsearch** - Search and index
 
@@ -58,7 +62,7 @@
 
 ##### Connector Library Pipeline
 
-* records are retrieved from the stream, then transformed according to a user-defined data model
+* Records are retrieved from the stream, then transformed according to a user-defined data model
 
 * Then buffered for batch processing
 
@@ -66,13 +70,14 @@
 
 * Start with Kinesis Stream, then go through four interfaces in library:
 
-    * **iTransformer** - defines the transformation of records from teh Amazon Kinesis stream in order to suit the user-defined data model
+    * **iTransformer** - defines the transformation of records from the Amazon Kinesis stream in order to suit the user-defined data model
 
     * **iFilter** - excludes irrelevant records from processing
 
     * **iBuffer** - buffers set of records to be processed by specifying size limit (number of records) and total byte count
 
     * **iEmitter** - makes client calls to other AWS services and persists the records stored in the buffer
+      * This is the interface that helps us emit records to S3, Redshift, DynamoDB, and Elasticsearch
 
 ![image alt text](../images/domain2_1.png)
 
