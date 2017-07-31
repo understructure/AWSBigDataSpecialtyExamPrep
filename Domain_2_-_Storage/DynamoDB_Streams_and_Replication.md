@@ -14,9 +14,14 @@
 
     * streams.dynamodb-<region_name>.amazonaws.com
 
-* AWS guarantee each change to a DynamoDB table occurs in stream only once
+* AWS guarantee each change to a DynamoDB table occurs in stream **only once**
 
 * These changes occur in near-realtime
+
+##### Example
+
+* Start with a DynamoDB table, then add a stream
+* When a record is inserted, for instance, only the partition key is inserted into the stream by default
 
 * Changes recorded in streams have a "limitation" - you initially don’t know the nature of the operation on the partition key (don’t know specific details of what attributes changed, pre/post states of attribute values, etc.)
 
@@ -50,17 +55,17 @@
 
 * Create or select table to be replicated
 
-* Apply cloud formation stack and wait
+* Apply cloud formation stack and wait - stack will shift to COMPLETE - look in output section of the stack to get URL for replication console
 
-* Login to the console and create a replication group **identify** (?)
+* Login to the replication console and create a replication group **identify** (?)
 
 * Wait for process to be completed, in the background additional checkpoint tables will be created
 
-* See this link from AWS for more info: [http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html)
+* See this link from AWS for more info: [Cross-Region Replication](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html)
 
-* With DynamoDB Streams and Lambda, you can create an event-driven architecture where streams are captured and invoked by Lambda functions so that the Lambda function you write can copy the data to a different region (no need for EC2 instance w/ Kinesis Client Library)
+* **Second Option** - With DynamoDB Streams and Lambda, you can create an event-driven architecture where streams are captured and invoked by Lambda functions so that the Lambda function you write can copy the data to a different region (no need for EC2 instance w/ Kinesis Client Library)
 
-For the Exam
+#### For the Exam
 
 * Understand capability of DynamoDB Streams
 
