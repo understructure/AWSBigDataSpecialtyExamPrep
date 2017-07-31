@@ -24,7 +24,7 @@
 
 * Monitors health of core and task nodes
 
-#### Core node
+#### Core node (optional if you're running EMRFS)
 
 * Run tasks as directed by master
 
@@ -38,9 +38,9 @@
 
 * **ApplicationMaster** - negotiates resources from ResourceManager and works with NodeManager to execute and monitor containers
 
-* Shrink operation - reduce number of Core nodes - do this while no nodes are running to prevent data loss
+* Shrink operation - reduce number of Core nodes - do this while no jobs are running to prevent data loss
 
-#### Task node
+#### Task node (optional)
 
 * Slave node without HDFS
 
