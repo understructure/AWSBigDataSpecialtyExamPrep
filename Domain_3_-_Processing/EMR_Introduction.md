@@ -10,7 +10,7 @@
 
 * Presto
 
-* Zeppelin, Ganglia, Pig, Hive, Sqoop, Hue, Oozie
+* Zeppelin, Ganglia, Pig, Hive, Sqoop, Hue, Oozie, etc.
 
 * Exam questions on Presto, none on Impala
 
