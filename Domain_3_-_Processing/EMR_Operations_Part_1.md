@@ -39,6 +39,8 @@ Quick vs. Advanced Options - EMR console
 * Advanced
 
     * Can "Edit Software Settings" to e.g., change hadoop settings like data node heap size of core node
+    
+    `classification=hadoop-env.properties=[HADOOP_DATANODE_HEAPSIZE=2048]`
 
     * If you launch cluster in private subnet, have to create a VPC endpoint for S3 or create NAT instance for cluster to interact with other services that don’t support VPC endpoints - [http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html)
 
@@ -50,7 +52,7 @@ Quick vs. Advanced Options - EMR console
 
     * Can select EMRFS consistent view
 
-    * Bootstrap actions - [https://github.com/awslabs/emr-bootstrap-actions](https://github.com/awslabs/emr-bootstrap-actions)
+    * [Bootstrap actions scripts](https://github.com/awslabs/emr-bootstrap-actions)
 
     * Can select if cluster is visible to everyone in IAM users in account
 
