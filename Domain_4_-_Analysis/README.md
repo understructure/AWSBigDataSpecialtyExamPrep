@@ -15,7 +15,7 @@ This represents the sequence of lectures and the links to my notes to the lectur
 1.  [Redshift Table Design - Constraints (4:58)](Redshift_Table_Design_-_Constraints.md)
 1.  [Redshift Table Design - Review Design (3:43)](Redshift_Table_Design_-_Review_Design.md)
 1.  [Redshift Workload Management (14:57)](Redshift_Workload_Management.md)
-1.  [Redshift Loading Data Part 1 (17:41)](Redshift_Loading_Data_Part_1.md)
+1.  [Redshift Loading Data Part 1 (17:41)](Redshift_Data_Loading_Part_1.md)
 1.  [Redshift Data Loading Part 2 (6:32)](Redshift_Data_Loading_Part_2.md)
 1.  [Redshift Loading Data Part 3 (11:09)](Redshift_Loading_Data_Part_3.md)
 1.  [Redshift Loading Data Part 4 (3:54)](Redshift_Loading_Data_Part_4.md)
