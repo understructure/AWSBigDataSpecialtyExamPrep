@@ -32,7 +32,7 @@
 
     * High throughput
 
-* **YARN**
+* **YARN (Yet Another Resource Negotiator)**
 
     * Cluster resource-management and job scheduling
 
@@ -44,7 +44,7 @@
 
     * Processing can occur on data stored either in a filesystem (unstructured) or in a database (structured)
 
-    * Data locality
+    * Data locality - process the data where it's stored to reduce the distance data has to travel
 
     * MapReduce job tasks
 
