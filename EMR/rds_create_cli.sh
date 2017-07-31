@@ -1,17 +1,19 @@
 #!/bin/bash
 
 usage() {
-    echo "Usage: $0 region master-password [dev|test|stage|prod]"
+    # echo "Usage: $0 region master-password [dev|test|stage|prod]"
+    echo "Usage: $0 region master-password vpc-security-group-id"
     exit 1
 }
 
 REGION_NAME=$1
 MASTER_PASSWORD=$2
-THE_ENVIRONMENT=$3
+SECURITY_GROUP_ID=$3
 
 if [ "$#" -ne 3 ]; then
 
-  usage 
+  usage
+  exit 1  
 
 fi
 
@@ -33,9 +35,9 @@ aws rds create-db-instance \
 --allocated-storage 10 \
 --db-instance-identifier hivemetastore \
 --master-username metastoreadmin \
---master-user-password MyStupidPassword12345 \
---vpc-security-group-ids sg-4ac8bc3b \
+--master-user-password ${MASTER_PASSWORD} \
+--vpc-security-group-ids ${SECURITY_GROUP_ID} \
 --publicly-accessible \
---availability-zone ${THE_REGION} \
+--availability-zone ${REGION_NAME} \
 --port 3306 
 
