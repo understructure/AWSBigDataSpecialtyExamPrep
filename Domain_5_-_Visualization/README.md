@@ -1,4 +1,6 @@
+# Domain 5 - Visualization
 
+This represents the sequence of lectures and the links to my notes to the lectures in this repository:
 
 
 1.  [QuickSight Introduction (11:47)](QuickSight_Introduction.md)
