@@ -13,7 +13,7 @@ Domain 6 - Data Security | 20%
 
 A set of ~ [10 sample exam questions can be downloaded here](https://d0.awsstatic.com/training-and-certification/docs-bigdata-spec/AWS_Certified_Big_Data_Specialty_SampleExam.pdf).
 
-This repository represents notes on the A Cloud Guru lectures for this topic.
+This repository represents notes on the [A Cloud Guru lectures](https://acloud.guru/learn/aws-certified-big-data-specialty) for this topic.
 
 The following sets of notes have been reviewed, spell checked, and organized, please feel free to suggest changes through PRs!
 
