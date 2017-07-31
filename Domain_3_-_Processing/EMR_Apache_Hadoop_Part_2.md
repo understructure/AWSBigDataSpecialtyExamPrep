@@ -6,9 +6,9 @@
 
 * YARN components
 
-    * **Resource Manager** lives on master, allocates available resources on cluster against competing applications
+    * **Resource Manager** - scheduler, lives on master, allocates available resources on cluster against competing applications
 
-    * **Node Manager** - lives on each slave - manages resources on slave
+    * **Node Manager** - lives on each slave - takes direction from resource manager, manages resources on slave
 
     * **Application Master** - lives on each slave - negotiates resources from Resource Manager and working w/ node manager to execute & monitor containers
 
@@ -26,10 +26,10 @@
 
     * **Split** - 
 
-    * **Map** - 
+    * **Map** - Resource Manager assigns map phase resources to do parallel processing, intermediate key/value pairs are generated
 
     * **Shuffle** - moves intermediate key-value pairs to the reducers - pairs sorted by key to a larger data list, data list groups equivalent keys together so their values can be iterated easily in the reduce phase
 
     * **Reduce** - takes grouped key/value pair data as input and runs a reducer function on all of them
 
-    * Result - writes output to file
+    * **Result** - writes output to file
