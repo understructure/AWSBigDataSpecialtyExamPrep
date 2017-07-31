@@ -12,7 +12,7 @@
 
 * **Hadoop Common (Hadoop Core)**
 
-    * Libraries and utilites needed by other Hadoop modules
+    * Libraries and utilities needed by other Hadoop modules
 
     * Considered the core of the Hadoop framework
 
