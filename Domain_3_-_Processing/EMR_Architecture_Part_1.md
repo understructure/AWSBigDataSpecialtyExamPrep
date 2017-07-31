@@ -30,13 +30,13 @@
 
 * Store data as HDFS or EMRFS (can use instance store or EBS)
 
-* EMRFS - extends Hadoop to access data from S3
+* **EMRFS** - extends Hadoop to access data from S3
 
-* DataNode - daemon that manages data blcoks and read/write requests on the core node whether HDFS or EMRFS is used
+* **DataNode** - daemon that manages data blocks and read/write requests on the core node whether HDFS or EMRFS is used
 
-* NodeManager - demon that takes direction from the Resource Manager on master in terms of how to manage resources on Core node
+* **NodeManager** - demon that takes direction from the Resource Manager on master in terms of how to manage resources on Core node
 
-* ApplicationMaster - negotiates resources from ResourceManager and works with NodeManager to execute and monitor containers
+* **ApplicationMaster** - negotiates resources from ResourceManager and works with NodeManager to execute and monitor containers
 
 * Shrink operation - reduce number of Core nodes - do this while no nodes are running to prevent data loss
 
