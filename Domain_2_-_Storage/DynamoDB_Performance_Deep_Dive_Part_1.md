@@ -6,19 +6,26 @@
 
 * Two formulas to know to determine number of partitions created - one based on performance, one based on capacity
 
-    * **Performance**: Partitions = 
+
+#### Performance
+
+* Partitions
+<pre>
 (desired RCU / 3000 RCU) + (desired WCU / 1000 WCU)
+</pre>
 Then round up.  That means DynamoDB will provide you with one partition per 3000 RCUs or 1000 WCUs of performance reservation
 
-    * E.g., if you want to achieve 7500 Reads / sec and 3000 writes / sec:
+* E.g., if you want to achieve 7500 Reads / sec and 3000 writes / sec:
 
-        * (7500 / 3000 RCU) + (3000 / 1000 WCU) = 2.5 + 3 = 5.5, round to **6**
+<pre>(7500 / 3000 RCU) + (3000 / 1000 WCU) = 2.5 + 3 = 5.5, round to **6**</pre>
 
-    * **Capacity / Size**: Partitions = 
-Data GB in size / 10 GB
-E.g., for 65 GB, 65/10GB = 6.5, round up to **7**
+#### Capacity / Size**
 
-    * The actual number of partitions you need is the maximum of these two, so MAX(6,7) = 7, so you need 7 partitions to meet performance and capacity expectations
+* Partitions = Data GB in size / 10 GB
+
+<pre>E.g., for 65 GB, 65/10GB = 6.5, round up to **7**</pre>
+
+* The actual number of partitions you need is the maximum of these two, so MAX(6,7) = 7, so you need 7 partitions to meet performance and capacity expectations
 
 * So now we know the number of partitions, but how does that really influence performance?
 
