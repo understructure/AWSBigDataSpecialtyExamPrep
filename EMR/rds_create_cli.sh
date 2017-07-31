@@ -1,12 +1,12 @@
 #!/bin/bash
 
 usage() {
-    # echo "Usage: $0 region master-password [dev|test|stage|prod]"
+    # echo "Usage: $0 availability-zone master-password [dev|test|stage|prod]"
     echo "Usage: $0 region master-password vpc-security-group-id"
     exit 1
 }
 
-REGION_NAME=$1
+AZ_NAME=$1
 MASTER_PASSWORD=$2
 SECURITY_GROUP_ID=$3
 
@@ -38,6 +38,6 @@ aws rds create-db-instance \
 --master-user-password ${MASTER_PASSWORD} \
 --vpc-security-group-ids ${SECURITY_GROUP_ID} \
 --publicly-accessible \
---availability-zone ${REGION_NAME} \
+--availability-zone ${AZ_NAME} \
 --port 3306 
 
