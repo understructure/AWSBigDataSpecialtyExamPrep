@@ -1,5 +1,15 @@
 # AWS Big Data Specialty Exam Preparation
 
+The [AWS Certified Big Data Specialty](https://aws.amazon.com/certification/certified-big-data-specialty/) focuses on using big data technologies in the cloud with Amazon Web Services.  The [exam blueprint](https://d0.awsstatic.com/training-and-certification/docs-bigdata-spec/AWS_Certified_Big_Data_Specialty_Blueprint.pdf) lays out what will be covered.
+
+Domain | % of Examination
+-------|-------------------
+Domain 1 - Collection | 17%
+Domain 2 - Storage | 17%
+Domain 3 - Processing | 17%
+Domain 4 - Analysis | 17%
+Domain 5 - Visualization | 12%
+Domain 6 - Data Security | 20%
 
 The following sets of notes have been reviewed, please feel free to suggest changes through PRs!
 
