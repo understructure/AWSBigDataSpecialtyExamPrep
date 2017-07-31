@@ -15,7 +15,7 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Scaling Writes on Amazon DynamoDB Tables with Global Secondary Indexes](https://aws.amazon.com/blogs/big-data/scaling-writes-on-amazon-dynamodb-tables-with-global-secondary-indexes/) | Blog Post |
 | [Improving Data Access with Secondary Indexes](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html) | Docs |
 | [Cross-Region Replication](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html) | Docs |
-| [Amazon EMR Best Practices*](https://media.acloud.guru/aws-certified-big-data-specialty/resource/dec42f32-9121-3b6d-3dbd-e6882a53acbd_da25b325-b5a3-6f28-38a7-293267c46f14/aws-certified-big-data-specialty-cc61a9eb-8e86-4e1c-af35-17ca9e92ffe1.pdf?Expires=1500059089&Signature=LK/LocvBuzv31aTyk/z0NxJmquXxU6TLbRTrv4ryE1jaZMhcY9oBUVnrqSaDkzuJ8DZ0Ccrr3be5KL1kaOkGscBewRd/8hNcAzFlNjg1J0nfBSQ5MHMG+i3FGiiwYGfNdDVFMRjtKJVS0C9LI42/jBglL+RGnl/jEn+oa8zykSoiQozs5GPYnWgxQIFOzRrLysiZztRdwH2/pckmOgQ0rqOGo3aYjFDALpKcJUcZHSisFfdCXqbxpz3/02C63lO2iheilEOXnW5+92WN9FSc+T9lb7gv28d3BYSJbqiQiVJh6Wa2mPvXfhcpDVb72e/kgOREtU/6ZX6eX9hd3Bbn+g==&Key-Pair-Id=APKAISLU6JPYU7SF6EUA) | Whitepaper |
+| [Amazon EMR Best Practices \*](https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf) | Whitepaper |
 | [View Web Interfaces Hosted on Amazon EMR Clusters](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-web-interfaces.html) | Docs |
 | [Configure Hue for LDAP Users](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/hue-ldap.html) | Docs | 
 | [Analyze Your Data on Amazon DynamoDB with Apache Spark](https://aws.amazon.com/blogs/big-data/analyze-your-data-on-amazon-dynamodb-with-apache-spark/) | Blog Post |
@@ -25,7 +25,7 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Using Spark SQL for ETL](https://aws.amazon.com/blogs/big-data/using-spark-sql-for-etl/) | Blog post |
 | [EMR DynamoDB Connector](https://github.com/awslabs/emr-dynamodb-connector) | GitHub Repo |
 | [Redshift Data Source for Apache Spark](https://github.com/databricks/spark-redshift) | GitHub Repo |
-| [EMR Lab**](https://github.com/sko71/aws-bigdata-specialty) | Lab Link |
+| [EMR Lab \*\*](https://github.com/sko71/aws-bigdata-specialty) | Lab Link |
 | [A Zero-Administration Amazon Redshift Database Loader](https://aws.amazon.com/blogs/big-data/a-zero-administration-amazon-redshift-database-loader/) | Blog Post |
 | [Ad Hoc Big Data Processing Made Simple with Serverless MapReduce](https://aws.amazon.com/blogs/compute/ad-hoc-big-data-processing-made-simple-with-serverless-mapreduce/) | Blog Post |
 | [Using AWS Lambda for Event-driven Data Processing Pipelines](https://aws.amazon.com/blogs/big-data/using-aws-lambda-for-event-driven-data-processing-pipelines/) | Blog Post |
@@ -58,6 +58,6 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Amazon Redshift Database Encryption](http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html) | Docs |
 
 
-\* This is a static link to a document that is out-of-date, AWS took this document offline in June, 2017  
+\* This is a static link to a document that is out-of-date, AWS removed a link to this document offline in June, 2017, but it appears this link works
 \*\* See the scripts in the EMR directory of this repo for a better implementation
                                                                                                                           
