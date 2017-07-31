@@ -3,10 +3,10 @@
 
 This represents the sequence of lectures and the links to my notes to the lectures in this repository:
 
-1.  [Introduction to Redshift (2:28)](Introduction_to_Redshift.md)
+1.  [Introduction to Redshift (2:28)](Redshift_Introduction.md)
 1.  [Redshift Architecture (10:23)](Redshift_Architecture.md)
 1.  [Redshift in the AWS Ecosystem (5:51)](Redshift_in_the_AWS_Ecosystem.md)
-1.  [Columnar Databases (5:16)](Columnar_Databases.md)
+1.  [Columnar Databases (5:16)](Redshift_Columnar_Databases.md)
 1.  [Redshift Table Design - Introduction (5:20)](Redshift_Table_Design_Introduction.md)
 1.  [Redshift Table Design - Distribution Styles (10:15)](Redshift_Table_Design_Distribution_Styles.md)
 1.  [Redshift Table Design - Sort Keys (14:57)](Redshift_Table_Design_Sort_Keys.md)
