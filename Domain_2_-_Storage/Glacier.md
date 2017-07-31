@@ -20,7 +20,7 @@
 
 * [http://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html](http://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html)
 
-* [Example Policies](http://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock-policy.html) - note that policies are applied in order, first policy takes precedence over the folllowing policies
+* [Example Policies](http://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock-policy.html) - note that policies are applied in order, first policy takes precedence over the following policies
 
 * Steps for Vault Lock
 
