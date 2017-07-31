@@ -2,9 +2,9 @@
 
 * Partitions - key performance building block
 
-* Partitions - Units of storage & performance that underpin the reads and writes b/t DynamoDB and underlying storage infrastructure
+* **Partitions** - Units of storage & performance that underpin the reads and writes b/t DynamoDB and underlying storage infrastructure
 
-* Two formulas to know to determine number of partitions created
+* Two formulas to know to determine number of partitions created - one based on performance, one based on capacity
 
     * **Performance**: Partitions = 
 (desired RCU / 3000 RCU) + (desired WCU / 1000 WCU)
