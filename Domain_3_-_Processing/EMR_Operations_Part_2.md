@@ -1,6 +1,6 @@
 ### EMR Operations Part 2
 
-* [http://media.amazonwebservices.com/AWS_Amazon_EMR_Best_Practices.pdf](http://media.amazonwebservices.com/AWS_Amazon_EMR_Best_Practices.pdf)
+* [EMR Best Practices Document](https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf)
 
 #### Long Running Clusters
 
