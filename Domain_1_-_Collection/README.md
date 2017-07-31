@@ -1,4 +1,4 @@
-# Domain 2 - Storage
+# Domain 1 - Collection
 
 This represents the sequence of lectures and the links to my notes to the lectures in this repository:
 
