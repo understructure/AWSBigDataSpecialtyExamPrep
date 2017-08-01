@@ -2,10 +2,10 @@
   {
     "Classification": "hive-site",
     "Properties": {
-      "javax.jdo.option.ConnectionURL": "jdbc:mysql:\/\/hivemetastore.cljrh2oncqba.us-east-1.rds.amazonaws.com:3306\/metastore-dev?createDatabaseIfNotExist=true",
+      "javax.jdo.option.ConnectionURL": "jdbc:hivemetastore.cfaihjkiyvkl.us-east-1.rds.amazonaws.com:3306\/metastore-dev?createDatabaseIfNotExist=true",
       "javax.jdo.option.ConnectionDriverName": "org.mariadb.jdbc.Driver",
       "javax.jdo.option.ConnectionUserName": "metastoreadmin",
-      "javax.jdo.option.ConnectionPassword": "MyStupidPassword90210"
+      "javax.jdo.option.ConnectionPassword": "MyStupidPassword12321"
     }
   },
   {
@@ -15,5 +15,15 @@
       "ZEPPELIN_NOTEBOOK_S3_USER": "hadoop",
       "ZEPPELIN_NOTEBOOK_STORAGE": "org.apache.zeppelin.notebook.repo.S3NotebookRepo"
     }
+  },
+
+  {
+    "Classification": "presto-connector-mysql",
+    "Properties": {
+      "connection-url": "jdbc:mysql://hivemetastore.cfaihjkiyvkl.us-east-1.rds.amazonaws.com:3306/metastore-dev",
+      "connection-user": "metastoreadmin",
+      "connection-password": "MyStupidPassword12321"
+    },
+    "Configurations": []
   }
 ]

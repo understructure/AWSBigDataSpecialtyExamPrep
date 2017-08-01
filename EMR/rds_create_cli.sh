@@ -2,15 +2,16 @@
 
 usage() {
     # echo "Usage: $0 availability-zone master-password [dev|test|stage|prod]"
-    echo "Usage: $0 region master-password vpc-security-group-id"
+    echo "Usage: $0 region master-password vpc-security-group-id profile"
     exit 1
 }
 
 AZ_NAME=$1
 MASTER_PASSWORD=$2
 SECURITY_GROUP_ID=$3
+AWS_PROFILE=$4
 
-if [ "$#" -ne 3 ]; then
+if [ "$#" -ne 4 ]; then
 
   usage
   exit 1  
@@ -39,5 +40,6 @@ aws rds create-db-instance \
 --vpc-security-group-ids ${SECURITY_GROUP_ID} \
 --publicly-accessible \
 --availability-zone ${AZ_NAME} \
---port 3306 
+--port 3306 \
+--profile ${AWS_PROFILE}
 

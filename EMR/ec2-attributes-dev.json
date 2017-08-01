@@ -1,10 +1,10 @@
 {
-  "KeyName": "key-big-data-admin",
+  "KeyName": "captech-mcloney-dev",
   "InstanceProfile": "EMR_EC2_DefaultRole",
-  "SubnetId": "subnet-8a2da3a7",
-  "EmrManagedSlaveSecurityGroup": "sg-41f36c30",
-  "EmrManagedMasterSecurityGroup": "sg-39fa6548",
+  "SubnetId": "subnet-67811b4b",
+  "EmrManagedSlaveSecurityGroup": "sg-76ebf707",
+  "EmrManagedMasterSecurityGroup": "sg-d4edf1a5",
   "AdditionalMasterSecurityGroups": [
-    "sg-fc35a48d"
+    "sg-4d98843c"
   ]
 }
