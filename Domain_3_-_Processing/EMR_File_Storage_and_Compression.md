@@ -14,6 +14,8 @@
 
 Table originally from [EMR Deep Dive and Best Practices re:Invent Presentation (slide 61)](https://www.slideshare.net/AmazonWebServices/amazon-emr-deep-dive-best-practices-67651043)
 
+**NOTE:** Questions on this can come up on the exam, study this table!
+
 <table>
   <tr>
     <td>Algorithm</td>
