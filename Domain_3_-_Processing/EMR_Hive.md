@@ -22,7 +22,7 @@
 
 * EMR can read from / write to S3
 * EMRFS - extends hadoop to use S3 as a file system instead of HDFS
-* Parititoning - supported w/ S3 - usually paritioned by date, source, etc.
+* Partitioning - supported w/ S3 - usually partitioned by date, source, etc.
 
 * Hive and DynamoDB are tightly integrated
 
