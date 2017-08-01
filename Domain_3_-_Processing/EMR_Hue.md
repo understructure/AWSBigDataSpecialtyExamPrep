@@ -2,30 +2,27 @@
 
 * Couple questions on Hue on the exam
 
+* S3 browser, HDFS browser included, but you have to configure it to show it
+
 * Can access metastore manager - information about tables too
 
 * HBase browser included
 
 * Zookeeper browser
 
-* Job browser
+* Job browser - see status of jobs
 
 * Server logs (searchable), can download logs
 
-* Oozie editor
+* Oozie editor - can schedule Sqoop jobs
 
 * Can use many authentication providers
 
-    * LDAP [http://docs.aws.amazon.com/emr/latest/ReleaseGuide/hue-ldap.html](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/hue-ldap.html)
-
+    * [LDAP](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/hue-ldap.html)
     * PAM
-
     * SPNEGO
-
     * OpenID
-
     * OAuth
-
     * SAML2
 
 * /etc/hue/conf/hue.ini
