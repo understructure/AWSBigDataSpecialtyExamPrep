@@ -4,7 +4,7 @@
 
 * MapReduce - batch oriented, consider 
 
-    * M3 or M4
+    * M3 or M4 - general purpose, allows for cheap horizontal scaling
 
 * Machine Learning
 
@@ -14,7 +14,7 @@
 
     * R3 or R4
 
-* Large instance store-based HDFS / MapReduce that require high I/O performance and high IOPS / HBase clusters
+* Large instance store-based HDFS / MapReduce that require high I/O performance and high IOPS / Large HBase clusters
 
     * I2 (I3 instance type releases but not supported in EMR yet)
 
@@ -24,13 +24,13 @@
 
 * Guidelines provided by AWS, but you should always experiment with your own data
 
-* Master node sizing
+* **Master node sizing** - Master nodes have low compute requirements
 
     * with clusters < 50 nodes, use m3.xlarge or m4.xlarge for master
 
     * with clusters > 50 nodes, use m3.2xlarge or m4.2xlarge for master
 
-* Core node sizing - core nodes run tasks, have HDFS, so ask if you’ll be using HDFS or EMRFS, and if HDFS, do you want EBS, instance store, or both?  
+* **Core node sizing** - core nodes run tasks, have HDFS, so ask if you’ll be using HDFS or EMRFS, and if HDFS, do you want EBS, instance store, or both?  
 
 * Replication factor also matters.  Default replication factors are:
 
@@ -42,10 +42,20 @@
 
 * Can override this in hdfs-site.xml
 
-* Use HDFS if you have high I/O requirements
+* Use HDFS (instance store of EBS) if you have high I/O requirements
+ 
+    
+* Calculate HDFS capacity of a cluster:
+      * 10 nodes * 800 GB space = 8 TB
+      * Replication factor is 3
+      * To calculate HDFS capacity:
+    
+    `8 TB (total storage) / 3 (replication factor) = 2.6 TB `
+    
+* Can add more nodes or add size to existing nodes if 2.6 TB isn't enough for your data size
+
 
 * Should you use large cluster of smaller nodes, or small cluster of larger nodes?
 
     * AWS says small cluster of larger nodes
-
-        * Less nodes, less nodes failure, reduces amount of maintenance
+    * Less nodes, less nodes failure, reduces amount of maintenance
