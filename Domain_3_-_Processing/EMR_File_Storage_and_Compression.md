@@ -6,7 +6,7 @@
 
 * Both of the above points directly correlate to file sizes and compression algorithms
 
-* If the compression algorithm doesn’t allow for splitting, then Hadoop won’t split your data files - a single Map task will be used to process your compressed files (see figure 7, page 14 of Best Practices for Amazon EMR)
+* If the compression algorithm doesn’t allow for splitting, then Hadoop won’t split your data files - a single Map task will be used to process your compressed files (see figure 7, page 14 of [Best Practices for Amazon EMR](https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf)
 
 * If your compression algorithm allows files to be split, your files get split and processed in parallel
 
