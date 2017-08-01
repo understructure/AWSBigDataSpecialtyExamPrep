@@ -24,8 +24,8 @@
 
 * By caching tables and running same query, it goes from ~12 minutes to about 1.5 minutes
 
-`cache tables orders;
+`cache tables orders;`
 
-cache table lineitem;`
+`cache table lineitem;`
 
 * NOTE:  See the scripts I created, they’re much better
