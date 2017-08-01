@@ -24,7 +24,7 @@
 
     * Data in small sizes
 
-* **Machine learning**
+* **Machine learning (MLlib)**
 
     * Repeated queries against datasets
 
@@ -44,7 +44,7 @@
 
 * Not a database for OLTP
 
-* Batch processing (very large batch processing)
+* Batch processing (use Hive for very large batch processing)
 
 * Avoid for large multi-user reporting environments with high concurrency
 
@@ -88,7 +88,7 @@
 
     * [https://spark.apache.org/mllib](https://spark.apache.org/mllib) 
 
-* **GraphX** - interactively build and transform graph-structured data at scale 
+* **GraphX** - interactively build and transform graph-structured data at scale - **probably** no questions on the exam
 
     * Supports a number of graph algorithms
 
