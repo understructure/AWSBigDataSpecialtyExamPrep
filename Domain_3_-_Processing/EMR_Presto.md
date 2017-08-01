@@ -1,6 +1,6 @@
 ### Presto On EMR
 
-* Open source in-memory distributed fast SQL query engine
+* Open source in-memory distributed fast SQL query engine - uses ANSI SQL
 
 * Runs interactive analytic queries against variety of data sources
 
@@ -19,6 +19,8 @@
     * Frameworks like Hive
 
     * Available for Blackhole, Cassandra, jmx, localfile, mongodb, MySQL, PostgreSQL, Raptor, Redis, TPCH
+    
+    * To launch a cluster with a connector, use JSON [(example here)](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-presto.html)
 
 * High concurrency, run thousands of queries per day (sub-second to minutes)
 
@@ -28,7 +30,9 @@
 
 * No disk I/O, data queried needs to fit into memory
 
-* Don’t use Presto for:
+* Presto is very good for interactive queries
+
+* DON’T use Presto for:
 
     * OLTP
 
@@ -50,7 +54,7 @@
 
     * Workers process rows and return results to client
 
-For the Exam
+#### For the Exam
 
 * High level understanding of Presto
 
