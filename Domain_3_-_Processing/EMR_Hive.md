@@ -2,7 +2,7 @@
 
 * HiveQL
 
-* Provides SQL abstraction
+* Provides SQL abstraction to Hadoop
 
 * High-level programming language - needs an interpreter
 
@@ -12,13 +12,17 @@
 
 * Metastore - helps driver keep track of data
 
-* Hive-site.xml
+* hive-site.xml
 
 * Hive query converted to MapReduce
 
 * YARN allocates resources across the cluster
 
 * Tez is default engine in EMR 5+ (not MapReduce)
+
+* EMR can read from / write to S3
+* EMRFS - extends hadoop to use S3 as a file system instead of HDFS
+* Parititoning - supported w/ S3 - usually paritioned by date, source, etc.
 
 * Hive and DynamoDB are tightly integrated
 
@@ -38,8 +42,8 @@
 
     * Read and write data to/from EMRFS or HDFS in any format
 
-* There’s a JSON SerDe
+* There’s a JSON SerDe at s3://elasticmapreduce/samples/hive-ads/libs/jsonserde.jar
 
-* To read log files, a RegEx SerDe is used
+* To read log files, a RegEx SerDe is used [see this page for an example](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs-prepare-data-and-script.html)
 
 * SerDe not necessarily on the exam
