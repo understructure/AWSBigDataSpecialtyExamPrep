@@ -1,6 +1,6 @@
 ### Spark on EMR Part 2
 
-* Spark processing agent deployed to each node in the cluster
+* Spark processing engine deployed to each node in the cluster
 
 * Spark framework replaces MapReduce framework
 
@@ -10,13 +10,13 @@
 
 #### Kinesis Streams
 
-* Spark streaming receives live input data streams, divides them into batches which are then processed by Spark engine to generate final stream of results (in batches)
+* Spark streaming receives live input data streams, divides data into batches which are then processed by Spark engine to generate final stream of results (in batches)
 
 * Spark streaming provides a high-level abstraction called **Discretized Streams** (or **DStreams**) which are a continuous stream of data
 
 * DStreams can then be created from input data streams from sources like Kinesis Streams
 
-* Internally, a DStream is a collection of RDDs (?)
+* Internally, a DStream is a collection of RDDs
 
 * Transformations can be applied to these RDDs
 
@@ -44,19 +44,17 @@
 
 **References for Exam - AWS Big Data blog posts**
 
-* [https://aws.amazon.com/blogs/big-data/analyze-your-data-on-amazon-dynamodb-with-apache-spark/](https://aws.amazon.com/blogs/big-data/analyze-your-data-on-amazon-dynamodb-with-apache-spark/)
+* [Querying Amazon Kinesis Streams Directly with SQL and Spark Streaming](https://aws.amazon.com/blogs/big-data/querying-amazon-kinesis-streams-directly-with-sql-and-spark-streaming/)
 
-* [https://aws.amazon.com/blogs/big-data/analyze-realtime-data-from-amazon-kinesis-streams-using-zeppelin-and-spark-streaming/](https://aws.amazon.com/blogs/big-data/analyze-realtime-data-from-amazon-kinesis-streams-using-zeppelin-and-spark-streaming/)
+* [Optimize Spark-Streaming to Efficiently Process Amazon Kinesis Streams](https://aws.amazon.com/blogs/big-data/optimize-spark-streaming-to-efficiently-process-amazon-kinesis-streams/)
 
-* [https://aws.amazon.com/blogs/big-data/optimize-spark-streaming-to-efficiently-process-amazon-kinesis-streams/](https://aws.amazon.com/blogs/big-data/optimize-spark-streaming-to-efficiently-process-amazon-kinesis-streams/)
+* [Analyze Realtime Data from Amazon Kinesis Streams Using Zeppelin and Spark Streaming](https://aws.amazon.com/blogs/big-data/analyze-realtime-data-from-amazon-kinesis-streams-using-zeppelin-and-spark-streaming/)
 
-* [https://aws.amazon.com/blogs/big-data/powering-amazon-redshift-analytics-with-apache-spark-and-amazon-machine-learning/](https://aws.amazon.com/blogs/big-data/powering-amazon-redshift-analytics-with-apache-spark-and-amazon-machine-learning/)
+* [Analyze Your Data on Amazon DynamoDB with Apache Spark](https://aws.amazon.com/blogs/big-data/analyze-your-data-on-amazon-dynamodb-with-apache-spark/)
 
-* [https://aws.amazon.com/blogs/big-data/using-spark-sql-for-etl/](https://aws.amazon.com/blogs/big-data/using-spark-sql-for-etl/)
+* [Using Spark SQL for ETL](https://aws.amazon.com/blogs/big-data/using-spark-sql-for-etl/)
 
-* [https://github.com/awslabs/emr-dynamodb-connector](https://github.com/awslabs/emr-dynamodb-connector)
-
-* [https://github.com/databricks/spark-redshift](https://github.com/databricks/spark-redshift)
+* [emr-dynamodb-connector](https://github.com/awslabs/emr-dynamodb-connector)
 
 #### Spark and Redhsift
 
@@ -70,15 +68,21 @@
 
 * Databricks Spark Redshift library
 
-    * Executes Redshift UNLOAD command to copy data to an S3 bucket
+* [Redshift Data Source for Apache Spark](https://github.com/databricks/spark-redshift)
 
-    * Reads the files in S3 bucket
+    * Reads data from Redshift, and can write back to Redshift by loading data into SparkSQL DataFrames
 
-    * SparkSQL DataFrame is generated and registered as a temp table in Spark
+        * Spark Redhsift library executes Redshift UNLOAD command to copy data to an S3 bucket
 
-    * Queries can then be executed directly against it
+        * Files in s3 are then read
+
+        * SparkSQL DataFrame is generated and registered as a temp table in Spark
+
+        * Queries can then be executed directly against it
 
     * Spark-Redshift library can be used with various data in S3, Hive tables, text or Parquet files on HDFS
+
+* [Powering Amazon Redshift Analytics with Apache Spark and Amazon Machine Learning](https://aws.amazon.com/blogs/big-data/powering-amazon-redshift-analytics-with-apache-spark-and-amazon-machine-learning/)
 
 #### Spark and DynamoDB
 
