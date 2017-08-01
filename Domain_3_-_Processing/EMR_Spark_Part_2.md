@@ -84,7 +84,7 @@
 
 * [Powering Amazon Redshift Analytics with Apache Spark and Amazon Machine Learning](https://aws.amazon.com/blogs/big-data/powering-amazon-redshift-analytics-with-apache-spark-and-amazon-machine-learning/)
 
-![redshift and spark and ML](images/spark_redshift.png)
+![redshift and spark and ML](../images/spark_redshift.png)
 
 #### Spark and DynamoDB
 
