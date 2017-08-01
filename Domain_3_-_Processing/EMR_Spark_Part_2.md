@@ -52,11 +52,11 @@
 
 * [Analyze Your Data on Amazon DynamoDB with Apache Spark](https://aws.amazon.com/blogs/big-data/analyze-your-data-on-amazon-dynamodb-with-apache-spark/)
 
+* [Powering Amazon Redshift Analytics with Apache Spark and Amazon Machine Learning](https://aws.amazon.com/blogs/big-data/powering-amazon-redshift-analytics-with-apache-spark-and-amazon-machine-learning/)
+
 * [Using Spark SQL for ETL](https://aws.amazon.com/blogs/big-data/using-spark-sql-for-etl/)
 
-* [emr-dynamodb-connector](https://github.com/awslabs/emr-dynamodb-connector)
-
-#### Spark and Redhsift
+#### Spark and Redshift
 
 * Spark for ETL of large amounts of data
 
@@ -72,7 +72,7 @@
 
     * Reads data from Redshift, and can write back to Redshift by loading data into SparkSQL DataFrames
 
-        * Spark Redhsift library executes Redshift UNLOAD command to copy data to an S3 bucket
+        * Spark Redshift library executes Redshift UNLOAD command to copy data to an S3 bucket
 
         * Files in s3 are then read
 
@@ -82,17 +82,15 @@
 
     * Spark-Redshift library can be used with various data in S3, Hive tables, text or Parquet files on HDFS
 
-* [Powering Amazon Redshift Analytics with Apache Spark and Amazon Machine Learning](https://aws.amazon.com/blogs/big-data/powering-amazon-redshift-analytics-with-apache-spark-and-amazon-machine-learning/)
-
 ![redshift and spark and ML](../images/spark_redshift.png)
 
 #### Spark and DynamoDB
 
-* Use AWSLabs’s EMR DynamoDB Connector
+* Use AWSLabs’s EMR DynamoDB Connector `emr-ddb-hadoop.jar` library used to let Spark interact with DynamoDB
 
-* See sample code
+* See sample code here: [emr-dynamodb-connector](https://github.com/awslabs/emr-dynamodb-connector)
 
-For the exam, know
+#### For the exam, know
 
 * How Spark Streaming and Kinesis Streams work together
 
