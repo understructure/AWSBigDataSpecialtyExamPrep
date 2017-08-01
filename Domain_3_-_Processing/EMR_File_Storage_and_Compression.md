@@ -2,7 +2,7 @@
 
 * In HDFS, files are split into chunks automatically by Hadoop
 
-* If your data fiels are stored in S3, Hadoop will split the data on S3 by reading the files in multiple HTTP range requests
+* If your data files are stored in S3, Hadoop will split the data on S3 by reading the files in multiple HTTP range requests
 
 * Both of the above points directly correlate to file sizes and compression algorithms
 
