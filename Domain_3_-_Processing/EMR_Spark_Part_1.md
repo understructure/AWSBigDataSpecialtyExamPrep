@@ -96,7 +96,7 @@
 
         * Connected components
 
-        * Label propogation
+        * Label propagation
 
         * SVD++
 
