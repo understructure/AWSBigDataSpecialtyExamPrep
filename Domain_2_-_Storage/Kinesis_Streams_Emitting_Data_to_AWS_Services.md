@@ -89,7 +89,7 @@
 
     * Requires the configuration of an S3 bucket and endpoint
 
-<pre>
+```
 public class S3Emitter implements IEmitter<byte[]> {
 
     private static final Log LOG = LogFactory.getLog(S3Emitter.class);
@@ -113,7 +113,7 @@ public class S3Emitter implements IEmitter<byte[]> {
     public void fail(List<byte[]> records)
 
 }
-</pre>
+```
 
 
 (**Demo**)
