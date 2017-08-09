@@ -89,7 +89,7 @@
 
     * Requires the configuration of an S3 bucket and endpoint
 
-```java
+```javascript
 public class S3Emitter implements IEmitter<byte[]> {
 
     private static final Log LOG = LogFactory.getLog(S3Emitter.class);
