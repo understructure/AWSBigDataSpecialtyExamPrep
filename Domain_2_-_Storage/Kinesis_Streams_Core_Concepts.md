@@ -101,8 +101,8 @@ Record consists of:
     * High write throughput, can do complicated stuff like matching
 
     * Do **NOT** use KPL if:
-        * Your producer app / use case cannot incur an additional processing delay 
-        * RecordMaxBufferedTime - maximum amount of time a record spends being buffered
+        * Your producer app / use case cannot incur an additional processing delay - this delay is created by RecordMaxBufferedTime
+        * **RecordMaxBufferedTime** - maximum amount of time a record spends being buffered
             * Larger values can result in better performance, but can delay records
             * Setting this too low can negatively impact throughput
 
