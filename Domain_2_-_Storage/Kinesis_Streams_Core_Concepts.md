@@ -87,7 +87,7 @@ Record consists of:
         * PutRecord - puts single data record - separate HTTP request for each record
         * PutRecords - puts multiple data records - recommended by AWS, will give you higher throughput
 
-2. **Kinesis Producer Library (KPL) **
+2. **Kinesis Producer Library (KPL)**
 
     * Configurable library to create producer apps that allow devs to achieve high write throughput to a Kinesis Stream
     * Write to one or more Kinesis Streams with auto-retry configurable mechanism
