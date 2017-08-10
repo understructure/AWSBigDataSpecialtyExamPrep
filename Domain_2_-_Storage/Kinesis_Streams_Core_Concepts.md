@@ -94,8 +94,8 @@ Record consists of:
     * Collects records to write multiple records to multiple shards per request
     * Aggregate user records
     * Integrates Kinesis Client Library (de-aggregates records)
-    * Monitoring - at Stream, Shard, or Producer level
-    * TAKEAWAY - use KPL if you need to write thousands of records per second to Kinesis Streams
+    * Monitoring - emits throughput, error, and other metrics to CloudWatch at Stream, Shard, or Producer level
+    * **TAKEAWAY** - use KPL if you need to write thousands of events per second to Kinesis Streams
     
     * High performance - makes it easier to create Streams apps
     * High write throughput, can do complicated stuff like matching
