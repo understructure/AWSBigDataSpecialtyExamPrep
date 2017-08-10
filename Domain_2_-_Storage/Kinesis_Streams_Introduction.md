@@ -50,7 +50,7 @@ Create a data processing applications, that reads data from stream as data recor
 
 * **Consumer** - anything that gets data from Kinesis Stream
 
-    * Kinesis Consumer Library (KCL)
+    * Kinesis Client Library (KCL)
 
 * **Kinesis Agent** - collect and send data to Kinesis Streams
 
