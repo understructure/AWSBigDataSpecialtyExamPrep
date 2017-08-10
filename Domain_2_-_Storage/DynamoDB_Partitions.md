@@ -54,7 +54,7 @@
 
 * Be careful when (manually) decreasing WCU and RCU - number of partitions will NOT be reduced, so they’ll be spread among all the partitions
 
-* While there’s an automatic split across partitions to handle upscaling, there’s nothing equivalent for downscaling when performance needs decrease
+* **NOTE** - There's no automatic decreasing in partitions!  While there’s an automatic split across partitions to handle upscaling, there’s nothing equivalent for downscaling when performance needs to decrease
 
 * Allocated WCU and RCU are split between partitions - 100 WCU and 4 partitions means only 25 WCUs max on any partition
 
