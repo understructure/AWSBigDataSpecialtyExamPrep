@@ -44,6 +44,7 @@ DynamoDB - SCAN vs. QUERY
 
 * LSI is a sparse index - index will only have an ITEM if index sort key attribute is contained in the table item (row)
 
+    * This means it's likely there will be significantly fewer items in your LSI than in your table (e.g., if only some of your items in the table have that attribute, only those items will be included in the LSI)
     * Sparse index allows very efficient data lookups in this use case - where you’re actively looking for data based on presence of a certain attribute
 
 #### Storage and Performance Considerations w/ LSIs
