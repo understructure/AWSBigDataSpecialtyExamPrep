@@ -2,7 +2,7 @@
 
 ## Exam Feedback
 
-### User Posts
+### User Posts - A Cloud Guru Forums
 
 * [2017-08-09](https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-Kr67dbXLCoT8YQoYCUo/big_data_exam_feedback)
 * [Passing AWS Big Data Specialty Certification – A Chapter in My AWS Journey](https://www.linkedin.com/pulse/passing-aws-big-data-specialty-certification-chapter-my-sivan?trk=v-feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BLJWQaML3Qs66Mok5ApSi1Q%3D%3D)
