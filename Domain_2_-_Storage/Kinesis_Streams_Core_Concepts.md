@@ -87,22 +87,22 @@ Record consists of:
         * PutRecord - puts single data record - separate HTTP request for each record
         * PutRecords - puts multiple data records - recommended by AWS, will give you higher throughput
 
-2. **Kinesis Producer Library (KPL) **
+2. **Kinesis Producer Library (KPL)**
 
     * Configurable library to create producer apps that allow devs to achieve high write throughput to a Kinesis Stream
     * Write to one or more Kinesis Streams with auto-retry configurable mechanism
     * Collects records to write multiple records to multiple shards per request
     * Aggregate user records
     * Integrates Kinesis Client Library (de-aggregates records)
-    * Monitoring - at Stream, Shard, or Producer level
-    * TAKEAWAY - use KPL if you need to write thousands of records per second to Kinesis Streams
+    * Monitoring - emits throughput, error, and other metrics to CloudWatch at Stream, Shard, or Producer level
+    * **TAKEAWAY** - use KPL if you need to write thousands of events per second to Kinesis Streams
     
     * High performance - makes it easier to create Streams apps
     * High write throughput, can do complicated stuff like matching
 
     * Do **NOT** use KPL if:
-          * Your producer app / use case cannot incur an additional processing delay 
-          * RecordMaxBufferedTime - maximum amount of time a record spends being buffered
+        * Your producer app / use case cannot incur an additional processing delay - this delay is created by RecordMaxBufferedTime
+        * **RecordMaxBufferedTime** - maximum amount of time a record spends being buffered
             * Larger values can result in better performance, but can delay records
             * Setting this too low can negatively impact throughput
 

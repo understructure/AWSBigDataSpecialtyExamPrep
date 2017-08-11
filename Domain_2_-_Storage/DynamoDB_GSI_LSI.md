@@ -44,6 +44,7 @@ DynamoDB - SCAN vs. QUERY
 
 * LSI is a sparse index - index will only have an ITEM if index sort key attribute is contained in the table item (row)
 
+    * This means it's likely there will be significantly fewer items in your LSI than in your table (e.g., if only some of your items in the table have that attribute, only those items will be included in the LSI)
     * Sparse index allows very efficient data lookups in this use case - where you’re actively looking for data based on presence of a certain attribute
 
 #### Storage and Performance Considerations w/ LSIs
@@ -58,11 +59,11 @@ DynamoDB - SCAN vs. QUERY
 
   * You can potentially save in retrieval costs by only having important non-key values projected into the index
 
-* If an attribute isn’t stored in the LSI and you query on it, you have two penalties:
+* If an attribute isn’t stored in the LSI and you query on it, you have **two penalties**:
 
-    * Additional query latency
+    1.  Additional query latency
 
-    * DynamoDB will have to fetch the items from the main table in addition to the index - but you’re charged the retrieval cost for the entire item from the main table individually rounded up to 4k rather than just attributes being retrieved
+    2.  DynamoDB will have to fetch the items from the main table in addition to the index - but you’re charged the retrieval cost for the entire item from the main table individually rounded up to 4k rather than just attributes being retrieved
 
 * Example:  If you just query the table or the LSI, you’ll get the total of the ENTIRE query rounded up to 4k.  However, if you have to pull from the query’s LSI + Index (subquery) due to a missing projected attribute in the LSI, then EACH subquery gets rounded up to the nearest 4k and added to the rounded up value of the entire query on the index rounded up to 4k.
 
