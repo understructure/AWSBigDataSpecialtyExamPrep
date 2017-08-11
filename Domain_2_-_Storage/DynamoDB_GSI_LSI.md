@@ -101,11 +101,11 @@ DynamoDB - SCAN vs. QUERY
 
     * **ALL** - projects all attributes
 
-* Unlike LSIs where the performance is shared with the table, RCU and WCU are defined on the GSI - in the same way as the table
+* Unlike LSIs where the performance is shared with the table, a GSI has the ability to have a separate set of reserved performance via its own RCUs and WCUs
 
-* As with LSI, changes to table are copied to GSI asynchronously - which means eventual consistency
+* As with LSI, changes to table are copied to GSI asynchronously - which means eventual consistency 
 
-* GSI’s only support eventually consistent reads
+* GSI’s **only** support eventually consistent reads
 
 * With an LSI on weather station ID and intrusion detected, we could pull all the records for a given weather station, and then filter intrusion detection where True, for instance, but we couldn’t JUST filter for true regardless of weather station ID - GSI’s solve that
 
