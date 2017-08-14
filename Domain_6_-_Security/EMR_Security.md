@@ -101,7 +101,7 @@
     * hadoop.ssl.client.conf
     * hadoop.ssl.enabled.protocols
   * **mapred-site.xml**
-    * mapreduce.shuffle.ssl.enabled (set from false to true)
+    * mapreduce.shuffle.ssl.enabled (property added, set to true)
 
 
 ![Hadoop Encrypted Shuffle](../images/hadoop_encrypted_shuffle.png)
