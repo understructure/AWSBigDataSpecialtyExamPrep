@@ -64,9 +64,13 @@
 
 1.  Wait for process to be completed, in the background additional checkpoint tables will be created
 
+![example01](../images/DynamoDB_replication1.pngs)
+
 * See this link from AWS for more info: [DynamoDB Cross-Region Replication](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html)
 
 * **Second Option** - With DynamoDB Streams and Lambda, you can create an event-driven architecture where streams are captured and invoked by Lambda functions so that the Lambda function you write can copy the data to a different region (no need for EC2 instance w/ Kinesis Client Library)
+
+![example02](../images/DynamoDB_replication2.png)
 
 #### For the Exam
 
