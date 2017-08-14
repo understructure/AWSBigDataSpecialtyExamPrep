@@ -66,8 +66,8 @@ For more information, see the [Redshift Documentation on Using HSM](https://docs
 1. That key will be used as the Cluster encryption key, and will be stored on the HSM
 1. RS then randomly generates the database encryption key in the cluster, and passes it to the HSM to be encrypted by the Cluster encryption key
 1. HSM returns encrypted database encryption key to RS
-1. RS performs additional encryption by using a randomly-generated internal master key that’s stored interally on disk in a separate network from the cluster
-1. RS loads the decrypted version of the Database enryption key into memory in the cluster so that the Database encryption key can be used to encrypt and decrypt individual keys for the data blocks
+1. RS performs additional encryption by using a randomly-generated internal master key that’s stored internally on disk in a separate network from the cluster
+1. RS loads the decrypted version of the Database encryption key into memory in the cluster so that the Database encryption key can be used to encrypt and decrypt individual keys for the data blocks
 
 ![Redshift HSM](../images/redshift_hsm_01.png)
 
