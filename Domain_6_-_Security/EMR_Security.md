@@ -110,18 +110,20 @@
   * **tez-site.xml**
     * **tez.runtime.shuffle.ssl.enable** property added, set to true
     * **tez.runtime.shuffle.keep-alive** property added, set to true
+    
 * For Spark - settings automatically enabled for you
   * **spark.defaults.conf** - Spark security settings: two things to keep in mind:
-  * Security is setup for
-    * Authentication - handshake to make sure both sides have the same shared secret, and are allowed to communicate
-      * Two parameters added and set to true:
-        * **spark.authenticate**
-        * **spark.authenticate.enableSaslEncryption** - SASL stands for Simple Authentication and Security Layer
-    * Ensuring that data in transit is encrypted (these have NOT come up on the exam so far):
-      * ~8 that start with spark.ssl
-      * spark.network.sasl.serverAlwaysEncrypt
+  * Security is setup for two things:
+      * Authentication - handshake to make sure both sides have the same shared secret, and are allowed to communicate
+          * Two parameters added and set to true:
+              * **spark.authenticate**
+              * **spark.authenticate.enableSaslEncryption** - SASL stands for Simple Authentication and Security Layer
+      * Ensuring that data in transit is encrypted (these have NOT come up on the exam so far):
+          * ~8 that start with spark.ssl
+          * spark.network.sasl.serverAlwaysEncrypt
 
-**For the Exam:**
+### For the Exam:
+
 * **Encryption at rest** - know the encryption modes and how they work, and which file are automatically updated behind the scenes
 * **Encryption in transit** - specifically, study how [Hadoop Encrypted Shuffle](https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html) is setup
   * At a minimum - remember how **encryption for Spark and Tez** are setup
