@@ -39,17 +39,17 @@
 
 ##### Use Cases
 
-* Replication
+1.  Replication
 
-* Triggers
+    * Disaster Recovery (DR) - database table in one AW region, replicating to another region for DR failure
+    
+2.  Triggers
 
-* DR - database table in one AW region, replicating to another region for DR failure
-
-* Lambda function triggered when new record added to stream, do analytics on data
-
-* Lambda function triggered when new user signup on web app, data entered into users table, email sent to users, etc.
-
-* Large distributed applications with users worldwide - using a multi-master database model.  A synched set of tables operating worldwide.
+    * Lambda function triggered when new record added to stream, do analytics on data
+    
+    * Lambda function triggered when new user signup on web app, data entered into users table, email sent to users, etc.
+    
+    * Large distributed applications with users worldwide - using a multi-master database model.  A synched set of tables operating worldwide.
 
 ##### Example w/ CloudFormation and Elastic Beanstalk
 
