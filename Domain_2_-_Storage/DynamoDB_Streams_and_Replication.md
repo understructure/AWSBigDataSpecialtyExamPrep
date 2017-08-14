@@ -42,26 +42,29 @@
 1.  Replication
 
     * Disaster Recovery (DR) - database table in one AW region, replicating to another region for DR failure
+        * Close to realtime, but there will be some latency
+        * Latency depends on which regions are involved and what the latency is b/t regions
+
+    * Large distributed applications with users worldwide - using a multi-master database model.  A synched set of tables operating worldwide.
     
 2.  Triggers
 
     * Lambda function triggered when new record added to stream, do analytics on data
     
     * Lambda function triggered when new user signup on web app, data entered into users table, email sent to users, etc.
-    
-    * Large distributed applications with users worldwide - using a multi-master database model.  A synched set of tables operating worldwide.
+
 
 ##### Example w/ CloudFormation and Elastic Beanstalk
 
-* Create or select table to be replicated
+1.  Create or select table to be replicated
 
-* Apply cloud formation stack and wait - stack will shift to COMPLETE - look in output section of the stack to get URL for replication console
+1.  Apply cloud formation stack and wait - stack will shift to COMPLETE - look in output section of the stack to get URL for replication console
 
-* Login to the replication console and create a replication group **identify** (?)
+1.  Login to the replication console and create a replication group **identify** (?)
 
-* Wait for process to be completed, in the background additional checkpoint tables will be created
+1.  Wait for process to be completed, in the background additional checkpoint tables will be created
 
-* See this link from AWS for more info: [Cross-Region Replication](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html)
+* See this link from AWS for more info: [DynamoDB Cross-Region Replication](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html)
 
 * **Second Option** - With DynamoDB Streams and Lambda, you can create an event-driven architecture where streams are captured and invoked by Lambda functions so that the Lambda function you write can copy the data to a different region (no need for EC2 instance w/ Kinesis Client Library)
 
