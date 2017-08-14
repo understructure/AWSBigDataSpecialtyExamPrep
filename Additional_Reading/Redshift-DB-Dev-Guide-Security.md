@@ -62,7 +62,11 @@ A recent comment on the ACG forums indicated that the lectures did not cover the
 * Can grant `USAGE ON LANGUAGE` - this allows a user to create UDFs.  `language_name` in Redshift must be `plpythonu`
 
 
-## Loading Data >> Using a COPY Command to Load Data >> Credentials and Access Permissions
+## Loading Data >> Using a COPY Command to Load Data 
+
+### Credentials and Access Permissions
+
+The IAM user role or IAM user referenced by the CREDENTIALS parameter must have, at a minimum, the following permissions:
 
 | Service                                           | Operation |  Permissions                                                |
 |---------------------------------------------------|-----------|-----------------------------------------------------------|
@@ -72,3 +76,19 @@ A recent comment on the ACG forums indicated that the lectures did not cover the
 | EMR                                               |   COPY    | Cluster: ListInstances   (on the cluster)                  |
 | S3                                                |  UNLOAD   | Bucket: READ, WRITE |
 | S3                                                | CREATE LIBRARY | Bucket: LIST, Objects: GET |
+
+
+### Loading Data from Amazon S3 >> Uploading Files to Amazon S3 >> Uploading Encrypted Data to Amazon S3
+
+* Server-side encryption is transparent to Redshift
+* Client-side encryption - must use `COPY` command with `ENCRYPTED` option and a private encryption key
+    * Data is encrypted by an *envelope key* - one-time use symmetric key that's encrypted by master key and stored alongside your data in S3
+    * When data is accessed by Redshift during a load, the encrypted symmetric key is retrieved and decrypted with your real key, then the data is decrypted
+
+### Unloading Encrypted Data Files
+
+* `UNLOAD` automatically creates files using S3 server-side encryption with AWS-managed encryption keys (SSE-S3)
+* `UNLOAD` does **not** support S3 server-side encryption with encryption keys from SSE-KMS or a customer supplied key (SSE-C)
+* Use `UNLOAD` with the `ENCRYPTED` option (with your key) to create client-side encrypted files
+    * Your key would then generate a one-time use symmetric "envelope" key and an initialization vector to encrypt the data
+    
