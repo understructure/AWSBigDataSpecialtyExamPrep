@@ -33,7 +33,7 @@
 
     * **OLD_IMAGE** - entire item PRE update written to the stream (before)
 
-    * **NEW_AND_OLD_IMAGES** - pre and post operation state of the item is written to the stream, allowing more complex comparison operations to be performed
+    * **NEW_AND_OLD_IMAGES** - pre and post operation state of the item is written to the stream, allowing more complex comparison operations to be performed ("allow a pre and post comparison without consulting DynamoDB")
 
 #### Streams and Replication
 
