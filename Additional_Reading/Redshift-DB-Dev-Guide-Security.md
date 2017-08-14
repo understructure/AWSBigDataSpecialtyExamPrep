@@ -3,7 +3,10 @@
 
 A recent comment on the ACG forums indicated that the lectures did not cover the topic of limiting access to certain Redshift objects.  This document is a summary of the Managing Database Security section of the Redshift Database Developer Guide, and was written to try to help fill that need.
 
-## Redshift Security Overview
+
+## Managing Database Security
+
+### Redshift Security Overview
 
 
 | Feature                    | Description                       | Controlled by                      |
@@ -17,7 +20,6 @@ A recent comment on the ACG forums indicated that the lectures did not cover the
 | Load data encryption       | Server- or client-side encryption | S3 / COPY command.                 |
 | Data in transit            | From S3 DynamoDB, COPY, UNLOAD, backup and restore ops                 | Redshift hardware accelerated SSL  | 
 
-## Managing Database Security
 
 
 ### Users
@@ -59,3 +61,14 @@ A recent comment on the ACG forums indicated that the lectures did not cover the
 
 * Can grant `USAGE ON LANGUAGE` - this allows a user to create UDFs.  `language_name` in Redshift must be `plpythonu`
 
+
+## Loading Data >> Using a COPY Command to Load Data >> Credentials and Access Permissions
+
+| Service                                           | Operation |  Permissions                                                |
+|---------------------------------------------------|-----------|-----------------------------------------------------------|
+| S3                                                |   COPY    | Bucket: LIST, Objects (and manifest file, if exists): GET  |
+| S3, EMR, Remote Hosts (SSH) w JSON-formatted data |   COPY    | JSONPaths file on S3: LIST, GET (if used)                  |
+| DynamoDB                                          |   COPY    | Table: SCAN and DESCRIBE (on the table)                    |
+| EMR                                               |   COPY    | Cluster: ListInstances   (on the cluster)                  |
+| S3                                                |  UNLOAD   | Bucket: READ, WRITE |
+| S3                                                | CREATE LIBRARY | Bucket: LIST, Objects: GET |
