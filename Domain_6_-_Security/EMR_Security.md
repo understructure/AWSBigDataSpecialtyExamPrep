@@ -113,12 +113,14 @@
     
 * For Spark - settings automatically enabled for you
   * **spark.defaults.conf** - Spark security settings: two things to keep in mind:
+  
+  
   * Security is setup for two things:
-      * Authentication - handshake to make sure both sides have the same shared secret, and are allowed to communicate
+      1. Authentication - handshake to make sure both sides have the same shared secret, and are allowed to communicate
           * Two parameters added and set to true:
               * **spark.authenticate**
               * **spark.authenticate.enableSaslEncryption** - SASL stands for Simple Authentication and Security Layer
-      * Ensuring that data in transit is encrypted (these have NOT come up on the exam so far):
+      1. Ensuring that data in transit is encrypted (these have NOT come up on the exam so far):
           * ~8 that start with spark.ssl
           * spark.network.sasl.serverAlwaysEncrypt
 
