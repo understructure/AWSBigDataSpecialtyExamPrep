@@ -5,3 +5,8 @@ This represents the sequence of lectures and the links to my notes to the lectur
 
 1.  [EMR Security](EMR_Security.md)
 2.  [Redshift Security](Redshift_Security.md)
+
+
+## See Also
+
+1. [Redshift Database Developer Guide - Security](../Additional_Reading/Redshift-DB-Dev-Guide-Security.md)
