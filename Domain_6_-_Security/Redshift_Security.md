@@ -29,10 +29,10 @@
 * Four-tier hierarchy of encryption keys:
   * **Master key** - As you launch a cluster and select KMS to encrypt your db, Redshift returns a list of Master keys
       * select from list - lists all of the following:
-          * keys you’ve created
-          * keys you have access to
-          * default keys, e.g., customer master key for Redshift
-              * default key is AWS-managed key, KMS creates this key first time you create an encrypted cluster
+          * keys you’ve **created**
+          * keys you have **access to**
+          * **default** keys, e.g., customer master key for Redshift
+              * **default** key is AWS-managed key, KMS creates this key first time you create an encrypted cluster
   * **Cluster encryption key** - After you select master key, Redshift requests that KMS create a data key and encrypt it with the Master key.  This key is then used as Cluster encryption key.  
       * KMS then exports Cluster encryption key to Redshift, stores it in internally on disk, separate network from cluster
       * RS then loads the Cluster encryption key into memory and calls KMS to decrypt this key and loads it into memory
