@@ -64,7 +64,7 @@
 
 1.  Wait for process to be completed, in the background additional checkpoint tables will be created
 
-![example01](../images/DynamoDB_replication1.pngs)
+![example01](../images/DynamoDB_replication1.png)
 
 * See this link from AWS for more info: [DynamoDB Cross-Region Replication](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html)
 
