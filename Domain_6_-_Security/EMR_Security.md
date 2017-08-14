@@ -88,6 +88,8 @@
     * In DEV, it’s OK to use self-created certs, but in prod, it’s a risk
   * **Custom option** (custom option is like S3 CSE-Custom option) 
 
+### Hadoop Encrypted Shuffle
+
 * [Hadoop Encrypted Shuffle](https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html) - process of transferring data from mappers to reducers - from node to node w/in the cluster
 * Allows encryption of mapreduce shuffle using HTTPS
 * Two files updated
