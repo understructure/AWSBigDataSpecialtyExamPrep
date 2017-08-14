@@ -51,6 +51,11 @@ A recent comment on the ACG forums indicated that the lectures did not cover the
 * When creating an object without explicitly supplying its schema, the object is created in the first schema in the search_path parameter
 * Query the `PG_NAMESPACE` catalog table for information on all schemas
 * Query the `PG_TABLE_DEF` catalog `where schemaname = 'whatever'` to get a list of tables in the `whatever` schema
+* Grant `USAGE` on a schema to give a user access to it
+    * Still must specify object permissions explicitly, e.g., `SELECT, INSERT, UPDATE, DELETE`
+    
+    
+### Other
 
-
+* Can grant `USAGE ON LANGUAGE` - this allows a user to create UDFs.  `language_name` in Redshift must be `plpythonu`
 
