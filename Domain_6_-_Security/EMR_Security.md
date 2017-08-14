@@ -4,8 +4,8 @@
 * Security Groups
 * IAM Roles
 * Running an EMR cluster in a private subnet
-* Encryption at rest \* MOST important for exam!
-* Encryption in transit \* MOST important for exam!
+* Encryption at rest - **MOST important for exam!**
+* Encryption in transit - **MOST important for exam!**
 
 ### Security Groups
 
