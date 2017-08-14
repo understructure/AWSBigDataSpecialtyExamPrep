@@ -9,9 +9,16 @@ This represents the sequence of lectures and the links to my notes to the lectur
 
 ## Embedded Links
 
+### Redshift 
+
 1. [Amazon Redshift Database Encryption](http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html)
 1. [Configure Security Options for Connections](http://docs.aws.amazon.com/redshift/latest/mgmt/connecting-ssl-support.html)
 1. [Redshift Documentation on Using HSM](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)
+
+### EMR
+
+1.  [using open-ssl per AWS documentation](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-encryption-certificates.html)
+1.  [Hadoop Encrypted Shuffle](https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html)
 
 ## See Also
 
