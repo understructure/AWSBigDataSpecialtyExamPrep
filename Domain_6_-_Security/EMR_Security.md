@@ -41,13 +41,14 @@
 
 ### Encryption in transit
 * With S3:
-  * For EMRFS traffic b/t S3 and cluster nodes (enabled automatically)
-  * TLS encryption
+  * TLS encryption - enabled automatically - encrypts traffic b/t S3 and cluster nodes
 * For distributed apps
   * Open source encryption functionality for Hadoop, Tez, and Spark
 
 ### Setting Up Encryption - At Rest
+
 * Whether you’re using managed or custom roles, neither of them allows access to KMS store by default, so you’ll need to attach an Inline Role Policy for that to the role you’re using that allows access to the KMS master key
+
 * Create a Security Configuration
 
 * At-rest encryption on S3 - one of four modes
