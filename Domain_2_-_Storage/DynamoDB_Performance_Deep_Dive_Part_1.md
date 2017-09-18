@@ -29,11 +29,15 @@ Then round up.  That means DynamoDB will provide you with one partition per 3000
 
 * E.g., for 65 GB:
 
-<pre>65/10GB = 6.5</pre>
+<pre>65 GB/10 GB = 6.5</pre>
 
 * Round up to **7**
 
-* The actual number of partitions you need is the maximum of these two, so MAX(6,7) = 7, so you need 7 partitions to meet performance and capacity expectations
+* The actual number of partitions you need is the maximum of these two:
+
+`MAX(6,7) = 7`
+
+* so you need 7 partitions to meet performance and capacity expectations
 
 * So now we know the number of partitions, but how does that really influence performance?
 
