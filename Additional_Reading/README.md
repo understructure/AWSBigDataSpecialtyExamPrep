@@ -18,6 +18,7 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Cross-Region Replication (DynamoDB)](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html) | Docs |
 | [Using AWS Lambda with Amazon DynamoDB](http://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html) | Docs |
 | [Analyze Your Data on Amazon DynamoDB with Apache Spark](https://aws.amazon.com/blogs/big-data/analyze-your-data-on-amazon-dynamodb-with-apache-spark/) | Blog Post |
+| [Implementing a Serverless AWS IoT Backend with AWS Lambda and Amazon DynamoDB](https://aws.amazon.com/blogs/compute/implementing-a-serverless-aws-iot-backend-with-aws-lambda-and-amazon-dynamodb/) | Blog Post |
 | [EMR DynamoDB Connector](https://github.com/awslabs/emr-dynamodb-connector) | GitHub Repo |
 | [Amazon EMR Best Practices \*](https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf) | Whitepaper |
 | [View Web Interfaces Hosted on Amazon EMR Clusters](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-web-interfaces.html) | Docs |
@@ -33,7 +34,6 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Using AWS Lambda for Event-driven Data Processing Pipelines](https://aws.amazon.com/blogs/big-data/using-aws-lambda-for-event-driven-data-processing-pipelines/) | Blog Post |
 | [Amazon Kinesis Firehose Data Transformation with AWS Lambda](https://aws.amazon.com/blogs/compute/amazon-kinesis-firehose-data-transformation-with-aws-lambda/) | Blog Post |
 | [Using AWS Lambda with Amazon Kinesis](http://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html) | Docs |
-| [Implementing a Serverless AWS IoT Backend with AWS Lambda and Amazon DynamoDB](https://aws.amazon.com/blogs/compute/implementing-a-serverless-aws-iot-backend-with-aws-lambda-and-amazon-dynamodb/) | Blog Post |
 | [Indexing Metadata in Amazon Elasticsearch Service Using AWS Lambda and Python](https://aws.amazon.com/blogs/database/indexing-metadata-in-amazon-elasticsearch-service-using-aws-lambda-and-python/) | Blog Post |
 | [Data Warehousing on AWS](https://d0.awsstatic.com/whitepapers/enterprise-data-warehousing-on-aws.pdf) | Whitepaper |
 | [Amazon Redshift Engineering's Advanced Table Design Playbook](https://aws.amazon.com/blogs/big-data/amazon-redshift-engineerings-advanced-table-design-playbook-preamble-prerequisites-and-prioritization/) | Blog Post |
