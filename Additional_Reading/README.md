@@ -56,6 +56,7 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 [Run Jupyter Notebook and JupyterHub on Amazon EMR](https://aws.amazon.com/blogs/big-data/running-jupyter-notebook-and-jupyterhub-on-amazon-emr/) | Blog Post |
 | [Hadoop Encrypted Shuffle](https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html) | Docs |
 | [Amazon Redshift Database Encryption](http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html) | Docs |
+| [Big Data Analytics Options on AWS](https://d0.awsstatic.com/whitepapers/Big_Data_Analytics_Options_on_AWS.pdf) | Whitepaper |
 
 
 \* This is a static link to a document that is out-of-date, AWS removed a link to this document offline in June, 2017, but it appears this link works   
