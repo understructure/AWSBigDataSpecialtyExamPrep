@@ -95,7 +95,7 @@
 
     * DistCp - open source tool to copy large amounts of data efficiently
     
-    * Use EMRFS if:
+    * Use EMRFS and HDFS together if:
 
         * you need high I/O performance and/or need to take advantage of instance storage on D2 and I3 instance families
 
