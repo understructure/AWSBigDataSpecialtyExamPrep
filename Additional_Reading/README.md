@@ -16,9 +16,9 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Scaling Writes on Amazon DynamoDB Tables with Global Secondary Indexes](https://aws.amazon.com/blogs/big-data/scaling-writes-on-amazon-dynamodb-tables-with-global-secondary-indexes/) | Blog Post |
 | [Improving Data Access with Secondary Indexes (DynamoDB)](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html) | Docs |
 | [Cross-Region Replication (DynamoDB)](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html) | Docs |
-| [Using AWS Lambda with Amazon DynamoDB](http://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html) | Docs |
+
 | [Analyze Your Data on Amazon DynamoDB with Apache Spark](https://aws.amazon.com/blogs/big-data/analyze-your-data-on-amazon-dynamodb-with-apache-spark/) | Blog Post |
-| [Implementing a Serverless AWS IoT Backend with AWS Lambda and Amazon DynamoDB](https://aws.amazon.com/blogs/compute/implementing-a-serverless-aws-iot-backend-with-aws-lambda-and-amazon-dynamodb/) | Blog Post |
+
 | [EMR DynamoDB Connector](https://github.com/awslabs/emr-dynamodb-connector) | GitHub Repo |
 | [Amazon EMR Best Practices \*](https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf) | Whitepaper |
 | [View Web Interfaces Hosted on Amazon EMR Clusters](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-web-interfaces.html) | Docs |
@@ -29,12 +29,16 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Using Spark SQL for ETL](https://aws.amazon.com/blogs/big-data/using-spark-sql-for-etl/) | Blog post |
 | [Redshift Data Source for Apache Spark](https://github.com/databricks/spark-redshift) | GitHub Repo |
 | [EMR Lab \*\*](https://github.com/sko71/aws-bigdata-specialty) | Lab Link |
+
 | [A Zero-Administration Amazon Redshift Database Loader](https://aws.amazon.com/blogs/big-data/a-zero-administration-amazon-redshift-database-loader/) | Blog Post |
 | [Ad Hoc Big Data Processing Made Simple with Serverless MapReduce](https://aws.amazon.com/blogs/compute/ad-hoc-big-data-processing-made-simple-with-serverless-mapreduce/) | Blog Post |
 | [Using AWS Lambda for Event-driven Data Processing Pipelines](https://aws.amazon.com/blogs/big-data/using-aws-lambda-for-event-driven-data-processing-pipelines/) | Blog Post |
+| [Using AWS Lambda with Amazon DynamoDB](http://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html) | Docs |
 | [Amazon Kinesis Firehose Data Transformation with AWS Lambda](https://aws.amazon.com/blogs/compute/amazon-kinesis-firehose-data-transformation-with-aws-lambda/) | Blog Post |
 | [Using AWS Lambda with Amazon Kinesis](http://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html) | Docs |
+| [Implementing a Serverless AWS IoT Backend with AWS Lambda and Amazon DynamoDB](https://aws.amazon.com/blogs/compute/implementing-a-serverless-aws-iot-backend-with-aws-lambda-and-amazon-dynamodb/) | Blog Post | 
 | [Indexing Metadata in Amazon Elasticsearch Service Using AWS Lambda and Python](https://aws.amazon.com/blogs/database/indexing-metadata-in-amazon-elasticsearch-service-using-aws-lambda-and-python/) | Blog Post |
+
 | [Data Warehousing on AWS](https://d0.awsstatic.com/whitepapers/enterprise-data-warehousing-on-aws.pdf) | Whitepaper |
 | [Amazon Redshift Engineering's Advanced Table Design Playbook](https://aws.amazon.com/blogs/big-data/amazon-redshift-engineerings-advanced-table-design-playbook-preamble-prerequisites-and-prioritization/) | Blog Post |
 | [Optimizing for star schemas and Interleaved interleaved Sorting on Amazon Redshift](https://aws.amazon.com/blogs/big-data/optimizing-for-star-schemas-and-interleaved-sorting-on-amazon-redshift/) | Blog Post |
