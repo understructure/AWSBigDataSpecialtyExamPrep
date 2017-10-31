@@ -1,6 +1,10 @@
 ### EMR Operations Part 2
 
 * [EMR Best Practices Document](https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf)
+* [EMR Release Guide](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-components.html)
+
+* Components - open source, AWS-modified, and EMR-specific components
+* communityVersion-amzn-emrReleaseVersion
 
 #### Long Running Clusters
 
