@@ -52,7 +52,7 @@
 
 * Run batch jobs in Hive instead, consider scheduling using Oozie (yeah right)
 
-![image alt text](../images/domain3_2.png)
+![Spark Stack](../images/sparkstuff.png)
 
 #### Spark Core
 
@@ -104,8 +104,6 @@
 
         * Triangle count
 
-
-![Spark Stack](../images/sparkstuff.png)
 
 * Spark stack runs on top of cluster managers, e.g., Standalone Scheduler, YARN or Mesos
 
