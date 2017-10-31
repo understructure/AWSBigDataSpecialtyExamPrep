@@ -66,6 +66,6 @@
 * Default Autoscaling role selected for you, if you decide to use custom roles, and you don’t add a role to do autoscaling on EMR, then it can’t be added after cluster has been created - have to recreate cluster
 
 * Scale Out Policy - add instances when metric triggered for a number of consecutive 5-minute period and Scale In policies
-  * Cooldown period - amount of time before next event of this type happens
+  * Cooldown period - amount of time before next event of this type happens (in seconds)
   
 * Scale In Policy - remove instances when metric triggered
