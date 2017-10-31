@@ -77,8 +77,8 @@ Then round up.  That means DynamoDB will provide you with one partition per 3000
     
 ![image alt text](../images/two_popular_candidates.png)
 
-    * You can change the key strategy so you’re tacking the partition number onto the candidate key, and use that instead of the candidate key
+* You can change the key strategy so you’re tacking the partition number onto the candidate key, and use that instead of the candidate key
     
-    * E.g., for candidate 1, tack random number between 1 and 100 to the key.  The key would range between 1_1 and 1_100 for 100 partitions - should then be evenly distributed among those 100 partitions
+* E.g., for candidate 1, tack random number between 1 and 100 to the key.  The key would range between 1_1 and 1_100 for 100 partitions - should then be evenly distributed among those 100 partitions
 
 ![image alt text](../images/domain2_2.png)
