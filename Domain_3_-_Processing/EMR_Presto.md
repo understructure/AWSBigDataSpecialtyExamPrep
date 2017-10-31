@@ -18,7 +18,7 @@
 
     * Frameworks like Hive
 
-    * Available for Blackhole, Cassandra, jmx, localfile, mongodb, MySQL, PostgreSQL, Raptor, Redis, TPCH
+    * Available for Blackhole, Cassandra, Hive, jmx, Kafka, localfile, mongodb, MySQL, PostgreSQL, Raptor, Redis, TPCH
     
     * To launch a cluster with a connector, use JSON [(example here)](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-presto.html)
 
