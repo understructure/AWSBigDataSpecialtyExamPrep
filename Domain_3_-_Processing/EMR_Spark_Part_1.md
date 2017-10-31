@@ -56,8 +56,6 @@
 
 #### Spark Core
 
-![Spark Stack](../images/sparkstuff.png)
-
 * General execution engine
 
     * Dispatch & scheduling of tasks
@@ -105,6 +103,9 @@
         * Strongly connected components
 
         * Triangle count
+
+
+![Spark Stack](../images/sparkstuff.png)
 
 * Spark stack runs on top of cluster managers, e.g., Standalone Scheduler, YARN or Mesos
 
