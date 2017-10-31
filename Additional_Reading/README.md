@@ -39,6 +39,8 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Implementing a Serverless AWS IoT Backend with AWS Lambda and Amazon DynamoDB](https://aws.amazon.com/blogs/compute/implementing-a-serverless-aws-iot-backend-with-aws-lambda-and-amazon-dynamodb/) | Blog Post | 
 | [Indexing Metadata in Amazon Elasticsearch Service Using AWS Lambda and Python](https://aws.amazon.com/blogs/database/indexing-metadata-in-amazon-elasticsearch-service-using-aws-lambda-and-python/) | Blog Post |
 
+| Link                                                                                                                                                              | Notes         |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | [Data Warehousing on AWS](https://d0.awsstatic.com/whitepapers/enterprise-data-warehousing-on-aws.pdf) | Whitepaper |
 | [Amazon Redshift Engineering's Advanced Table Design Playbook](https://aws.amazon.com/blogs/big-data/amazon-redshift-engineerings-advanced-table-design-playbook-preamble-prerequisites-and-prioritization/) | Blog Post |
 | [Optimizing for star schemas and Interleaved interleaved Sorting on Amazon Redshift](https://aws.amazon.com/blogs/big-data/optimizing-for-star-schemas-and-interleaved-sorting-on-amazon-redshift/) | Blog Post |
