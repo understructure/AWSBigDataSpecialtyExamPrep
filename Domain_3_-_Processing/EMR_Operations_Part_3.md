@@ -52,7 +52,11 @@
     
     `8 TB (total storage) / 3 (replication factor) = 2.6 TB `
     
-* Can add more nodes or add size to existing nodes if 2.6 TB isn't enough for your data size
+* Can add more nodes or add size to existing nodes if 2.6 TB isn't enough for your data size - three options:
+
+1.  Add more core nodes of same type
+2.  Use fewer, larger-capacity core nodes
+3.  Add EBS volumes (of same size as what the nodes come with?)
 
 
 * Should you use large cluster of smaller nodes, or small cluster of larger nodes?
