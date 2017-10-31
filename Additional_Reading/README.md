@@ -52,7 +52,7 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Implementing a Serverless AWS IoT Backend with AWS Lambda and Amazon DynamoDB](https://aws.amazon.com/blogs/compute/implementing-a-serverless-aws-iot-backend-with-aws-lambda-and-amazon-dynamodb/) | Blog Post | 
 | [Indexing Metadata in Amazon Elasticsearch Service Using AWS Lambda and Python](https://aws.amazon.com/blogs/database/indexing-metadata-in-amazon-elasticsearch-service-using-aws-lambda-and-python/) | Blog Post |
 
-### Domains 4 and 5
+### Domain 4 - Analysis
 
 | Link                                                                                                                                                              | Notes         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
@@ -67,7 +67,6 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Amazon Redshift Snapshot Manager](https://github.com/awslabs/amazon-redshift-utils/tree/master/src/SnapshotManager) | GitHub Repo |
 | [Redshift Advance Monitoring](https://github.com/awslabs/amazon-redshift-monitoring) | GitHub Repo |
 | [Redshift Lab DDL and COPY Commands](https://github.com/sko71/aws-bigdata-specialty/tree/master/Domain%204) | Lab Link |
-| [Amazon Redshift Database Encryption](http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html) | Docs |
 | [Factors Affecting Query Performance (Redshift)](http://docs.aws.amazon.com/redshift/latest/dg/c-query-performance.html) | Docs |
 | [Building a Multi-Class ML Model with Amazon Machine Learning](https://aws.amazon.com/blogs/big-data/building-a-multi-class-ml-model-with-amazon-machine-learning/) | Blog Post |
 | [Building a Binary Classification Model with Amazon Machine Learning](https://aws.amazon.com/blogs/big-data/building-a-binary-classification-model-with-amazon-machine-learning-and-amazon-redshift/) | Blog Post |
@@ -75,9 +74,24 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Machine Learning Lab Data](https://github.com/sko71/aws-bigdata-specialty/tree/master/Domain%204) | Lab Link |
 | [How to Visualize and Refine Your Network’s Security by Adding Security Group IDs to Your VPC Flow Logs](https://aws.amazon.com/blogs/security/how-to-visualize-and-refine-your-networks-security-by-adding-security-group-ids-to-your-vpc-flow-logs/#more-3559) | Blog Post |
 | [Managing Amazon Elasticsearch Service Domains](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-managedomains.html) | Docs |
+
+
+
+### Domain 5 - Visualization 
+
+
+| Link                                                                                                                                                              | Notes         |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| [Analyze Realtime Data from Amazon Kinesis Streams Using Zeppelin and Spark Streaming (duplicate)](https://aws.amazon.com/blogs/big-data/analyze-realtime-data-from-amazon-kinesis-streams-using-zeppelin-and-spark-streaming/) | Blog Post |
 | [Run Jupyter Notebook and JupyterHub on Amazon EMR](https://aws.amazon.com/blogs/big-data/running-jupyter-notebook-and-jupyterhub-on-amazon-emr/) | Blog Post |
-| [Hadoop Encrypted Shuffle](https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html) | Docs |
 | [Big Data Analytics Options on AWS](https://d0.awsstatic.com/whitepapers/Big_Data_Analytics_Options_on_AWS.pdf) | Whitepaper |
+
+### Domain 6 - Security
+
+| Link                                                                                                                                                              | Notes         |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| [Hadoop Encrypted Shuffle](https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html) | Docs |
+| [Amazon Redshift Database Encryption](http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html) | Docs |
 
 
 \* This is a static link to a document that is out-of-date, AWS removed a link to this document offline in June, 2017, but it appears this link works   
