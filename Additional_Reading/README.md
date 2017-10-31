@@ -10,7 +10,7 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | [Amazon Kinesis Firehose Data Transformation with AWS Lambda](https://aws.amazon.com/blogs/compute/amazon-kinesis-firehose-data-transformation-with-aws-lambda/)  | Blog Post   |
 | [Core Tenets of IoT](https://d0.awsstatic.com/whitepapers/core-tenets-of-iot1.pdf)                                                                                | Whitepaper    |
-| [AWS IoT Python Example](https://github.com/aws/aws-iot-device-sdk-python) | ??? |
+| [AWS IoT Python Example](https://github.com/aws/aws-iot-device-sdk-python) | GitHub Repo |
 
 
 
