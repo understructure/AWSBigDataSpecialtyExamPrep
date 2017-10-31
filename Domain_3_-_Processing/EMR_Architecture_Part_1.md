@@ -20,7 +20,7 @@
 
 * Tracking and directing against HDFS
 
-* ResourceManager
+* ResourceManager (i.e., YARN)
 
 * Monitors health of core and task nodes
 
@@ -46,6 +46,6 @@
 
 * Can be added and removed from running clusters
 
-* No DataNode daemon running on them
+* No DataNode daemon running on Task nodes!
 
 * Ideal to handle extra capacity (CPU and RAM)
