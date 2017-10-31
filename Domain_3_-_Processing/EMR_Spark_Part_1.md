@@ -56,6 +56,8 @@
 
 #### Spark Core
 
+![Spark Stack](../images/sparkstuff.png)
+
 * General execution engine
 
     * Dispatch & scheduling of tasks
