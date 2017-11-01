@@ -147,10 +147,127 @@ Considerations
 
 ## Processing Data with EMR
 
+### Picking the Right Instance Size
+
+* Memory-intensive jobs - m1.xlarge or m2 instances
+* CPU-intensive jobs - c1.xlarge, cc1.4xlarge, cc2.8xlarge
+* If both intensive - cc1.4xlarge or cc2.8xlarge
+* Hadoop tries to use as much memory as possible, spilling to disk when necessary
+* EMR configures the following for you:
+    * Number of mappers per instance
+    * Number of reducers per instance
+    * Java memory (heap) size per daemon
+* The optimal Amazon EMR cluster size is the one that has enough nodes and can process many mappers and reducers in parallel
+* Keep in mind time and cost (remember the hour boundary)
+* [Task Comnfiguration / JVM Settings by Instance Type](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hadoop-task-config.html)
+
+#### Estimating the Number of Mappers Your Job Requires
+
+1.  The number of mappers depends on the number of Hadoop splits - if files are <= your block size, number of files = number of mappers.  Otherwise, divide file size by block size, that's your number of mappers.
+2.  Run your job on EMR and note the number of mappers calculated by Hadoop for your job - JobTracker GUI or log output "Launched map tasks=N"
+
+### EMR Cluster Type - Transient vs. Persistent
+
+* Do what makes financial sense
+* If you're not using HDFS, possible to do transient
 
 
 
+### Common EMR Architectures
 
+#### Pattern 1:  Amazon S3 instead of HDFS
+
+* EMR doesn't copy data to local disk
+* Mappers open multithreaded HTTP connections to S3, pull the data, and process in streams
+* Potential drawback - Not effective for iterative data processing jobs where data needs processing multiple times with multiple passes
+
+#### Pattern 2:  Amazon S3 AND HDFS
+
+* Data stored on S3 according to data partitioning, data size, and compression best practices
+* EMR copies data to HDFS w/ DistCp or S3DistCp
+* Potential drawback - delay to data processing workflow due to having to copy the data over to HDFS first
+
+#### Pattern 3: HDFS and Amazon S3 as Backup Storage
+
+* Stored on HDFS, use DistCp or S3DistCp to copy to S3 periodically
+* Advantage - speed
+* Disadvantage - data durability
+* Backup data partitions rather than entire data set to avoid putting too much load on EMR cluster
+
+#### Pattern 4: Elastic Amazon EMR Cluster (Manual)
+
+* Monitor with CloudWatch, resize as necessary
+* Number of mappers running / outstanding
+* Number of reducers running / outstanding
+
+#### Pattern 5: Elastic Amazon EMR Cluster (Dynamic)
+
+* Master - runs JobTracker and NameNode
+* Core - run TaskTracker and DataNodes
+* Task - run TaskTracker only - data processing only (running mappers and reducers)
+* Can automate adding more task nodes to clluster with CloudWatch metrics
+    * Number of mappers running / outstanding
+    * Number of reducers running / outstanding
+    * Cluster idle
+    * Live data nodes or task nodes
+
+## Optimizing for Cost with Amazon EMR and Amazon EC2
+
+1.  On-demand instances
+2.  Reserved instances - use if EMR hourly usage is more than 17%
+3.  Spot instances
+
+* Reserved instances - Heavy (steady, predictable workload), Medium (predictable, but not constant workload), and Light
+* On-demand or spot - Unpredictable workload
+* Spot - task nodes are safest to run on spot
+
+
+## Performance Optimizations (Advanced)
+
+* Best performance optimization is to structure your data better (e.g., partitioning) - this limits amount of data Hadoop processes, leading to better performance (exception:  triple-digit cluster sizes)
+* Use Spark or something else instead of Hadoop
+* Improving by a few minutes won't help if it doesn't keep you on one side of the hour barrier
+* Adding more nodes might be better than trying to optimize
+
+
+1.  Run a (representative) benchmark test (several times) before and after optimizations
+2.  Monitor benchmark tests using Ganglia
+3.  Identify constraints by monitoring Ganglia's metrics, e.g., memory, CPU, Disk I/O, Network I/O
+4.  Once you've identified the potential constraint, optimize to remove the constraint and start a new benchmark test
+
+### Suggestions for Performance Improvement
+
+#### Map Task Improvements
+
+* Map Task Lifetime - if map tasks have a short lifespan on average, may want to reduce the number of mappers
+    * Aggregate files by size or time
+    * Aggregate smaller files into larger Hadoop archive files (HAR)
+* Compress mapper outputs - monitor `FILE_BYTES_WRITTEN` metric - compression can benefit shuffle phase and HDFS data replication
+* Avoid map task disk spill - increase `io.sort.*` parameters, e.g., `io.sort.mb` - determines size of mapper task buffer (common to increase mapper heap size prior to increasing `io.sort.mb`
+
+#### Reduce Task Improvements
+
+* Job should use fewer reducers than cluster's total reducer capacity - all reducers should finish at the same time if this is happening and there's no skew
+* CloudWatch **Average Reduce Task Remaining** and **Average Reduce Tasks Running**
+* If reducer requires small memory footprint, increase reducer memory thusly:
+    * `mapred.inmem.merge.threshold` set to 0
+    * `mapred.job.reduce.input.buffer.percent` set to 1.0
+
+#### Use Ganglia for Performance Optimizations
+
+* CPU - if not at maximum, may be able to use fewer nodes or increase the number of mapper or reducer capacity per node
+* Memory - if not at maximum, may benefit by increasing the amount of memory available to mappers or reducers and/or decrease number of mappers or reducers per node
+* Network I/O - if using S3 - e.g., if you have 100 files, you should have 100 mappers available, if not, either add more nodes (easiest) or increase mapper capacity per node
+    * If you have enough mappers available but are running fewer, you may have more nodes than required for your job, or you're using large, non-splittable files
+    * May want to reduce data file sizes or use compression that supports splitting
+* Monitoring JVM - watch JVM metrics and garbage collector pauses - if you see long GC pauses, increase JVM memory or add more instances to remove pressure
+* Disk I/O - check reducer spills `SPILLED_RECORDS` - to reduce, set `mapred.compress.map.output` to true, or monitor Disk I/O and increase task memory if needed (`io.file.buffer.size` parameter)
+
+#### Locating Hadoop Metrics
+
+* JobTracker UI interface on masternode:9100
+* click a job (running or not) to get aggregate metrics
+* click a mapper/reducer to get metrics for that map-reduce job
 
 
 
