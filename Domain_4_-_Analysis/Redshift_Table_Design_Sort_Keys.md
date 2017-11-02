@@ -46,7 +46,7 @@
 
     * Most useful on very large tables only - 100 M + rows
 
-    * NOT good for loading data in sort order
+    * NOT good for loading data in sort order (they don't preserve this order)
 
 * Can have tables w/ single sort key
 
