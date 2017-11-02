@@ -108,7 +108,7 @@ Changing any of the following "dynamic Workload Management" properties does NOT 
 
 * Priority is more queue based, rather than job or query based... can’t assign, say, priorities of 1-10 to 10 queries
 
-* WLM Queue Assignment 
+* WLM Queue Assignment Rules
 
 * Any queries that come through that don’t fall into one of these categories go into default queue
 
