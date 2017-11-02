@@ -106,7 +106,7 @@ Changing any of the following "dynamic Workload Management" properties does NOT 
 
 * Timeout
 
-* Priority is more queue based, can’t assign, say, priorities of 1-10 to 10 queries
+* Priority is more queue based, rather than job or query based... can’t assign, say, priorities of 1-10 to 10 queries
 
 * WLM Queue Assignment 
 
