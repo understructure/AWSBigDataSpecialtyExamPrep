@@ -20,9 +20,9 @@
 
 <table>
   <tr>
-    <td>Encoding type</td>
-    <td>Keyword in CREATE TABLE and ALTER TABLE</td>
-    <td>Data types</td>
+    <th>Encoding type</th>
+    <th>Keyword in CREATE TABLE and ALTER TABLE</th>
+    <th>Data types</th>
   </tr>
   <tr>
     <td>Raw (no compression)</td>
