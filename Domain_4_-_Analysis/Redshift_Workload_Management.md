@@ -77,13 +77,10 @@
 
 * To get all of a user’s query to run in the smallqueries group we created:
 
-<table>
-  <tr>
-    <td>create user maashu createuser password 'non-stupid-password';
-create group smallqueries;
-alter group smallqueries add user maashu;</td>
-  </tr>
-</table>
+`create user maashu createuser password 'non-stupid-password';` <br />
+`create group smallqueries;` <br />
+`alter group smallqueries add user maashu;` <br />
+
 
 
 Changing any of the following "static Workload Management" properties requires a reboot:
