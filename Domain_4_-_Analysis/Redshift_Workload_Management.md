@@ -69,7 +69,9 @@
 * To get a query to run in the largequeries group we created:
 
 `set query_group to largequeries;`
+
 `--example query only here`
+
 `SELECT * FROM table_name where year = 2016;`
 
 
