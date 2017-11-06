@@ -30,6 +30,8 @@
 * You’ll get a warning that you’ll need an S3 endpoint to access S3
 * Also need a NAT instance to communicate with DynamoDB, AWS KMS, and Amazon Kinesis
 * To connect to EMR cluster in private subnet, you’ll need to have VPC connected via VPN, direct connect, or using Bastion Host
+* "For EMR to communicate with Amazon DynamoDB (and for EMRFS consistent view), AWS KMS, and Amazon Kinesis, your cluster must be able to reach this IP range.  You can create a NAT instance to create a route for this traffic"
+* [Launch EMR In Private Subnet](https://aws.amazon.com/blogs/aws/new-launch-amazon-emr-clusters-in-private-subnets/)
 
 ### Encryption at rest
 * For cluster nodes (EC2 instance volumes - instance store and EBS), two things work together to provide this:
