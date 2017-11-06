@@ -8,7 +8,14 @@
 |ds2.xlarge |    4 |  13 |    31     |      2          | 2 TB HDD         |   1-32     |     64 TB      |
 |ds2.8xlarge|    36| 119 |   244     |     16          | 16 TB HDD        |   2-128    |     2  PB      |
 
+#### Dense Compute Node Types
 
+| Node Size | vCPU | ECU | RAM (GiB) | Slices Per Node | Storage Per Node | Node Range | Total Capacity | 
+|-----------|------|-----|-----------|-----------------|------------------|------------|----------------|
+|dc1.large  |    2 |   7 |    15     |      2          | 160 GB SSD       |   1-32     |     5.12 TB    |
+|dc1.8xlarge|    32| 104 |   244     |     32          | 2.56 TB SSD      |   2-128    |     326 TB     |
+|dc2.large  |    2 |   7 |   15.25   |      2          | 160 GB NVMe-SSD  |   1-32     |     5.12 TB    |
+|dc2.8xlarge|    32|  99 |   244     |     16          | 2.56 TB NVMe-SSD |   2-128    |     326 TB     |
 
 #### Launching Clusters
 
