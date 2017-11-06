@@ -1,5 +1,15 @@
 ### Redshift Maintenance and Operations Part 1
 
+
+#### Dense Storage Node Types
+
+| Node Size | vCPU | ECU | RAM (GiB) | Slices Per Node | Storage Per Node | Node Range | Total Capacity | 
+|-----------|------|-----|-----------|-----------------|------------------|------------|----------------|
+|ds2.xlarge |    4 |  13 |    31     |      2          | 2 TB HDD         |   1-32     |     64 TB      |
+|ds2.8xlarge|    36| 119 |   244     |     16          | 16 TB HDD        |   2-128    |     2  PB      |
+
+
+
 #### Launching Clusters
 
 * Cluster identifier, database name, database port, master username, master password, confirm password
