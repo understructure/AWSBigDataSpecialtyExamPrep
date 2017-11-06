@@ -111,7 +111,7 @@
 * For Tez:
   * **tez-site.xml**
     * **tez.runtime.shuffle.ssl.enable** property added, set to true
-    * **tez.runtime.shuffle.keep-alive** property added, set to true
+    * **tez.runtime.shuffle.keep-alive.enabled** property added, set to true
     
 * For Spark - settings automatically enabled for you
   * **spark.defaults.conf** - Spark security settings: two things to keep in mind:
