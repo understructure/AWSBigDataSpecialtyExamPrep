@@ -105,6 +105,8 @@
     * E.g., primary shards in us-east-1a and replicas in us-east-1b
 
     * HA, but slight uptick in network latency
+    
+    * Also requires even number of nodes in each AZ
 
 * DEMO - follows [How to Visualize and Refine Your Network’s Security by Adding Security Group IDs to Your VPC Flow Logs](https://aws.amazon.com/blogs/security/how-to-visualize-and-refine-your-networks-security-by-adding-security-group-ids-to-your-vpc-flow-logs/#more-3559)
 
