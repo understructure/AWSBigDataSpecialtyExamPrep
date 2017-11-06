@@ -3,13 +3,9 @@
 #### Data Formats
 
 * CSV
-
 * Delimited (e.g., pipe)
-
 * Fixed width
-
 * JSON
-
 * Avro
 
 #### Error Checking - System Tables	
