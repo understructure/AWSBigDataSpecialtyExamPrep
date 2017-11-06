@@ -38,7 +38,7 @@
 
 * Efficient in loading data in parallel from S3
 
-copy tablename from 's3://mybucket/myfile.whatever' credentials 'aws_iam_role=arn:aws:iam::accountnumber:role/redshift'
+`copy tablename from 's3://mybucket/myfile.whatever' credentials 'aws_iam_role=arn:aws:iam::accountnumber:role/redshift'`
 
 * Much more secure to use roles than to use access keys and secret keys
 
@@ -48,7 +48,7 @@ copy tablename from 's3://mybucket/myfile.whatever' credentials 'aws_iam_role=ar
 
 * Compare loading TPC-H dataset in one chunk vs. splitting it into 8 chunks (50 GB) - much faster with the 8 chunks (~9 minutes vs. ~4.5 minutes)
 
-    * You can use the same script from before if you just append .nnn (where nnn is number of the chunk) to the end of the split files) if you remove the original file from the directory
+    * You can use the same script from before if you just append **.nnn** (where nnn is number of the chunk) to the end of the split files) if you remove the original file from the directory
 
 
 
@@ -72,7 +72,11 @@ Remember this slide from Architecture?
 
 * After compression, try to keep file sizes from 1 MB - 1 GB each
 
-* **DynamoDB** - when ingesting production and you think you’re going to go over your reads, best practices is to have a copy of the table and ingest from that
+* **DynamoDB** - when ingesting production and you think you’re going to go over your reads, best practices is to have a copy of the table and ingest from that.
+
+* Below, "readratio" means that percent of the RCUs assigned to the table will be assigned to this copy
+
+`copy redshift_table_name from 'dynamodb://dynamodb_table_name' credentials '<aws-auth-args>' readratio 50;`
 
 * **EC2** - can use an "SSH manifest" file - contains endpoint IPs of Redshift cluster nodes
 
