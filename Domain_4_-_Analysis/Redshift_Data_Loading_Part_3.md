@@ -32,16 +32,13 @@
 
 * Here’s a link: [http://docs.aws.amazon.com/redshift/latest/dg/t_updating-inserting-using-staging-tables-.html](http://docs.aws.amazon.com/redshift/latest/dg/t_updating-inserting-using-staging-tables-.html)
 
-2.    Specify a column list (mimic UPSERT) - us this if:
+2.    Specify a column list (mimic UPSERT) - use this if:
 
-* Update specific columns in target table
-
+* Update specific columns in target table, or
 * Most rows in staging table will not be used to update target table
 
 **For the exam, know:**
 
 * UPSERT not supported
-
-* Understand when staging tables re used
-
+* Understand when staging tables are used
 * Know the two methods to merge data (illustrated above)
