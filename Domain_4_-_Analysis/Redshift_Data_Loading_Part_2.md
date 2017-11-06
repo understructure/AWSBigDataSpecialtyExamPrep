@@ -13,6 +13,10 @@
     * Put manifest file in FROM part of COPY command, use "manifest" as last word in the copy command
 
     * This helps if you’ve got a bunch of files in a bucket and you only want to load a few
+    
+    * Example:
+    
+`copy tablename from 's3://manifest_file_location.manifest' credentials '<aws-credentials>' manifest;`
 
 **For the exam:**
 
