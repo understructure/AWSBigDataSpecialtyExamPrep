@@ -95,7 +95,7 @@ For the Exam:
 
     * Zeppelin favored by heavy Spark users
 
-    * Jupyter used heavily for data science
+    * Jupyter used heavily for data science / Python
 
 * Know what D3.js is, and what it’s capable of (it comes up as a possible answer in some of the questions on the exam)
 
