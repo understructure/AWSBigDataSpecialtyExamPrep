@@ -68,13 +68,9 @@
 
 * To get a query to run in the largequeries group we created:
 
-<table>
-  <tr>
-    <td>set query_group to largequeries;
---example query only here
-SELECT * FROM table_name where year = 2016;</td>
-  </tr>
-</table>
+`set query_group to largequeries;`
+`--example query only here`
+`SELECT * FROM table_name where year = 2016;`
 
 
 * To get all of a user’s query to run in the smallqueries group we created:
