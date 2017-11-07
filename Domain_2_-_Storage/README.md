@@ -23,3 +23,5 @@ This represents the sequence of lectures and the links to my notes to the lectur
 5.  [Kinesis Connectors (GitHub)](https://github.com/awslabs/amazon-kinesis-connectors)
 6.  [Scaling Writes on Amazon DynamoDB Tables with Global Secondary Indexes](https://aws.amazon.com/blogs/big-data/scaling-writes-on-amazon-dynamodb-tables-with-global-secondary-indexes/)
 7.  [Improving Data Access with Secondary Indexes](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)
+8.  [Cross-Region Replication](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html)
+
