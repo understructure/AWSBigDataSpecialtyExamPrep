@@ -64,7 +64,7 @@
 
 * Remember what influences number of partitions:
     * Capacity - every 10 GB creates a partition
-    * Performance - every 3000 RCU or 1000 RCU creates a partition
+    * Performance - every 3000 RCU or 1000 WCU creates a partition
     
 * Partitions can increase but not decrease
 
