@@ -32,6 +32,12 @@
     * Write data to SNS as a push notification
 
     * Invoke Lambda function
+    
+    
+* Protocols supported
+    * MQTT
+    * HTTP
+    * WebSockets
 
 [https://aws.amazon.com/iot-platform/how-it-works/](https://aws.amazon.com/iot-platform/how-it-works/)
 
