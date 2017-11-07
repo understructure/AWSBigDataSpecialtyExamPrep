@@ -9,7 +9,7 @@
 
 #### Performance
 
-* Partitions
+* Partitions (largest number needed)
 <pre>
 (desired RCU / 3000 RCU) + (desired WCU / 1000 WCU)
 </pre>
