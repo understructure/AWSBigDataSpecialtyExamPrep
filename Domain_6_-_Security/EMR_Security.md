@@ -76,7 +76,7 @@
   * Select the at-rest encryption checkbox
   * And your encryption mode
   * And attach the security configuration to the cluster you’re launching
-* EMR will automatically update
+* EMR will automatically update these in /etc/hadoop/conf:
   * **core-site.xml** - updates property **hadoop.rpc.protection** to value=**privacy**
   * **hdfs-site.xml** - updates property **dfs.encrypt.data.transfer** value=**true**
 
