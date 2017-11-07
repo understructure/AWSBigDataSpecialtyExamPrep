@@ -21,3 +21,5 @@ This represents the sequence of lectures and the links to my notes to the lectur
 3.  [Kinesis Client Library (GitHub)](https://github.com/awslabs/amazon-kinesis-client)
 4.  [Implementing Efficient and Reliable Producers with the Amazon Kinesis Producer Library](https://aws.amazon.com/blogs/big-data/implementing-efficient-and-reliable-producers-with-the-amazon-kinesis-producer-library/)
 5.  [Kinesis Connectors (GitHub)](https://github.com/awslabs/amazon-kinesis-connectors)
+6.  [Scaling Writes on Amazon DynamoDB Tables with Global Secondary Indexes](https://aws.amazon.com/blogs/big-data/scaling-writes-on-amazon-dynamodb-tables-with-global-secondary-indexes/)
+7.  [Improving Data Access with Secondary Indexes](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)
