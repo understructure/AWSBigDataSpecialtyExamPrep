@@ -57,4 +57,22 @@ To reduce overhead and increase throughput, the application must:
 
 ## Architecture
 
-[!architecture](../images/Image_1_Kinesis_KPL.png)
+![architecture](../images/Image_1_Kinesis_KPL.png)
+
+* KPL split into native process and wrapper
+    * Native Process - does work of processing and sending records
+    * Wrapper - manages and communicates with the native process
+    * IPC - communications b/t native process and wrapper take place over named pipes
+    
+    
+KPL provides the following out of the box:
+
+* Batching of puts using PutRecords (the Collector in the architecture diagram)
+* Tracking of record age and enforcement of maximum buffering times (all components)
+* Per-shard record aggregation (the Aggregator)
+* Retries in case of errors, with ability to distinguish between retryable and non-retryable errors (the Retrier)
+* Per-shard rate limiting to prevent excessive and pointless spamming (the Limiter)
+* Useful metrics and a highly efficient CloudWatch client (not shown in diagram)
+
+* Can create multiple instances of KPL, as long as number is small (10-15)
+
