@@ -47,8 +47,14 @@ To reduce overhead and increase throughput, the application must:
 * 950 * 1050 = .9975 MB
 * 950 * 3 records per aggregated record = 2,850 records / second
 
-### Aggregation - Considerations
+### Aggregation - Considerations (KPL solves these for you?)
 
 * Be careful about how you group records - ensure that the consumer application can still access all the records with the same partition key without having to perform distributed sorting or resorting to an application level map
 * Add timestamps and timers to your components to support buffering scheme that will limit how long records can wait in buffers - this will prevent excessive delays
 * Choose a binary format that's unambiguous for both the producer and the client to support aggregation and de-aggregation
+
+
+
+## Architecture
+
+[!../images/Image_1_Kinesis_KPL.png]
