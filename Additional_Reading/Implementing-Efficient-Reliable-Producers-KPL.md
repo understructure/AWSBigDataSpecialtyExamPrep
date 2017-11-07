@@ -34,3 +34,21 @@ To reduce overhead and increase throughput, the application must:
 1.  **Backoff Strategies** - Add monitoring to determine if certain shards are having problems, handle issues accordingly
 
 
+## Monitoring
+
+* Metrics (CloudWatch)
+* Realtime log analysis (RTLA) (CloudWatch Logs)
+* Use KPL to make your ClickEvents class (or whatever) emit a metric
+
+## Aggregation
+
+* If your records are 350 bytes and Kinesis Streams can handle 1 MB or 1,000 records / second, we're still only at .35 megs per second.
+* Use **aggregation** to combine, e.g., three records into one, so record size is now 1,050 bytes - can do 950 of these
+* 950 * 1050 = .9975 MB
+* 950 * 3 records per aggregated record = 2,850 records / second
+
+### Aggregation - Considerations
+
+* Be careful about how you group records - ensure that the consumer application can still access all the records with the same partition key without having to perform distributed sorting or resorting to an application level map
+* Add timestamps and timers to your components to support buffering scheme that will limit how long records can wait in buffers - this will prevent excessive delays
+* Choose a binary format that's unambiguous for both the producer and the client to support aggregation and de-aggregation
