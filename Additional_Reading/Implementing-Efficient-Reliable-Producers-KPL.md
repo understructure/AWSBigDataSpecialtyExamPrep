@@ -57,4 +57,4 @@ To reduce overhead and increase throughput, the application must:
 
 ## Architecture
 
-[!../images/Image_1_Kinesis_KPL.png]
+[!architecture](../images/Image_1_Kinesis_KPL.png)
