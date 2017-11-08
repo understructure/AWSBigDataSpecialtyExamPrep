@@ -13,10 +13,10 @@
 * reducers do the actual data copy
 * The main optimization that S3DistCp provides over DistCp is by having a reducer run multiple HTTP upload threads to upload the files in parallel
 
-http://aws.amazon.com/documentation/elasticmapreduce/
-http://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/1449311520/
-http://docs.aws.amazon.com/AmazonS3/latest/dev/TCPWindowScaling.html
-http://docs.aws.amazon.com/AmazonS3/latest/dev/TCPSelectiveAcknowledgement.html
+* http://aws.amazon.com/documentation/elasticmapreduce/  
+* http://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/1449311520/  
+* http://docs.aws.amazon.com/AmazonS3/latest/dev/TCPWindowScaling.html  
+* http://docs.aws.amazon.com/AmazonS3/latest/dev/TCPSelectiveAcknowledgement.html  
 
 #### DistCp
 
