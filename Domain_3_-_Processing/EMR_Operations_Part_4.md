@@ -69,3 +69,7 @@
   * Cooldown period - amount of time before next event of this type happens (in seconds)
   
 * Scale In Policy - remove instances when metric triggered
+
+### Resources
+
+[View Web Interfaces Hosted on Amazon EMR Clusters](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-web-interfaces.html)
