@@ -4,6 +4,8 @@
 
 * Slave nodes perform jobs and coordinate w/ master and w/ each other
 
+![image alt text](../images/YARN.png)
+
 * YARN components
 
     * **Resource Manager** - scheduler, lives on master, allocates available resources on cluster against competing applications
