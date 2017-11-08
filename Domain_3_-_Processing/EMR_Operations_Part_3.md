@@ -16,7 +16,7 @@
 
 * Large instance store-based HDFS / MapReduce that require high I/O performance and high IOPS / Large HBase clusters
 
-    * I2 (I3 instance type releases but not supported in EMR yet)
+    * I2, I3 (I3 instance type releases now supported in EMR 5.9.0+)
 
     * D2
 
