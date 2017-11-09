@@ -8,7 +8,7 @@
 
     * Good for no joins, ok w/ reduced parallelism, where KEY and ALL are not a clear choice
 
-    * Distribution style defined at end of DDL statement
+    * Distribution style defined at end of DDL statement (`DISTSTYLE EVEN`)
 
 * **Key** - Particularly used when joining tables
 
@@ -30,7 +30,7 @@
 
     * ...and no common distribution key
 
-    * Distribution style defined at end of DDL statement
+    * Distribution style defined at end of DDL statement (`DISTSTYLE ALL`)
 
 * Extra Tips
 
