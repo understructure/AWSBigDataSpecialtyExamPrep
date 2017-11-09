@@ -50,7 +50,7 @@
 
 * Nodes have dedicated CPU, memory & local storage
 
-* Nodes are independent, self-sufficient, no disk sharing, no contention b/t nodes
+* **Shared Nothing Architecture** - Nodes are independent, self-sufficient, no disk sharing, no contention b/t nodes
 
 * All communication happens on a high-speed network
 
