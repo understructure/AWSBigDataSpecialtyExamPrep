@@ -16,7 +16,7 @@ For the exam
 
 * Very important to know range / width for VARCHAR and CHAR columns - see this link: [http://docs.aws.amazon.com/redshift/latest/dg/r_Character_types.html](http://docs.aws.amazon.com/redshift/latest/dg/r_Character_types.html)
 
-*  Wide columns have a performance impact
+*  Columns that are too wide have a performance impact - queries written to temp tables
 
 The following table lists the data types that you can use in Amazon Redshift tables. 
 
