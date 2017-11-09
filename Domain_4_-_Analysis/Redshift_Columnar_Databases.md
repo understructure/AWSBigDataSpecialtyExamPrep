@@ -38,4 +38,6 @@
 
 * Always use COPY command over inserting data row-by-row - much faster
 
-* [https://www.aginity.com/redshift/](https://www.aginity.com/redshift/)
+* [SQL Workbench/J](http://www.sql-workbench.net/)
+
+* [Aginity (Windows only)](https://www.aginity.com/redshift/)
