@@ -20,7 +20,7 @@
 
     * **Good for** tables used in joins, large fact tables in star schema
 
-    * Distribution style defined **inline** with table creation
+    * Distribution style defined **inline** with table creation (`DISTKEY`)
 
 * **All** - Copy of entire tables on all nodes of cluster
 
