@@ -36,4 +36,4 @@
 
 * **UNLOAD** command does NOT support:
 
-    * SSE w/ customer-provided keys (SSE-C)
+    * S3 server-side encryption using a customer-provided key (SSE-C)
