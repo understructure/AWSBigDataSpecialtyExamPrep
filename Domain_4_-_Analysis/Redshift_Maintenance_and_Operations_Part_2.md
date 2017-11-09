@@ -2,7 +2,7 @@
 
 #### Vacuum
 
-* Redshift blocs are immutable
+* Redshift blocks are immutable
 
 * Updates result in a new block
 
