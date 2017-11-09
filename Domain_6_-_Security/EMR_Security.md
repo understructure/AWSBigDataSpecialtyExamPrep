@@ -24,7 +24,7 @@
 * **EMR role** - allows EMR service to access EC2
 * **EC2 Instance Profile** - allows EC2 instances in your cluster to access S3, DynamoDB, and other services
 * **Auto Scaling role** - allows AutoScaling service to start and terminate nodes when you have AutoScaling setup for your Core and Task nodes
-* Usually the default roles that come out of the box are fine, unless you want to do something like encrypt your EC2 nodes, then you’d want a Custom role for the EC2 Instance Profile role
+* Usually the default roles that come out of the box are fine, unless you want to do something like encrypt your EC2 nodes (and use KMS keys), then you’d want a Custom role for the EC2 Instance Profile role that can generate these keys
 
 ### Running an EMR cluster in a private subnet
 * You’ll get a warning that you’ll need an S3 endpoint to access S3
