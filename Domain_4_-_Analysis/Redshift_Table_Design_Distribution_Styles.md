@@ -45,3 +45,8 @@
     * Know when you would use each
 
     * Know their benefits and drawbacks
+
+
+### Resources 
+
+* Five-part (extra) Resource - [AWS Big Data Blog - Redshift Engineering’s Advanced Table Design Playbook](https://aws.amazon.com/blogs/big-data/amazon-redshift-engineerings-advanced-table-design-playbook-preamble-prerequisites-and-prioritization/)
