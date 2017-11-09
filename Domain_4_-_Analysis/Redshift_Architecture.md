@@ -6,7 +6,9 @@
 
 * **Leader Node**
 
-    * Has a SQL endpoint, looks like this: <cluster_name>.<unique_id>.<region_name>.redshift.amazonaws.com:5439
+    * Has a SQL endpoint, looks like this: 
+    
+    `<cluster_name>.<unique_id>.<region_name>.redshift.amazonaws.com:5439`
 
     * Coordinates parallel query execution (compiles to C++)
 
