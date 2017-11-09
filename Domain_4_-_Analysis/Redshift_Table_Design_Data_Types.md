@@ -1,6 +1,6 @@
 ### Table Design - Data Types
 
-* 12 data types (see table next page)
+* 12 data types (see table below)
 
 * VARCHAR and CHAR stored in BYTES, not length of characters
 
