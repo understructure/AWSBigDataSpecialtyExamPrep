@@ -2,7 +2,7 @@
 
 * S3 will probably be the main source for loading and unloading data, all done in parallel
 
-* Can use **copy** command to load data into Redshift tables from S3 and DynamoDB
+* Can use **copy** command to load data into Redshift tables from S3 and DynamoDB (also [EMR](http://docs.aws.amazon.com/redshift/latest/dg/loading-data-from-emr.html) and EC2 instances
 
 copy thermostat_logs from ‘s3://mybucket/my_key/blah/myfile.csv’ credentials ‘aws_iam_role=arn:aws:iam::account_id:role/’
 
