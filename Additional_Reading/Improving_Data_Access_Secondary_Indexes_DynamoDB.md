@@ -66,8 +66,11 @@ http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GuidelinesForGSI
 
 
 * Choose a Key That Will Provide Uniform Workloads
+    * Choose partition keys and sort keys that have a high number of values relative to the number of items in the index
 * Take Advantage of Sparse Indexes
+    * You can use a sparse global secondary index to efficiently locate table items that have an uncommon attribute
 * Use a Global Secondary Index For Quick Lookups
+    *  If most of your queries do not require that much data to be returned, you can create a global secondary index with a bare minimum of projected attributes - including no projected attributes at all, other than the table's key
 * Create an Eventually Consistent Read Replica
-
+    * This lets you avoid having to modify the provisioned read capacity on the table, in response to increased read activity
 
