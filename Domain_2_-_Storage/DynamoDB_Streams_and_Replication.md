@@ -54,7 +54,7 @@
     * Lambda function triggered when new user signup on web app, data entered into users table, email sent to users, etc.
 
 
-##### Example w/ CloudFormation and Elastic Beanstalk
+##### Example w/ CloudFormation and Elastic Beanstalk - DEPRECATED
 
 1.  Create or select table to be replicated
 
@@ -66,7 +66,9 @@
 
 ![example01](../images/DynamoDB_replication1.png)
 
-* See this link from AWS for more info: [DynamoDB Cross-Region Replication](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html)
+* From this document: [DynamoDB Cross-Region Replication](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html)
+
+<pre>The DynamoDB cross-region replication solution uses the Amazon DynamoDB Cross-Region Replication Library. This library uses DynamoDB Streams to keep DynamoDB tables in sync across multiple regions in near real time. When you write to a DynamoDB table in one region, those changes are automatically propagated by the Cross-Region Replication Library to your tables in other regions. </pre>
 
 * **Second Option** - With DynamoDB Streams and Lambda, you can create an event-driven architecture where streams are captured and invoked by Lambda functions so that the Lambda function you write can copy the data to a different region (no need for EC2 instance w/ Kinesis Client Library)
 
