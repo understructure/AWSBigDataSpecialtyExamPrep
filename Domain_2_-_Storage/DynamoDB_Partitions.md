@@ -88,3 +88,8 @@
 
 * Understand sort key selection
 
+---
+
+* [Back: DynamoDB Introduction (11:43)](DynamoDB_Introduction.md)
+
+* [Next: DynamoDB GSI/LSI (20:44)](DynamoDB_GSI_LSI.md)
