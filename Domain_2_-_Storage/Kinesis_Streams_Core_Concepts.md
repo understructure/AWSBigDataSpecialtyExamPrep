@@ -114,10 +114,10 @@ Record consists of:
         * Help you to efficiently use shards, helps with better throughput
         * **Aggregation** - allows you to combine multiple **User** records into a single **Streams** record, helping improve per-shard throughput
 
-**Example:**
-
-* Single shard capability is 1MB/sec, 1000 transactions/sec.
-* With 1000 records at 500 bytes each, you're writing 0.5 MB/sec, so not as efficient as it could be.  Using aggregation can help
+        * **Example:**
+        
+        * Single shard capability is 1MB/sec, 1000 transactions/sec.
+        * With 1000 records at 500 bytes each, you're writing 0.5 MB/sec, so not as efficient as it could be.  Using aggregation can help
 
     * **Collection (Batching)** - Multiple **Streams** records are batched and sent in a single HTTP request with a call to PutRecords API operation - reduces number of HTTP requests
     
