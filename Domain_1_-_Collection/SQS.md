@@ -76,3 +76,5 @@
 
     * Complex stream processing
 
+* [Previous: Kinesis Firehose (17:09)](Kinesis_Firehose.md)
+* [Next: IoT (14:31)](IoT.md)
