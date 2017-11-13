@@ -123,6 +123,6 @@
 
 * Access to metadata on master wouldn't be efficient if you had core/task nodes in another AZ
 
-* Single master node possible today anyway, so not possible to setup multi-AZ for master
+* Single master node is the only option possible today anyway, so can't setup multi-AZ for master
 
 * Launch replacement clusters easily with no data loss if you use EMRFS
