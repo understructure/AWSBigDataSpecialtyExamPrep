@@ -36,7 +36,7 @@
 
 **Types of nodes:**
 
-**Dense Compute** - density - high performacne databases - great if you need lots of CPU, RAM and solid state drives
+**Dense Compute** - density - high performance databases - great if you need lots of CPU, RAM and solid state drives
 
 **Dense Storage** - Large data warehouses, less expensive, very large hard drives (HDD, not solid state)
 
