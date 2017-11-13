@@ -82,3 +82,8 @@ Then round up.  That means DynamoDB will provide you with one partition per 3000
 * E.g., for candidate 1, tack random number between 1 and 100 to the key.  The key would range between 1_1 and 1_100 for 100 partitions - should then be evenly distributed among those 100 partitions
 
 ![image alt text](../images/domain2_2.png)
+
+---
+
+* [Back: DynamoDB Streams and Replication (8:03)](DynamoDB_Streams_and_Replication.md)
+* [Next: DynamoDB Performance Deep Dive Part 2 (10:35)](DynamoDB_Performance_Deep_Dive_Part_2.md)
