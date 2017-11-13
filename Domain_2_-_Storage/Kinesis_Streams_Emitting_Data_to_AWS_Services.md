@@ -131,5 +131,7 @@ public class S3Emitter implements IEmitter<byte[]> {
     
 * Lambda functions can automatically read records from a Kinesis Stream, process them, and send the records to Redshift, S3, or DynamoDB
 
+---
+
 * [Back: Kinesis Streams Core Concepts (17:24)](Kinesis_Streams_Core_Concepts.md)
 * [Next: Glacier (4:02)](Glacier.md)
