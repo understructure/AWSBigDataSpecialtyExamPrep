@@ -47,3 +47,7 @@
 * Best practice for partition keys, how to structure data based on key-space and load
 
 * GSIs and how to select keys, and how this selection impacts the index and the table (RCUs and WCUs are defined separately from main table, indexes can have alternative partition key and alternative sort key than main table)
+
+---
+
+* [Back: DynamoDB Performance Deep Dive Part 1 (15:29)](DynamoDB_Performance_Deep_Dive_Part_1.md)
