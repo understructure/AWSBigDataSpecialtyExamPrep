@@ -120,3 +120,8 @@ DynamoDB - SCAN vs. QUERY
     * [Scaling Writes on Amazon DynamoDB Tables w/ Global Secondary Indexes](https://aws.amazon.com/blogs/big-data/scaling-writes-on-amazon-dynamodb-tables-with-global-secondary-indexes/)
 
     * [Improving Data Access with Secondary Indexes](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)
+
+---
+
+* [Back: DynamoDB Partitions (11:16)](DynamoDB_Partitions.md)
+* [Next: DynamoDB Streams and Replication (8:03)](DynamoDB_Streams_and_Replication.md)
