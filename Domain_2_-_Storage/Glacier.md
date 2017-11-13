@@ -38,3 +38,9 @@
 
 * Vault lock controls - time-based retention, "undeleteable" or both in same policy
 * Implement control using IAM policies
+
+---
+
+
+* [Back: Kinesis Streams Emitting Data to AWS Services (12:57)](Kinesis_Streams_Emitting_Data_to_AWS_Services.md)
+* [Next: DynamoDB Introduction (11:43)](DynamoDB_Introduction.md)
