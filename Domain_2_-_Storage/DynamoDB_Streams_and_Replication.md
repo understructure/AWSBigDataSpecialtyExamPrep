@@ -96,5 +96,5 @@
 
 ---
 
-* [DynamoDB GSI/LSI (20:44)](DynamoDB_GSI_LSI.md)
-* [DynamoDB Performance Deep Dive Part 1 (15:29)](DynamoDB_Performance_Deep_Dive_Part_1.md)
+* [Back: DynamoDB GSI/LSI (20:44)](DynamoDB_GSI_LSI.md)
+* [Next: DynamoDB Performance Deep Dive Part 1 (15:29)](DynamoDB_Performance_Deep_Dive_Part_1.md)
