@@ -127,7 +127,7 @@ DEMO 4:28 - 8:25
   * Enter Retry duration seconds - default is 3600, range is 0-7200 - how long after failed COPY command will be retried - if it still fails, error manifest files are delivered to the intermediate bucket
 
 
-* When testing with demo data (at least), files are generated in your bucket with a key that begins with <year>/<month>/<day>/<hour>/
+* When testing with demo data (at least), files are generated in your bucket with a key that begins with year/month/day/hour/
 
 **Data Transformation Flow**
 
