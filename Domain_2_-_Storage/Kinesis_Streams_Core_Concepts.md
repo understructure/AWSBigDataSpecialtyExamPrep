@@ -260,5 +260,5 @@ Record consists of:
 * Data can be replayed within this window if required
 * SQS retention period is 14 days
 
-* [Previous: Kinesis Producer Library GitHub)](https://github.com/awslabs/amazon-kinesis-producer)
-* [Next: Kinesis Client Library (GitHub)](https://github.com/awslabs/amazon-kinesis-client)
+* [Back: Kinesis Streams Introduction (6:12)](Kinesis_Streams_Introduction.md)
+* [Next: Kinesis Streams Emitting Data to AWS Services (12:57)](Kinesis_Streams_Emitting_Data_to_AWS_Services.md)
