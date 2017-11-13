@@ -79,3 +79,9 @@
   * Triggers can be used to react to data modifications in DynamoDB tables
 
 * **Kinesis Streams** - using Kinesis Client Library and Kinesis Connector Library, can consume from Kinesis Streams and emit to DynamoDB
+
+---
+
+
+* [Back: Glacier (4:02)](Glacier.md)
+* [Next: DynamoDB Partitions (11:16)](DynamoDB_Partitions.md)
