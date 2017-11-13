@@ -93,3 +93,4 @@
 
 * A LOT of Data Pipeline’s functionality has been replaced by Lambda
 
+* [Previous: IoT (14:31)](IoT.md)
