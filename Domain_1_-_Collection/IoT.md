@@ -41,7 +41,7 @@
 
 [https://aws.amazon.com/iot-platform/how-it-works/](https://aws.amazon.com/iot-platform/how-it-works/)
 
-![image_2.png](../images/domain1_2.png)
+![image_2.png](../images/awsiot_how_it_works_diagram.png)
 
 NOTE: See [Core Tenets of IoT Whitepaper notes](../Additional_Reading/1_Core_Tenets_of_IoT.md) for summary of the whitepaper, includes information from lecture
 
