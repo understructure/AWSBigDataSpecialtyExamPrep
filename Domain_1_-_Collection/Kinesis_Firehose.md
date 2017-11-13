@@ -201,3 +201,4 @@ DEMO 4:28 - 8:25
 
 * Key concepts in this lecture
 
+[Next: SQS (8:51)](SQS.md)
