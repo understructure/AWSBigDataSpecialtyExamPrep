@@ -63,4 +63,5 @@ Create a data processing applications, that reads data from stream as data recor
 ![image alt text](../images/domain2_0.png)
 
 
-* [Next: Kinesis Agent (GitHub)](https://github.com/awslabs/amazon-kinesis-agent)
+
+* [Next: Kinesis Streams Core Concepts (17:24)](Kinesis_Streams_Core_Concepts.md)
