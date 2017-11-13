@@ -61,3 +61,6 @@ Create a data processing applications, that reads data from stream as data recor
 * Can emit to Lambda as well, though it’s not on this diagram:
 
 ![image alt text](../images/domain2_0.png)
+
+
+* [Next: Kinesis Agent (GitHub)](https://github.com/awslabs/amazon-kinesis-agent)
