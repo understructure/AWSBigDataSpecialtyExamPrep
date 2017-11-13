@@ -93,3 +93,8 @@
     * **NEW_AND_OLD_IMAGES** - pre and post operation state of the item is written to the stream, allowing more complex comparison operations to be performed
 
 * Understand cross-region replication as a feature of DynamoDB Streams
+
+---
+
+* [DynamoDB GSI/LSI (20:44)](DynamoDB_GSI_LSI.md)
+* [DynamoDB Performance Deep Dive Part 1 (15:29)](DynamoDB_Performance_Deep_Dive_Part_1.md)
