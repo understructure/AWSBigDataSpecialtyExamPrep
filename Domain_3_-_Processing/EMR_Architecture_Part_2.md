@@ -24,7 +24,7 @@
 
 * Blocks stored across slave nodes
 
-* Files can be made up of many blocks, blcoks not necessarily stored on same node
+* Files can be made up of many blocks, blocks not necessarily stored on same node
 
 * Block by block basis - blocks stored randomly on nodes
 
