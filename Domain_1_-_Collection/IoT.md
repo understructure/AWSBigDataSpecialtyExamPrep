@@ -184,3 +184,7 @@ NOTE: See [Core Tenets of IoT Whitepaper notes](../Additional_Reading/1_Core_Ten
 * Cognito identities can be used to authenticate against AWS IoT - specifically for mobile users
 
 * Cognito Identity User Pools can be used instead, and can scale to millions of users
+
+
+* [Previous: SQS (8:51)](SQS.md)
+* [Next: Data Pipeline (7:55)](Data_Pipeline.md)
