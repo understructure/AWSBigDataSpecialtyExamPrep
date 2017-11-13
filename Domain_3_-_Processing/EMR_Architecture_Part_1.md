@@ -34,7 +34,7 @@
 
 * **DataNode** - daemon that manages data blocks and read/write requests on the core node whether HDFS or EMRFS is used
 
-* **NodeManager** - demon that takes direction from the Resource Manager on master in terms of how to manage resources on Core node
+* **NodeManager** - demon that takes direction from the Resource Manager on master in terms of how to manage resources on slave nodes
 
 * **ApplicationMaster** - negotiates resources from ResourceManager and works with NodeManager to execute and monitor containers
 
