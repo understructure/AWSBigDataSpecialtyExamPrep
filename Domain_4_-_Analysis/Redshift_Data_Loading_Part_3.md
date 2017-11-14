@@ -42,3 +42,8 @@
 * UPSERT not supported
 * Understand when staging tables are used
 * Know the two methods to merge data (illustrated above)
+
+---
+
+* [Back: Redshift Data Loading Part 2 (6:32)](Redshift_Data_Loading_Part_2.md)
+* [Next: Redshift Loading Data Part 4 (3:54)](Redshift_Data_Loading_Part_4.md)
