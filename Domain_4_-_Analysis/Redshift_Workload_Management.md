@@ -125,3 +125,7 @@ Changing any of the following "dynamic Workload Management" properties does NOT 
 
 ![image alt text](../images/domain4_1.png)
 
+---
+
+* [Back: Redshift Table Design - Review Design (3:43)](Redshift_Table_Design_Review_Design_OPTIONAL.md)
+* [Next: Redshift Loading Data Part 1 (17:41)](Redshift_Data_Loading_Part_1.md)
