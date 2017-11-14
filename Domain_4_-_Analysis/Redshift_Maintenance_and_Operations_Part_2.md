@@ -16,7 +16,7 @@
 
 * VACUUM FULL - applies to every table in database - sorts & reclaims space
 
-* VACUUM FULL <TABLENAME> -  sorts & reclaims space on specific table
+* VACUUM FULL <TABLE_NAME> -  sorts & reclaims space on specific table
 
 * VACUUM SORT ONLY - applies to every table in database - sorts only (no reclaiming disk space)
 
