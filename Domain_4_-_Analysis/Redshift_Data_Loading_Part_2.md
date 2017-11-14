@@ -30,5 +30,6 @@
 
 ---
 
-* [Back: Redshift Data Loading Part 2 (6:32)](Redshift_Data_Loading_Part_2.md)
-* [Next: Redshift Loading Data Part 4 (3:54)](Redshift_Data_Loading_Part_4.md)
+* [Back: Redshift Data Loading Part 1 (17:41)](Redshift_Data_Loading_Part_1.md)
+* [Next: Redshift Loading Data Part 3 (11:09)](Redshift_Data_Loading_Part_3.md)
+
