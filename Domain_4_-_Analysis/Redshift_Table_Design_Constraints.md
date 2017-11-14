@@ -31,3 +31,8 @@
 * PKs and FKs can be defined but are NOT enforced
 
 * They’re there to drive performance only or for information purposes
+
+---
+
+* [Back: Redshift Table Design - Compression (9:31)](Redshift_Table_Design_Compression.md)
+* [Next: Redshift Table Design - Review Design (3:43)](Redshift_Table_Design_Review_Design_OPTIONAL.md)
