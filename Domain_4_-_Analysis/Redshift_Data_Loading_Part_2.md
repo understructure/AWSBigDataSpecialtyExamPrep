@@ -27,3 +27,8 @@
     * Load files from different buckets
 
     * Load files with different prefixes
+
+---
+
+* [Back: Redshift Data Loading Part 2 (6:32)](Redshift_Data_Loading_Part_2.md)
+* [Next: Redshift Loading Data Part 4 (3:54)](Redshift_Data_Loading_Part_4.md)
