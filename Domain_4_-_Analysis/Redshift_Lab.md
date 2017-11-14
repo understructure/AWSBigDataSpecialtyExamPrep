@@ -54,8 +54,6 @@
 
 jdbc:redshift://*endpoint*:*port*/*database*
 
-* My account number: 358695872585
-
 * [https://github.com/sko71/aws-bigdata-specialty/blob/master/Domain%204/redshiftlab.txt](https://github.com/sko71/aws-bigdata-specialty/blob/master/Domain%204/redshiftlab.txt)
 
 * NOTE:  Be sure that manifest files are copied up to S3 per the video for this to work
