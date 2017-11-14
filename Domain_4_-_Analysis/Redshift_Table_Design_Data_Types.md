@@ -87,3 +87,9 @@ The following table lists the data types that you can use in Amazon Redshift tab
     <td>Date and time (with time zone) </td>
   </tr>
 </table>
+
+
+---
+
+* [Back: Redshift Table Design - Sort Keys (14:57)](Redshift_Table_Design_Sort_Keys.md)
+* [Next: Redshift Table Design - Compression (9:31)](Redshift_Table_Design_Compression.md)
