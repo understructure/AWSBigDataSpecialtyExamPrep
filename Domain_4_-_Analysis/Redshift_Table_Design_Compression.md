@@ -99,20 +99,13 @@ VARCHAR only</td>
 
     * Add this to end of COPY command:
 
-<table>
-  <tr>
-    <td>compupdate off</td>
-  </tr>
-</table>
+
+`compupdate off`
 
 
-    * Then can run:
+Then can run:
 
-<table>
-  <tr>
-    <td>analyze compression table_name;</td>
-  </tr>
-</table>
+`analyze compression table_name;`
 
 
 * The above will give you compression recommendations based on the data you’ve loaded into the table with the "compupdate off" statement added to the end of the COPY command.  You’d then need to drop and recreate your table, recreate the DDL based on the recommendations, and reload the data into the new table
