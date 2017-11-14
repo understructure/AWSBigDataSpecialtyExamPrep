@@ -22,7 +22,7 @@
 
 * VACUUM DELETE ONLY - applies to every table in database - reclaims disk space only from rows marked for delete by previous update and delete operations (no sorting)
 
-* VACUUM REINDEX <TABLENAME> - analyzes distribution of index in interleaved sort key columns, then performs full VACUUM operation
+* VACUUM REINDEX <TABLE_NAME> - analyzes distribution of index in interleaved sort key columns, then performs full VACUUM operation
 
     * use for tables with interleaved sort keys
 
@@ -62,7 +62,7 @@
 
 1. Create new table using original DDL, do INSERT INTO new table
 
-2. CREATE TABLE <TABLENAME> (LIKE <OLDTABLENAME>);
+2. CREATE TABLE <TABLENAME> (LIKE <OLD_TABLE_NAME>);
 
 3. Create temp table as SELECT * FROM from <OLDTABLENAME>, then truncate old table and insert from temp table
 
