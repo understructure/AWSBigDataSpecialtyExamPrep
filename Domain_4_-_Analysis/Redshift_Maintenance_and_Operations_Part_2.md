@@ -137,3 +137,8 @@
 * Cross-Region KMS-Encrypted Snapshots
 
     * Create a snapshot copy grant in the destination region
+
+---
+
+*  [Back: Redshift Maintenance and Operations Part 1 (10:17)](Redshift_Maintenance_and_Operations_Part_1.md)
+*  [Next: Redshift Lab (22:29)](Redshift_Lab.md)
