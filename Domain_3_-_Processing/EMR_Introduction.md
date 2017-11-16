@@ -39,3 +39,6 @@
 * EMR and HUE (Hadoop User Experience)
 
 * Cost considerations
+
+---
+* [Next: Apache Hadoop Part 1 (4:39)](EMR_Apache_Hadoop_Part_1.md)
