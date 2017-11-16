@@ -59,3 +59,8 @@
 * High level understanding of Presto
 
 * Know where Presto should and should NOT be used
+
+---
+
+* [Back: Hive on EMR (16:40)](EMR_Hive.md)
+* [Next: Spark on EMR Part 1 (12:21)](EMR_Spark_Part_1.md)
