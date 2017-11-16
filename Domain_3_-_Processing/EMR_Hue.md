@@ -32,3 +32,9 @@
 #### For the Exam
 
 * Have an overall understanding of the benefits and advantages of Hue
+
+---
+
+
+* [Back: EMR Operations Part 4 (16:30)](EMR_Operations_Part_4.md)
+* [Next: Hive on EMR (16:40)](EMR_Hive.md)
