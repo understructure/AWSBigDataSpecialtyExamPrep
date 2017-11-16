@@ -52,3 +52,7 @@
 
         * Reduce - outputs of map task become inputs for reduce task, data is reduced to create an output file
 
+---
+
+* [Back: EMR Introduction (5:33)](EMR_Introduction.md)
+* [Next: Apache Hadoop Part 2 (4:02)](EMR_Apache_Hadoop_Part_2.md)
