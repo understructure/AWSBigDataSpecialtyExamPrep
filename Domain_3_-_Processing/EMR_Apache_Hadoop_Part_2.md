@@ -18,8 +18,6 @@
 
 ![image alt text](../images/domain3_0.png)
 
-![image alt text](../images/domain3_1.png)
-
 * YARN allows multiple access engines to use Hadoop as a common standard to simultaneously access the same data set
 
 * MapReduce job tasks
