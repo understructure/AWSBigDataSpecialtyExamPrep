@@ -4,7 +4,7 @@
 
 * Can use Spark Streaming to consume data from Kinesis Streams and then put data into one of the below as well
 
-    * Spark Streaming has integration with Kinesis Streams through the Kinesis Connector Library
+    * Spark Streaming has integration with Kinesis Streams through the Kinesis Client Library
 
 * Kinesis Streams needs to use the [Kinesis Connector Library](https://github.com/awslabs/amazon-kinesis-connectors) to emit data to:
 
