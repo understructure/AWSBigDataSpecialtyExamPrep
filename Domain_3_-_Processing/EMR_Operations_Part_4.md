@@ -73,3 +73,8 @@
 ### Resources
 
 [View Web Interfaces Hosted on Amazon EMR Clusters](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-web-interfaces.html)
+
+---
+
+* [Back: EMR Operations Part 3 (7:12)](EMR_Operations_Part_3.md)
+* [Next: Using Hue with EMR (9:01)](EMR_Hue.md)
