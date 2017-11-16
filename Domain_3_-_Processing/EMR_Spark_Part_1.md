@@ -1,6 +1,6 @@
 ### Spark on EMR Part 1
 
-* Spark - fast engine for processing large amounts on data
+* Spark - fast engine for processing large amounts of data
 
 * Run in-memory = 100x faster than MapReduce
 
@@ -144,3 +144,8 @@
     * Not installed with EMR but could technically install on EMR
 
 * NOTE:  Bulk of questions on exam on Spark are on Spark Streaming and SparkSQL
+
+---
+
+12. [Back: Presto on EMR (6:13)](EMR_Presto.md)
+14. [Next: Spark on EMR Part 2 (9:49)](EMR_Spark_Part_2.md)
