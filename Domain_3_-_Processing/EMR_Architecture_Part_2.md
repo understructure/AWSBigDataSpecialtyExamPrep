@@ -126,3 +126,9 @@
 * Single master node is the only option possible today anyway, so can't setup multi-AZ for master
 
 * Launch replacement clusters easily with no data loss if you use EMRFS
+
+---
+
+
+* [Back: EMR Architecture Part 1 (7:20)](EMR_Architecture_Part_1.md)
+* [Next: EMR Operations Part 1 (12:23)](EMR_Operations_Part_1.md)
