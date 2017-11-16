@@ -63,3 +63,8 @@
 
     * AWS says small cluster of larger nodes
     * Less nodes, less nodes failure, reduces amount of maintenance
+
+---
+
+* [Back: EMR Operations Part 2 (9:47)](EMR_Operations_Part_2.md)
+* [Next: EMR Operations Part 4 (16:30)](EMR_Operations_Part_4.md)
