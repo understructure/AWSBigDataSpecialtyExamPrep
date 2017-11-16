@@ -49,3 +49,8 @@
 * No DataNode daemon running on Task nodes!
 
 * Ideal to handle extra capacity (CPU and RAM)
+
+---
+
+* [Back: Apache Hadoop Part 2 (4:02)](EMR_Apache_Hadoop_Part_2.md)
+* [Next: EMR Architecture Part 2 (12:48)](EMR_Architecture_Part_2.md)
