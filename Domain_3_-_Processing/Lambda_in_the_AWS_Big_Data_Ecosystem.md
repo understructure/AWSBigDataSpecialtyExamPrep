@@ -100,3 +100,6 @@ For the Exam:
 
     * [Using AWS Lambda for Event-driven Data Processing Pipelines](https://aws.amazon.com/blogs/big-data/using-aws-lambda-for-event-driven-data-processing-pipelines/)
 
+---
+
+* [Back: EMR Lab (13:10)](EMR_Lab.md)
