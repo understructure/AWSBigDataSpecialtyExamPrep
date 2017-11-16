@@ -35,3 +35,8 @@
     * **Reduce** - takes grouped key/value pair data as input and runs a reducer function on all of them
 
     * **Result** - writes output to file
+
+---
+
+* [Back: Apache Hadoop Part 1 (4:39)](EMR_Apache_Hadoop_Part_1.md)
+* [Next: EMR Architecture Part 1 (7:20)](EMR_Architecture_Part_1.md)
