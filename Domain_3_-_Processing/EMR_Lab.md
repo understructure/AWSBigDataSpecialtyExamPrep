@@ -29,3 +29,8 @@
 `cache table lineitem;`
 
 * NOTE:  See the scripts I created, they’re much better
+
+---
+
+15. [Back: EMR File Storage and Compression (4:38)](EMR_File_Storage_and_Compression.md)
+17. [Next: Lambda in the AWS Big Data Ecosystem (15:56)](Lambda_in_the_AWS_Big_Data_Ecosystem.md)
