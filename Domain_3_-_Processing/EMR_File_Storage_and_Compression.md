@@ -89,3 +89,8 @@ Table originally from [EMR Deep Dive and Best Practices re:Invent Presentation (
 #### For the Exam
 
 * Study compression algorithms table
+
+---
+
+* [Back: Spark on EMR Part 2 (9:49)](EMR_Spark_Part_2.md)
+* [Next: EMR Lab (13:10)](EMR_Lab.md)
