@@ -98,3 +98,8 @@
 
     * Have a high-level understanding of how Spark connects to / integrates with Redshift and DynamoDB
 
+---
+
+
+* [Back: Spark on EMR Part 1 (12:21)](EMR_Spark_Part_1.md)
+* [Next: EMR File Storage and Compression (4:38)](EMR_File_Storage_and_Compression.md)
