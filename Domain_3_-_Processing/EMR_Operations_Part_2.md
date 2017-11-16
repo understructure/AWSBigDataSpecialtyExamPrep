@@ -15,3 +15,8 @@
 ## Resources
 * [EMR Best Practices Whitepaper](https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf) 
 * [My summary of EMR Best Practices Whitepaper](../Additional_Reading/EMR_Best_Practices.md)
+
+---
+
+* [Back: EMR Operations Part 1 (12:23)](EMR_Operations_Part_1.md)
+* [Next: EMR Operations Part 3 (7:12)](EMR_Operations_Part_3.md)
