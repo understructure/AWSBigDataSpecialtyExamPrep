@@ -47,3 +47,8 @@
 * To read log files, a RegEx SerDe is used [see this page for an example](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs-prepare-data-and-script.html)
 
 * SerDe not necessarily on the exam
+
+---
+
+* [Back: Using Hue with EMR (9:01)](EMR_Hue.md)
+* [Next: Presto on EMR (6:13)](EMR_Presto.md)
