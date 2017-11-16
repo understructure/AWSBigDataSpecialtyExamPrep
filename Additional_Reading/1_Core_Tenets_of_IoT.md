@@ -101,7 +101,7 @@ and the outbound device command bus
 * **Serving Layer** - The access point for systems and humans to interact
 with the devices in a fleet, to perform analysis, archive, and correlate
 data, and to use real-time views of the fleet.
-* Telemetry - processing of data emitted by devices
+* **Telemetry** - processing of data emitted by devices
 
 ##### Scenario - Telemetry
 1. Device authenticates
