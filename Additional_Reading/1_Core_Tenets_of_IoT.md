@@ -67,7 +67,7 @@ the AWS platform over:
 * **Identification / Authentication** - X.509 Certificates - must be provisioned, activated, and installed before it can be used as a valid entity with AWS IoT
 * **IoT Policies** - IAM Users, Groups, Roles 
 
-#### Event-Driven Services
+#### Event-Driven Services (that should be a part of an event-driven IoT architecture)
 
 * SQS
 * SNS
