@@ -61,3 +61,9 @@ Quick vs. Advanced Options - EMR console
     * Can assign additional security groups to Master and Core & Task instances
 
     * Can do custom security groups so you don’t have to modify the default ones
+
+---
+
+
+* [Back: EMR Architecture Part 2 (12:48)](EMR_Architecture_Part_2.md)
+* [Next: EMR Operations Part 2 (9:47)](EMR_Operations_Part_2.md)
