@@ -46,9 +46,9 @@
  
     
 * Calculate HDFS capacity of a cluster:
-      * 10 nodes * 800 GB space = 8 TB
-      * Replication factor is 3
-      * To calculate HDFS capacity:
+    * 10 nodes * 800 GB space = 8 TB
+    * Replication factor is 3
+    * To calculate HDFS capacity:
     
     `8 TB (total storage) / 3 (replication factor) = 2.6 TB `
     
