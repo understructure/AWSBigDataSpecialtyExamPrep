@@ -86,3 +86,9 @@ Remember this slide from Architecture?
 
 * Know loading - best to have number of files equal to number of slices or multiples of the number of slices, e.g., 4 slices = 4 or 8 files
 
+---
+
+
+* [Back: Redshift Workload Management (14:57)](Redshift_Workload_Management.md)
+
+* [Next: Redshift Data Loading Part 2 (6:32)](Redshift_Data_Loading_Part_2.md)
