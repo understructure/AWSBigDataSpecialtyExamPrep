@@ -37,3 +37,9 @@
 * Set score - Score for prediction accuracy
 
 * Use model - real time / batch
+
+---
+
+
+* [Back: Redshift Lab (22:29)](Redshift_Lab.md)
+* [Next: Machine Learning Multiclass Classification Model (9:05)](Machine_Learning_Multiclass_Classification_Model.md)
