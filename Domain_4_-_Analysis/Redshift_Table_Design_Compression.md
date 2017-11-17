@@ -115,3 +115,8 @@ For the exam, know:
 * Benefits of compression
 
 * How compression works in Redshift
+
+---
+
+* [Back: Redshift Table Design - Data Types (4:56)](Redshift_Table_Design_Data_Types.md)
+* [Next: Redshift Table Design - Constraints (4:58)](Redshift_Table_Design_Constraints.md)
