@@ -205,7 +205,7 @@ Considerations
 * Master - runs JobTracker and NameNode
 * Core - run TaskTracker and DataNodes
 * Task - run TaskTracker only - data processing only (running mappers and reducers)
-* Can automate adding more task nodes to clluster with CloudWatch metrics
+* Can automate adding more task nodes to cluster with CloudWatch metrics
     * Number of mappers running / outstanding
     * Number of reducers running / outstanding
     * Cluster idle
