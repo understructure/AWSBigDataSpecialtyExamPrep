@@ -73,3 +73,9 @@ For Exam:
 * Know different sort key types and when to use them
 
 * Know different sort key benefits and drawbacks
+
+
+---
+
+* [Back: Redshift Table Design - Distribution Styles (10:15)](Redshift_Table_Design_Distribution_Styles.md)
+* [Next: Redshift Table Design - Data Types (4:56)](Redshift_Table_Design_Data_Types.md)
