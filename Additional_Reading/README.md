@@ -94,6 +94,12 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Amazon Redshift Database Encryption](http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html) | Docs |
 
 
+### Extra - Based on Exam Feedback
+
+| Link                                                                                                                                                              | Notes         |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| [Redshift - Managing Database Security](http://docs.aws.amazon.com/redshift/latest/dg/r_Database_objects.html) | Docs |
+
 \* This is a static link to a document that is out-of-date, AWS removed a link to this document offline in June, 2017, but it appears this link works   
 \*\* See the scripts in the EMR directory of this repo for a better implementation
                                                                                                                           
