@@ -25,3 +25,8 @@ Interpreting Results
 * Know how to interpret the regression model histogram
 
 * Read this: [https://aws.amazon.com/blogs/big-data/building-a-numeric-regression-model-with-amazon-machine-learning/](https://aws.amazon.com/blogs/big-data/building-a-numeric-regression-model-with-amazon-machine-learning/)
+
+---
+
+* [Back: Machine Learning Binary Classification Model (11:32)](Machine_Learning_Binary_Classification_Model.md)
+* [Next: Machine Learning Lab (8:56)](Machine_Learning_Lab.md)
