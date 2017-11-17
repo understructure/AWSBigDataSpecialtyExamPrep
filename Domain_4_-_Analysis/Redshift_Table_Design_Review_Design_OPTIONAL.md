@@ -21,3 +21,9 @@
     * UnloadCopyUtility
 
 * Check for distribution keys, sort keys, compression, etc.
+
+---
+
+
+* [Back: Redshift Table Design - Constraints (4:58)](Redshift_Table_Design_Constraints.md)
+* [Next: Redshift Workload Management (14:57)](Redshift_Workload_Management.md)
