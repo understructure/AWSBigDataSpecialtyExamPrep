@@ -45,3 +45,8 @@
 * Read this: [Building a Multi-Class ML Model with Amazon Machine Learning](https://aws.amazon.com/blogs/big-data/building-a-multi-class-ml-model-with-amazon-machine-learning/)
 
 * Also know about [Building a Numeric Regression Model with Amazon Machine Learning](https://aws.amazon.com/blogs/big-data/building-a-numeric-regression-model-with-amazon-machine-learning/) and [Building a Binary Classification Model with Amazon Machine Learning and Amazon Redshift](https://aws.amazon.com/blogs/big-data/building-a-binary-classification-model-with-amazon-machine-learning-and-amazon-redshift/)
+
+---
+
+* [Back: Machine Learning Introduction (13:16)](Machine_Learning_Introduction.md)
+* [Next: Machine Learning Binary Classification Model (11:32)](Machine_Learning_Binary_Classification_Model.md)
