@@ -31,3 +31,7 @@ NOTE - using an IAM role here instead of a username/password or secret keys
     * **Analytics** - use SQL to analyze data from Firehose → Redhsift
 
 * **Amazon Machine Learning** - Can dump data from Redshift into S3 and use Amazon ML to do predictive analytics on it
+
+---
+* [Back: Redshift Architecture (10:23)](Redshift_Architecture.md)
+* [Next: Columnar Databases (5:16)](Redshift_Columnar_Databases.md)
