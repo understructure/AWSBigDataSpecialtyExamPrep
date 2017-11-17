@@ -41,3 +41,8 @@
 * [SQL Workbench/J](http://www.sql-workbench.net/)
 
 * [Aginity (Windows only)](https://www.aginity.com/redshift/)
+
+---
+
+* [Back: Redshift in the AWS Ecosystem (5:51)](Redshift_in_the_AWS_Ecosystem.md)
+* [Next: Redshift Table Design - Introduction (5:20)](Redshift_Table_Design_Introduction.md)
