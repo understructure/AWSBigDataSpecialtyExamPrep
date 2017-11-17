@@ -57,3 +57,8 @@
 **Resources**
 
 [Data Warehousing on AWS](https://d0.awsstatic.com/whitepapers/enterprise-data-warehousing-on-aws.pdf)
+
+---
+
+* [Back: Introduction to Redshift (2:28)](Redshift_Introduction.md)
+* [Next: Redshift in the AWS Ecosystem (5:51)](Redshift_in_the_AWS_Ecosystem.md)
