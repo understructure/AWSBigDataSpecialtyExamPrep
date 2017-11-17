@@ -63,3 +63,9 @@ jdbc:redshift://*endpoint*:*port*/*database*
 * Redshift creates snapshots by default, you can’t delete them, only Redshift can.  Default retention period is 1 day
 
 * [Working With Snapshots](http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html): Only Amazon Redshift can delete an automated snapshot; you cannot delete them manually. Amazon Redshift deletes automated snapshots at the end of a snapshot’s retention period, when you disable automated snapshots, or when you delete the cluster. If you want to keep an automated snapshot for a longer period, you can create a copy of it as a manual snapshot. The automated snapshot is retained until the end of retention period, but the corresponding manual snapshot is retained until you manually delete it.
+
+---
+
+
+* [Back: Redshift Maintenance and Operations Part 2 (13:24)](Redshift_Maintenance_and_Operations_Part_2.md)
+* [Next: Machine Learning Introduction (13:16)](Machine_Learning_Introduction.md)
