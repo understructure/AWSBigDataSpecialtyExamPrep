@@ -51,3 +51,8 @@ For the Exam:
 * Know how to set cutoff score threshold, and why you would increase a threshold
 
 * Read this: [https://aws.amazon.com/blogs/big-data/building-a-binary-classification-model-with-amazon-machine-learning-and-amazon-redshift/](https://aws.amazon.com/blogs/big-data/building-a-binary-classification-model-with-amazon-machine-learning-and-amazon-redshift/)
+
+---
+
+* [Back: Machine Learning Multiclass Classification Model (9:05)](Machine_Learning_Multiclass_Classification_Model.md)
+* [Next: Machine Learning Regression Model (4:38)](Machine_Learning_Regression_Model.md)
