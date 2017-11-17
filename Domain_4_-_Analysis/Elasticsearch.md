@@ -127,3 +127,6 @@
 * Know the basics of AWS ES service
 
 * Have a high-level understanding of how Kibana and Logstash are used with AWS ES Service
+
+---
+* [Back: Machine Learning Lab (8:56)](Machine_Learning_Lab.md)
