@@ -78,3 +78,10 @@
     * DC1 - high I/O (SSD) but less storage
 
     * DS2 - very large amounts of data, HDD storage
+
+
+---
+
+
+* [Back: Redshift Loading Data Part 4 (3:54)](Redshift_Data_Loading_Part_4.md)
+* [Next: Redshift Maintenance and Operations Part 2 (13:24)](Redshift_Maintenance_and_Operations_Part_2.md)
