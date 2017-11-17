@@ -5,11 +5,11 @@
 ### User Posts - A Cloud Guru Forums
 
 
-* [https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-KwtjXQ6yMBoilvksMX3/passed_big_data_exam_with_78%25](passed big data exam with 78 percent)
-* [https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-Kx0lC6CkWYvfaq4zXVe/passed_big_data_specialty_exam](passed big data specialty exam)
-* [https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-KxGzKmZ-tZnEU7nJ9_W/passed_today](passed today)
-* [https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-KwAD6DaNa8jDEzBM3tr/passedmybigdataexamwith8](passed my big data exam with 8)
-* [https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-Kus6x1pvi0p5u8_-z9q/passed_the_exam](passed the exam)
+* [passed big data exam with 78 percent](https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-KwtjXQ6yMBoilvksMX3/passed_big_data_exam_with_78%25)
+* [passed big data specialty exam](https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-Kx0lC6CkWYvfaq4zXVe/passed_big_data_specialty_exam)
+* [passed today](https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-KxGzKmZ-tZnEU7nJ9_W/passed_today)
+* [passed my big data exam with 8](https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-KwAD6DaNa8jDEzBM3tr/passedmybigdataexamwith8)
+* [passed the exam](https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-Kus6x1pvi0p5u8_-z9q/passed_the_exam)
 
 * [2017-08-09 - Big Data Exam Feedback](https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-Kr67dbXLCoT8YQoYCUo/big_data_exam_feedback)
 * [Passing AWS Big Data Specialty Certification – A Chapter in My AWS Journey](https://www.linkedin.com/pulse/passing-aws-big-data-specialty-certification-chapter-my-sivan?trk=v-feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BLJWQaML3Qs66Mok5ApSi1Q%3D%3D)
