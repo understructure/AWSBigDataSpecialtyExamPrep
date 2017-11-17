@@ -50,3 +50,9 @@
 ### Resources 
 
 * Five-part (extra) Resource - [AWS Big Data Blog - Redshift Engineering’s Advanced Table Design Playbook](https://aws.amazon.com/blogs/big-data/amazon-redshift-engineerings-advanced-table-design-playbook-preamble-prerequisites-and-prioritization/)
+
+
+---
+
+* [Back: Redshift Table Design - Introduction (5:20)](Redshift_Table_Design_Introduction.md)
+* [Next: Redshift Table Design - Sort Keys (14:57)](Redshift_Table_Design_Sort_Keys.md)
