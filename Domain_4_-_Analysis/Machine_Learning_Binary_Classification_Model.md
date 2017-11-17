@@ -14,7 +14,7 @@
 
     * Independent of the actual score
 
-    * Value ranges from 0-1, with 1 being really good, 0.5 is baseline, meaning not good, and 0 meaning something wrong with data (?)
+    * Value ranges from 0-1, with 1 being perfect prediction, 0.5 is baseline, meaning not good, and 0 meaning something wrong with data (?)
 
 * Look at sample charts - know that a bad chart would be one histogram overlapping the other, where a good one would have very little overlap, e.g., only in the tails
 
