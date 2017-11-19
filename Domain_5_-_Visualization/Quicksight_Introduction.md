@@ -115,3 +115,7 @@
     * Data set checks - previews data, can skip rows that it can’t interpret - you get a message about number of rows it couldn’t import
 
 * Dashboards - can share with users, users can filter them, but can’t save the filters they create
+
+---
+
+* [Next: QuickSight Visualization (19:14)](Quicksight_Visualization.md)
