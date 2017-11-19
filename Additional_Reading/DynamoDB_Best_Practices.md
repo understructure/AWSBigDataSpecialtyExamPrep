@@ -10,7 +10,7 @@ http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BestPractices.ht
 * "Composite primary key" = partition + sort key
 * Good partition key choices include:
     * User ID, where the application has many users
-    * Device ID, where even if there are a lot of devices being tracked, one is by far more popular than all the others
+    * Device ID, where each device accesses data at relatively similar intervals
 * You may want to add a random value to a partition key to get it to write to more partitions, or use a "calculated value"
 * Calculated value example:  Add something to a key of date (YYYY-MM-DD) based on order ID, product ID, etc.  so you can more easily select the correct values later
 
