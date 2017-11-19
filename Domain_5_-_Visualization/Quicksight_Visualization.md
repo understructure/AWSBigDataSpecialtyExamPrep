@@ -47,3 +47,8 @@
 * Know the visual types and what they’re ideal for
 
 * Not too many questions on QS on the exam (maybe a couple)
+
+---
+
+* [Back: QuickSight Introduction (11:47)](Quicksight_Introduction.md)
+* [Next: Big Data Visualization (8:17)](Big_Data_Visualization.md)
