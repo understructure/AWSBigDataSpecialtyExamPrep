@@ -80,7 +80,7 @@ Four Hyperparameters:
 * Metrics provided
     * Accuracy : (TP + TN) / (TP + TN + FP + FN)
     * Precision : TP / (TP + FP)
-    * Recall : FP / (TP + FN)
+    * Recall : TP / (TP + FN)
     * False Positive Rate : FP / (FP + TN)
 
 [Multiclass Model Insights](http://docs.aws.amazon.com/machine-learning/latest/dg/multiclass-model-insights.html)  
