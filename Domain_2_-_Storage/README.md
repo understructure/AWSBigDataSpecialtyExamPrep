@@ -25,3 +25,8 @@ This represents the sequence of lectures and the links to my notes to the lectur
 7.  [Improving Data Access with Secondary Indexes](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)
 8.  [Cross-Region Replication](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html)
 
+## FAQs
+
+* [Kinesis Streams](https://aws.amazon.com/kinesis/streams/faqs/)
+* [Glacier](https://aws.amazon.com/glacier/faqs/)
+* [DynamoDB](https://aws.amazon.com/dynamodb/faqs/)
