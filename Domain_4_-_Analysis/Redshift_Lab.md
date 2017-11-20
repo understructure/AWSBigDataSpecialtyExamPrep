@@ -6,7 +6,7 @@
 
 2. Create sets of tables
 
-    1. With with compression encodings
+    1. With compression encodings
 
     2. Without compression encodings
 
