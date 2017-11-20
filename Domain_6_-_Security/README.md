@@ -23,3 +23,4 @@ This represents the sequence of lectures and the links to my notes to the lectur
 ## See Also
 
 1. [Redshift Database Developer Guide - Security](../Additional_Reading/Redshift-DB-Dev-Guide-Security.md)
+1. [Cloud HSM User Guide](http://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)
