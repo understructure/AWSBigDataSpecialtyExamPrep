@@ -85,6 +85,7 @@ This document is a list of every sidebar link, every embedded hyperlink in video
 | [Analyze Realtime Data from Amazon Kinesis Streams Using Zeppelin and Spark Streaming (duplicate)](https://aws.amazon.com/blogs/big-data/analyze-realtime-data-from-amazon-kinesis-streams-using-zeppelin-and-spark-streaming/) | Blog Post |
 | [Run Jupyter Notebook and JupyterHub on Amazon EMR](https://aws.amazon.com/blogs/big-data/running-jupyter-notebook-and-jupyterhub-on-amazon-emr/) | Blog Post |
 | [Big Data Analytics Options on AWS](https://d0.awsstatic.com/whitepapers/Big_Data_Analytics_Options_on_AWS.pdf) | Whitepaper |
+| [QuickSight Supported Data Sources](http://docs.aws.amazon.com/quicksight/latest/user/supported-data-sources.html) | Docs |
 
 ### Domain 6 - Security
 
