@@ -19,6 +19,6 @@
 
 * [Amazon Kinesis Streams Introduces Server-Side Encryption - posted 2017-07-06](https://aws.amazon.com/about-aws/whats-new/2017/07/amazon-kinesis-streams-introduces-server-side-encryption/)
     * [Using Server-Side Encryption](http://docs.aws.amazon.com/streams/latest/dev/server-side-encryption.html)
-* [Redshift Security Extra - GRANT](http://docs.aws.amazon.com/redshift/latest/dg/r_GRANT.html)
+* [Redshift Security Extra - GRANT (per number 6 on first link above)](http://docs.aws.amazon.com/redshift/latest/dg/r_GRANT.html)
 
 
